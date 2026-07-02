@@ -11,7 +11,7 @@ RUN npm run build
 
 
 # ---------- BACKEND ----------
-FROM php:8.3-cli
+FROM php:8.4.22-cli
 
 RUN apt-get update && apt-get install -y \
     unzip \
