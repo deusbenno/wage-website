@@ -2,10 +2,12 @@
 FROM node:18 AS node_build
 
 WORKDIR /app
-COPY . .
 
+COPY package*.json ./
 RUN npm install
-RUN npm run build || true
+
+COPY . .
+RUN npm run build
 
 
 # ---------- BACKEND ----------
@@ -30,12 +32,13 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 
+# Copy app
 COPY . .
 
-# Install PHP dependencies (IMPORTANT FIXED)
+# Install PHP deps
 RUN composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist
 
-# Copy built frontend assets
+# ONLY copy Vite build output (safe way)
 COPY --from=node_build /app/public/build /app/public/build
 
 EXPOSE 10000
