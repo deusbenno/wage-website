@@ -1,5 +1,5 @@
 # ---------- FRONTEND BUILD ----------
-FROM node:18 AS node_build
+FROM node:20 AS node_build
 
 WORKDIR /app
 
