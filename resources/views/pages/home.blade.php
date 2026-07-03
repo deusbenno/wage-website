@@ -17,6 +17,10 @@
         footer[id] {
             scroll-margin-top: 96px;
         }
+
+        [x-cloak] {
+            display: none !important;
+        }
     </style>
 </head>
 
@@ -50,7 +54,7 @@
         ['name' => 'Fresh Avocados', 'text' => 'Premium avocados, sourced from trusted farmers', 'image' => 'https://images.unsplash.com/photo-1601039641847-7857b994d704?auto=format&fit=crop&w=700&q=80'],
         ['name' => 'Ginger', 'text' => 'Fresh ginger, dried ginger & ginger powder', 'image' => 'https://images.unsplash.com/photo-1615485500834-bc10199bc727?auto=format&fit=crop&w=700&q=80'],
         ['name' => 'Turmeric', 'text' => 'Fresh turmeric, dried turmeric & turmeric powder', 'image' => 'https://images.unsplash.com/photo-1615485291234-9d694218aeb3?auto=format&fit=crop&w=700&q=80'],
-        ['name' => 'Cloves', 'text' => 'High quality cloves for local & export markets', 'image' => 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Cloves.JPG'],
+        ['name' => 'Cloves', 'text' => 'High quality cloves for local & export markets', 'image' => 'https://source.unsplash.com/700x500/?cloves,spice'],
         ['name' => 'Other Products', 'text' => 'Other agricultural products based on seasonality & demand', 'image' => 'https://images.unsplash.com/photo-1615484477778-ca3b77940c25?auto=format&fit=crop&w=700&q=80'],
     ];
 
@@ -110,17 +114,58 @@
 </header>
 
 <main>
-    <section class="relative min-h-[720px] overflow-hidden pt-28 text-white">
+    <section
+        x-data="{
+            current: 0,
+            slides: [
+                {
+                    label: 'Fresh Avocados',
+                    image: 'https://images.unsplash.com/photo-1601039641847-7857b994d704?auto=format&fit=crop&w=1900&q=85',
+                    alt: 'Fresh avocados growing on a tree'
+                },
+                {
+                    label: 'Maize Flour',
+                    image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=1900&q=85',
+                    alt: 'Maize and maize flour'
+                },
+                {
+                    label: 'Pilipili Spices',
+                    image: 'https://source.unsplash.com/1900x1100/?chili,pepper,spices',
+                    alt: 'Pilipili chili spices'
+                },
+                {
+                    label: 'Fresh Ginger',
+                    image: 'https://images.unsplash.com/photo-1615485500834-bc10199bc727?auto=format&fit=crop&w=1900&q=85',
+                    alt: 'Fresh ginger roots'
+                }
+            ],
+            next() {
+                this.current = (this.current + 1) % this.slides.length;
+            },
+            previous() {
+                this.current = (this.current - 1 + this.slides.length) % this.slides.length;
+            }
+        }"
+        class="relative min-h-[720px] overflow-hidden pt-28 text-white"
+    >
         <div class="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1601039641847-7857b994d704?auto=format&fit=crop&w=1900&q=85" alt="Avocados growing in Tanzania" class="h-full w-full object-cover">
+            <template x-for="(slide, index) in slides" :key="slide.label">
+                <img
+                    x-show="current === index"
+                    x-transition.opacity.duration.500ms
+                    :src="slide.image"
+                    :alt="slide.alt"
+                    class="absolute inset-0 h-full w-full object-cover"
+                >
+            </template>
             <div class="absolute inset-0 bg-gradient-to-r from-[#06150e]/92 via-[#06150e]/68 to-[#06150e]/25"></div>
             <div class="absolute inset-0 bg-black/20"></div>
         </div>
 
-        <button class="absolute left-5 top-1/2 z-10 hidden -translate-y-1/2 text-white/90 md:block" aria-label="Previous slide">
+        <button type="button" @click="previous()" class="absolute left-5 top-1/2 z-10 hidden -translate-y-1/2 rounded-full bg-black/20 p-2 text-white/90 transition hover:bg-[#d2e829] hover:text-[#082015] md:block" aria-label="Previous slide">
             <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m15 18-6-6 6-6"/></svg>
         </button>
-        <button class="absolute right-5 top-1/2 z-10 hidden -translate-y-1/2 text-white/90 md:block" aria-label="Next slide">
+        <button type="button" @click="next()" class="absolute right-5 top-1/2 z-10 hidden -translate-y-1/2 rounded-full bg-black/20 p-2 text-white/90 transition hover:bg-[#d2e829] hover:text-[#082015] md:block" aria-label="Next slide">
             <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m9 18 6-6-6-6"/></svg>
         </button>
 
@@ -148,9 +193,15 @@
         </div>
 
         <div class="absolute bottom-24 left-1/2 z-10 flex -translate-x-1/2 gap-3">
-            <span class="h-3.5 w-3.5 rounded-full bg-[#d2e829]"></span>
-            <span class="h-3.5 w-3.5 rounded-full bg-white/90"></span>
-            <span class="h-3.5 w-3.5 rounded-full bg-white/90"></span>
+            <template x-for="(slide, index) in slides" :key="slide.label">
+                <button
+                    type="button"
+                    @click="current = index"
+                    class="h-3.5 w-3.5 rounded-full transition"
+                    :class="current === index ? 'bg-[#d2e829] scale-110' : 'bg-white/90 hover:bg-white'"
+                    :aria-label="'Show ' + slide.label"
+                ></button>
+            </template>
         </div>
     </section>
 
@@ -183,7 +234,7 @@
             </div>
 
             <div class="overflow-hidden rounded-2xl shadow-xl shadow-black/10">
-                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85" alt="WAGE warehouse and delivery trucks" class="h-[360px] w-full object-cover">
+                <img src="https://source.unsplash.com/1200x800/?agricultural,warehouse,grain,storage" alt="Agricultural warehouse for crop storage" class="h-[360px] w-full object-cover">
             </div>
         </div>
     </section>
@@ -282,6 +333,30 @@
                 <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">Email</p>
                 <a href="mailto:getupala@yahoo.co.uk" class="mt-3 block break-words text-white/85 transition hover:text-[#d2e829]">getupala@yahoo.co.uk</a>
             </div>
+        </div>
+    </div>
+
+    <div class="mx-auto mt-12 grid max-w-7xl gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+        <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+            <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">Find Us on the Map</p>
+            <h2 class="mt-3 text-3xl font-black">Dakawa, Mvomero, Morogoro</h2>
+            <p class="mt-4 leading-7 text-white/78">
+                The map points visitors to Dakawa Ward in Mvomero District, Morogoro Region. For exact arrival guidance, contact WAGE Solutions Limited using the phone numbers above.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Dakawa%20Mvomero%20Morogoro%20Tanzania" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-3 rounded-full border border-[#d2e829] px-6 py-3 text-sm font-extrabold uppercase text-[#d2e829] transition hover:bg-[#d2e829] hover:text-[#082015]">
+                Open Google Maps
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+        </div>
+
+        <div class="overflow-hidden rounded-xl border border-white/10 bg-white/[0.08] shadow-2xl shadow-black/20">
+            <iframe
+                title="WAGE Solutions Limited location in Dakawa, Mvomero, Morogoro"
+                src="https://www.google.com/maps?q=Dakawa%20Mvomero%20Morogoro%20Tanzania&output=embed"
+                class="h-[360px] w-full"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
         </div>
     </div>
 
