@@ -41,8 +41,13 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction --prefer-di
 # Bring Vite build from node stage (CRITICAL)
 COPY --from=node_build /app/public/build /app/public/build
 
-# IMPORTANT: do NOT run artisan cache commands during build
-# (SQLite or DB is not guaranteed in build environment)
+# ================================
+# 🔥 FIX: FORCE CLEAN LARAVEL CONFIG
+# ================================
+RUN php artisan config:clear || true
+RUN php artisan cache:clear || true
+RUN php artisan view:clear || true
+RUN php artisan config:cache || true
 
 EXPOSE 10000
 
