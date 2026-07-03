@@ -8,9 +8,19 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section[id],
+        footer[id] {
+            scroll-margin-top: 96px;
+        }
+    </style>
 </head>
 
-<body class="bg-[#f6f8f2] font-sans text-[#10251d] antialiased">
+<body x-data="{ feedbackOpen: false }" class="bg-[#f6f8f2] font-sans text-[#10251d] antialiased">
 @php
     $features = [
         [
@@ -40,7 +50,7 @@
         ['name' => 'Fresh Avocados', 'text' => 'Premium avocados, sourced from trusted farmers', 'image' => 'https://images.unsplash.com/photo-1601039641847-7857b994d704?auto=format&fit=crop&w=700&q=80'],
         ['name' => 'Ginger', 'text' => 'Fresh ginger, dried ginger & ginger powder', 'image' => 'https://images.unsplash.com/photo-1615485500834-bc10199bc727?auto=format&fit=crop&w=700&q=80'],
         ['name' => 'Turmeric', 'text' => 'Fresh turmeric, dried turmeric & turmeric powder', 'image' => 'https://images.unsplash.com/photo-1615485291234-9d694218aeb3?auto=format&fit=crop&w=700&q=80'],
-        ['name' => 'Cloves', 'text' => 'High quality cloves for local & export markets', 'image' => 'https://images.unsplash.com/photo-1605369572399-05d8d64a0f6e?auto=format&fit=crop&w=700&q=80'],
+        ['name' => 'Cloves', 'text' => 'High quality cloves for local & export markets', 'image' => 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Cloves.JPG'],
         ['name' => 'Other Products', 'text' => 'Other agricultural products based on seasonality & demand', 'image' => 'https://images.unsplash.com/photo-1615484477778-ca3b77940c25?auto=format&fit=crop&w=700&q=80'],
     ];
 
@@ -54,7 +64,7 @@
     ];
 @endphp
 
-<header x-data="{ open: false }" class="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#082015]/72 text-white backdrop-blur-md">
+<header x-data="{ open: false }" class="fixed left-0 top-0 z-50 w-full border-b border-[#d2e829]/20 bg-gradient-to-r from-[#04140c] via-[#0b341c] to-[#062414] text-white shadow-xl shadow-black/20">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#" class="flex items-center gap-3">
             <span class="grid h-11 w-11 place-items-center rounded-full border border-[#d2e829]/50 text-[#d2e829]">
@@ -89,7 +99,7 @@
         </button>
     </div>
 
-    <div x-show="open" x-transition class="space-y-1 border-t border-white/10 bg-[#082015] px-5 py-4 text-sm font-bold uppercase lg:hidden">
+    <div x-show="open" x-transition class="space-y-1 border-t border-white/10 bg-gradient-to-b from-[#082015] to-[#0b341c] px-5 py-4 text-sm font-bold uppercase lg:hidden">
         <a href="#" class="block rounded-lg px-3 py-2 text-[#d2e829]">Home</a>
         <a href="#about" class="block rounded-lg px-3 py-2">About</a>
         <a href="#products" class="block rounded-lg px-3 py-2">Products</a>
@@ -220,5 +230,115 @@
         </div>
     </section>
 </main>
+
+<footer id="contact" class="bg-gradient-to-br from-[#04140c] via-[#0b301d] to-[#071d12] px-5 py-16 text-white lg:px-8">
+    <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1.15fr]">
+        <div>
+            <div class="flex items-center gap-3">
+                <span class="grid h-12 w-12 place-items-center rounded-full border border-[#d2e829]/50 text-[#d2e829]">
+                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 20c0-8 4-13 12-15-.4 8-5 12-12 12"/>
+                        <path d="M7 20c0-5-2-8-6-10 5-.4 8 2 9 6"/>
+                    </svg>
+                </span>
+                <span class="leading-none">
+                    <span class="block text-3xl font-black tracking-wide">WAGE</span>
+                    <span class="block text-[11px] font-bold uppercase tracking-[0.18em] text-white/80">Solutions Limited</span>
+                </span>
+            </div>
+
+            <p class="mt-6 max-w-xl text-base leading-8 text-white/78">
+                Premium Tanzanian agricultural products, processed and supplied with care for local and international markets.
+            </p>
+
+            <button type="button" @click="feedbackOpen = true" class="mt-8 inline-flex items-center gap-3 rounded-full bg-[#d2e829] px-7 py-3 text-sm font-extrabold uppercase text-[#082015] transition hover:bg-white">
+                Send Feedback
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2">
+            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">Business Location</p>
+                <p class="mt-3 leading-7 text-white/85">
+                    Morogoro Region, Mvomero District, Dakawa Ward, Wami Sokoine Kibao cha Ranch near Makunganya Mosque
+                </p>
+            </div>
+
+            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">Postal Address</p>
+                <p class="mt-3 leading-7 text-white/85">P.O. Box 3294, Morogoro, Tanzania</p>
+            </div>
+
+            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">Telephone</p>
+                <div class="mt-3 space-y-2 text-white/85">
+                    <a href="tel:+255786052912" class="block transition hover:text-[#d2e829]">+255 786 052 912</a>
+                    <a href="tel:+255792240381" class="block transition hover:text-[#d2e829]">+255 792 240 381</a>
+                </div>
+            </div>
+
+            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">Email</p>
+                <a href="mailto:getupala@yahoo.co.uk" class="mt-3 block break-words text-white/85 transition hover:text-[#d2e829]">getupala@yahoo.co.uk</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto mt-12 flex max-w-7xl flex-col gap-4 border-t border-white/10 pt-6 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
+        <p>&copy; {{ date('Y') }} WAGE Solutions Limited. All rights reserved.</p>
+        <div class="flex gap-5 font-bold uppercase">
+            <a href="#" class="transition hover:text-[#d2e829]">Home</a>
+            <a href="#products" class="transition hover:text-[#d2e829]">Products</a>
+            <a href="#services" class="transition hover:text-[#d2e829]">Services</a>
+        </div>
+    </div>
+</footer>
+
+<div x-show="feedbackOpen" x-transition.opacity class="fixed inset-0 z-[80] grid place-items-center bg-black/70 px-5" style="display: none;">
+    <div @click.away="feedbackOpen = false" class="w-full max-w-xl rounded-2xl bg-white p-6 shadow-2xl">
+        <div class="flex items-start justify-between gap-4">
+            <div>
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">WAGE Feedback</p>
+                <h2 class="mt-1 text-3xl font-black text-[#13241f]">Send Feedback</h2>
+            </div>
+            <button type="button" @click="feedbackOpen = false" class="grid h-10 w-10 place-items-center rounded-full bg-[#eef5ec] text-[#13241f] transition hover:bg-[#d2e829]" aria-label="Close feedback form">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+        </div>
+
+        <form class="mt-6 space-y-4" @submit.prevent="feedbackOpen = false">
+            <div class="grid gap-4 sm:grid-cols-2">
+                <label class="block">
+                    <span class="text-sm font-bold text-[#24352f]">Full Name</span>
+                    <input type="text" required class="mt-2 w-full rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20">
+                </label>
+                <label class="block">
+                    <span class="text-sm font-bold text-[#24352f]">Phone or Email</span>
+                    <input type="text" required class="mt-2 w-full rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20">
+                </label>
+            </div>
+
+            <label class="block">
+                <span class="text-sm font-bold text-[#24352f]">Subject</span>
+                <input type="text" required class="mt-2 w-full rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20">
+            </label>
+
+            <label class="block">
+                <span class="text-sm font-bold text-[#24352f]">Message</span>
+                <textarea rows="5" required class="mt-2 w-full resize-none rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20"></textarea>
+            </label>
+
+            <div class="flex flex-col gap-3 pt-2 sm:flex-row sm:justify-end">
+                <button type="button" @click="feedbackOpen = false" class="rounded-full border border-[#cfd9cb] px-6 py-3 text-sm font-extrabold uppercase text-[#24352f] transition hover:bg-[#eef5ec]">
+                    Cancel
+                </button>
+                <button type="submit" class="rounded-full bg-[#15812d] px-7 py-3 text-sm font-extrabold uppercase text-white transition hover:bg-[#0f5f22]">
+                    Submit Feedback
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
