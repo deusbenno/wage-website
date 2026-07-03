@@ -32,19 +32,17 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 
-# Copy EVERYTHING EXCEPT overwriting build later
+# Copy application
 COPY . .
 
-# Install PHP deps
+# Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist
 
-# 🚨 IMPORTANT: bring built assets LAST (override-safe)
+# Bring Vite build from node stage (CRITICAL)
 COPY --from=node_build /app/public/build /app/public/build
 
-# Clear Laravel caches (important for Vite manifest detection)
-RUN php artisan config:clear && \
-    php artisan view:clear && \
-    php artisan cache:clear
+# IMPORTANT: do NOT run artisan cache commands during build
+# (SQLite or DB is not guaranteed in build environment)
 
 EXPOSE 10000
 
