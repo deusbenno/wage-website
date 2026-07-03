@@ -116,6 +116,72 @@
 
     </div>
 </section>
+<!-- ABOUT SECTION -->
+<section id="about" class="py-20 bg-[#F8FAF5]">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- IMAGE -->
+        <div>
+            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38"
+                 class="rounded-2xl shadow-lg w-full object-cover">
+        </div>
+
+        <!-- TEXT -->
+        <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#0B5D1E]">
+                About WAGE Solutions Limited
+            </h2>
+
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                WAGE Solutions Limited is a Tanzanian agribusiness company focused on
+                sourcing, processing, packaging, and supplying high-quality agricultural
+                products including maize flour, avocados, ginger, turmeric, and cloves
+                to both local and international markets.
+            </p>
+
+            <p class="mt-4 text-gray-700 leading-relaxed">
+                We work directly with farmers to ensure quality, consistency, and fair
+                value across the supply chain while promoting sustainable agriculture
+                and food security.
+            </p>
+
+            <a href="#contact"
+               class="inline-block mt-6 bg-[#0B5D1E] text-white px-6 py-3 rounded-full hover:bg-[#063412] transition">
+                Contact Us
+            </a>
+        </div>
+
+    </div>
+</section>
+<!-- VISION / MISSION -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+
+        <div class="p-6 border rounded-xl hover:shadow-lg transition">
+            <h3 class="text-xl font-bold text-[#0B5D1E]">Vision</h3>
+            <p class="mt-3 text-gray-600">
+                To become a leading agribusiness company delivering premium Tanzanian
+                agricultural products globally.
+            </p>
+        </div>
+
+        <div class="p-6 border rounded-xl hover:shadow-lg transition">
+            <h3 class="text-xl font-bold text-[#0B5D1E]">Mission</h3>
+            <p class="mt-3 text-gray-600">
+                To connect farmers with markets through quality processing, packaging,
+                and reliable supply chains.
+            </p>
+        </div>
+
+        <div class="p-6 border rounded-xl hover:shadow-lg transition">
+            <h3 class="text-xl font-bold text-[#0B5D1E]">Core Values</h3>
+            <p class="mt-3 text-gray-600">
+                Quality, Integrity, Sustainability, Innovation, and Farmer Empowerment.
+            </p>
+        </div>
+
+    </div>
+</section>
 
 </body>
 </html>
