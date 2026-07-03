@@ -25,11 +25,13 @@ COPY . .
 
 RUN composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist
 
+# bring Vite build
 COPY --from=node_build /app/public/build /app/public/build
 
-# IMPORTANT: DO NOT cache anything during build
+# clean caches safely
 RUN rm -f bootstrap/cache/*.php || true
 
 EXPOSE 10000
 
-CMD ["sh", "-c", "php artisan config:clear && php artisan serve --host=0.0.0.0 --port=10000"]
+# ---------- FIX: PRODUCTION SERVER ----------
+CMD php -S 0.0.0.0:10000 -t public
