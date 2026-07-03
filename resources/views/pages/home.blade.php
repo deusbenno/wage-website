@@ -48,13 +48,16 @@
     </div>
 </header>
 
-<!-- HERO SECTION (STATIC MAIZE FARM BACKGROUND) -->
+<!-- HERO SECTION (FIXED BACKGROUND IMAGE) -->
 <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
 
     <!-- BACKGROUND IMAGE -->
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1605000797510-6a3c0b2d8b4c"
-             class="w-full h-full object-cover">
+        <img 
+            src="https://source.unsplash.com/1600x900/?maize,farm,agriculture,tanzania"
+            alt="Maize farm"
+            class="w-full h-full object-cover"
+        >
         <div class="absolute inset-0 bg-black/60"></div>
     </div>
 
