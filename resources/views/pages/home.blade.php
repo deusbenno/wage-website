@@ -55,36 +55,18 @@
     </div>
 </header>
 
-<!-- HERO SECTION WITH CONTROLLED SLIDESHOW -->
-<section x-data="{
-    active: 0,
-    images: [
-        'https://source.unsplash.com/1600x900/?avocado,farm,agriculture',
-        'https://source.unsplash.com/1600x900/?maize,corn,farm,africa',
-        'https://source.unsplash.com/1600x900/?spices,turmeric,cloves,ginger',
-        'https://source.unsplash.com/1600x900/?agriculture,farm,crops,tanzania'
-    ],
-    init() {
-        setInterval(() => {
-            this.active = (this.active + 1) % this.images.length;
-        }, 5000);
-    }
-}"
-class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+<!-- HERO SECTION (SINGLE MAIZE FARM BACKGROUND) -->
+<section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
 
-    <!-- SLIDES -->
-    <template x-for="(img, index) in images" :key="index">
-        <img
-            :src="img"
-            x-show="active === index"
-            x-transition.opacity.duration.1000ms
-            class="absolute inset-0 w-full h-full object-cover"
-            alt="Agriculture slide"
+    <!-- BACKGROUND IMAGE -->
+    <div class="absolute inset-0">
+        <img 
+            src="https://source.unsplash.com/1600x900/?maize,farm,cornfield,agriculture"
+            alt="Maize farm"
+            class="w-full h-full object-cover"
         >
-    </template>
-
-    <!-- DARK OVERLAY -->
-    <div class="absolute inset-0 bg-black/60"></div>
+        <div class="absolute inset-0 bg-black/60"></div>
+    </div>
 
     <!-- CONTENT -->
     <div class="relative z-10 max-w-3xl px-6">
@@ -94,8 +76,8 @@ class="relative h-screen flex items-center justify-center text-center text-white
         </h1>
 
         <p class="mt-6 text-lg text-gray-200">
-            We specialize in sourcing, processing and exporting avocados, maize,
-            and premium spices to local and global markets.
+            We specialize in sourcing, processing and exporting high-quality maize
+            for local and global markets.
         </p>
 
         <div class="mt-8 flex justify-center gap-4">
