@@ -55,14 +55,14 @@
     </div>
 </header>
 
-<!-- HERO SECTION WITH SLIDESHOW -->
+<!-- HERO SECTION WITH CONTROLLED SLIDESHOW -->
 <section x-data="{
     active: 0,
     images: [
-        'https://images.unsplash.com/photo-1592928302636-c83cf1b6c3a8',  /* avocado */
-        'https://images.unsplash.com/photo-1603048297172-c92544798d5a',  /* maize */
-        'https://images.unsplash.com/photo-1615485290382-441e4d049cb5',  /* spices */
-        'https://images.unsplash.com/photo-1625246333195-78d9c38ad449'   /* farm */
+        'https://source.unsplash.com/1600x900/?avocado,farm,agriculture',
+        'https://source.unsplash.com/1600x900/?maize,corn,farm,africa',
+        'https://source.unsplash.com/1600x900/?spices,turmeric,cloves,ginger',
+        'https://source.unsplash.com/1600x900/?agriculture,farm,crops,tanzania'
     ],
     init() {
         setInterval(() => {
@@ -77,8 +77,9 @@ class="relative h-screen flex items-center justify-center text-center text-white
         <img
             :src="img"
             x-show="active === index"
-            x-transition
+            x-transition.opacity.duration.1000ms
             class="absolute inset-0 w-full h-full object-cover"
+            alt="Agriculture slide"
         >
     </template>
 
