@@ -3,156 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://images.unsplash.com">
-    <title>WAGE Solutions</title>
+    <title>WAGE Solutions Limited</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="bg-[#F8FAF5] font-sans">
+<body class="bg-[#f6f8f2] font-sans text-[#10251d] antialiased">
+@php
+    $features = [
+        [
+            'title' => 'Premium Product Categories',
+            'text' => 'Maize Flour, Avocados, Spices & More',
+            'icon' => '<path d="M7 20c0-8 4-13 12-15-.4 8-5 12-12 12"/><path d="M7 20c0-5-2-8-6-10 5-.4 8 2 9 6"/>',
+        ],
+        [
+            'title' => 'Local & International Markets',
+            'text' => 'Serving Local Buyers and Global Markets',
+            'icon' => '<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 0 20"/><path d="M12 2a15.3 15.3 0 0 0 0 20"/>',
+        ],
+        [
+            'title' => 'Quality Processing',
+            'text' => 'Advanced Processing, Sorting & Packaging',
+            'icon' => '<path d="m15.5 7.5-5.2 5.2-1.8-1.8"/><path d="M12 2l2.2 2 3-.5.9 2.9 2.7 1.4-1.4 2.7.5 3-2.9.9-1.4 2.7-2.7-1.4-3 .5-.9-2.9-2.7-1.4 1.4-2.7-.5-3 2.9-.9z"/><path d="m8.5 17.5-1.8 4.2 5.3-2.1 5.3 2.1-1.8-4.2"/>',
+        ],
+        [
+            'title' => 'Farmer Partnerships',
+            'text' => 'Working Together for Sustainable Growth',
+            'icon' => '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+        ],
+    ];
 
-<!-- NAVBAR -->
-<header x-data="{ open: false }"
-        class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur shadow-sm">
+    $products = [
+        ['name' => 'Maize Flour', 'text' => 'High quality maize flour for diverse uses', 'image' => 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=700&q=80'],
+        ['name' => 'Fresh Avocados', 'text' => 'Premium avocados, sourced from trusted farmers', 'image' => 'https://images.unsplash.com/photo-1601039641847-7857b994d704?auto=format&fit=crop&w=700&q=80'],
+        ['name' => 'Ginger', 'text' => 'Fresh ginger, dried ginger & ginger powder', 'image' => 'https://images.unsplash.com/photo-1615485500834-bc10199bc727?auto=format&fit=crop&w=700&q=80'],
+        ['name' => 'Turmeric', 'text' => 'Fresh turmeric, dried turmeric & turmeric powder', 'image' => 'https://images.unsplash.com/photo-1615485291234-9d694218aeb3?auto=format&fit=crop&w=700&q=80'],
+        ['name' => 'Cloves', 'text' => 'High quality cloves for local & export markets', 'image' => 'https://images.unsplash.com/photo-1605369572399-05d8d64a0f6e?auto=format&fit=crop&w=700&q=80'],
+        ['name' => 'Other Products', 'text' => 'Other agricultural products based on seasonality & demand', 'image' => 'https://images.unsplash.com/photo-1615484477778-ca3b77940c25?auto=format&fit=crop&w=700&q=80'],
+    ];
 
-    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    $services = [
+        ['title' => 'Produce Aggregation', 'text' => 'Sourcing from farmers across regions', 'icon' => '<path d="M7 20c0-7 4-12 12-14-.4 7-5 11-12 11"/><path d="M7 20c0-4-2-7-6-9 4-.3 7 1.5 8 5"/>'],
+        ['title' => 'Sorting & Grading', 'text' => 'Ensuring premium quality standards', 'icon' => '<circle cx="5" cy="6" r="2"/><circle cx="17" cy="6" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="7" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7.5 10.5 11M13.5 11 16 7.5M10.5 13 8 16.5M13.5 13 17 16.5"/>'],
+        ['title' => 'Processing & Value Addition', 'text' => 'Drying, grinding & other processing', 'icon' => '<path d="M3 21h18"/><path d="M5 21V9l6 4V9l8 5v7"/><path d="M7 16h2"/><path d="M13 16h2"/><path d="M17 16h2"/><path d="M9 9V5h4v6"/>'],
+        ['title' => 'Packaging', 'text' => 'Hygienic packaging for local & export markets', 'icon' => '<path d="m21 8-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/><path d="m7.5 5.5 9 5"/>'],
+        ['title' => 'Warehouse Storage', 'text' => 'Safe storage with proper handling systems', 'icon' => '<path d="M3 21h18"/><path d="M4 21V8l8-5 8 5v13"/><path d="M8 21v-8h8v8"/><path d="M8 11h8"/><path d="M10 17h4"/>'],
+        ['title' => 'Logistics & Delivery', 'text' => 'Reliable transport & timely delivery', 'icon' => '<path d="M10 17H5a2 2 0 0 1-2-2V6h11v11"/><path d="M14 9h4l3 4v4h-3"/><circle cx="7" cy="17" r="2"/><circle cx="16" cy="17" r="2"/>'],
+    ];
+@endphp
 
-        <!-- LOGO -->
-        <div class="text-xl font-bold text-[#0B5D1E]">
-            WAGE
-        </div>
-
-        <!-- DESKTOP MENU -->
-        <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
-            <a href="#" class="hover:text-[#0B5D1E]">Home</a>
-            <a href="#about" class="hover:text-[#0B5D1E]">About</a>
-            <a href="#products" class="hover:text-[#0B5D1E]">Products</a>
-            <a href="#services" class="hover:text-[#0B5D1E]">Services</a>
-            <a href="#contact" class="hover:text-[#0B5D1E]">Contact</a>
-        </nav>
-
-        <!-- CTA -->
-        <a href="#contact"
-           class="hidden md:inline-block bg-[#0B5D1E] text-white px-5 py-2 rounded-full hover:bg-[#063412] transition">
-            Get Quote
+<header x-data="{ open: false }" class="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#082015]/72 text-white backdrop-blur-md">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+        <a href="#" class="flex items-center gap-3">
+            <span class="grid h-11 w-11 place-items-center rounded-full border border-[#d2e829]/50 text-[#d2e829]">
+                <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 20c0-8 4-13 12-15-.4 8-5 12-12 12"/>
+                    <path d="M7 20c0-5-2-8-6-10 5-.4 8 2 9 6"/>
+                </svg>
+            </span>
+            <span class="leading-none">
+                <span class="block text-3xl font-black tracking-wide">WAGE</span>
+                <span class="block text-[11px] font-bold uppercase tracking-[0.18em]">Solutions Limited</span>
+            </span>
         </a>
 
-        <!-- MOBILE BUTTON -->
-        <button @click="open = !open" class="md:hidden text-2xl">
-            ☰
+        <nav class="hidden items-center gap-9 text-sm font-extrabold uppercase lg:flex">
+            <a href="#" class="text-[#d2e829]">Home</a>
+            <a href="#about" class="transition hover:text-[#d2e829]">About</a>
+            <a href="#products" class="transition hover:text-[#d2e829]">Products</a>
+            <a href="#services" class="transition hover:text-[#d2e829]">Services</a>
+            <a href="#why-us" class="transition hover:text-[#d2e829]">Why Us</a>
+            <a href="#contact" class="transition hover:text-[#d2e829]">Contact</a>
+        </nav>
+
+        <a href="#contact" class="hidden rounded-full border border-[#d2e829] px-7 py-3 text-sm font-extrabold uppercase transition hover:bg-[#d2e829] hover:text-[#092114] lg:inline-flex">
+            Get a Quote
+        </a>
+
+        <button @click="open = !open" class="rounded-full border border-white/25 p-2 lg:hidden" aria-label="Open navigation">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 7h16M4 12h16M4 17h16"/>
+            </svg>
         </button>
     </div>
 
-    <!-- MOBILE MENU -->
-    <div x-show="open" class="md:hidden bg-white px-6 pb-4 space-y-3">
-        <a href="#" class="block">Home</a>
-        <a href="#about" class="block">About</a>
-        <a href="#products" class="block">Products</a>
-        <a href="#services" class="block">Services</a>
-        <a href="#contact" class="block">Contact</a>
+    <div x-show="open" x-transition class="space-y-1 border-t border-white/10 bg-[#082015] px-5 py-4 text-sm font-bold uppercase lg:hidden">
+        <a href="#" class="block rounded-lg px-3 py-2 text-[#d2e829]">Home</a>
+        <a href="#about" class="block rounded-lg px-3 py-2">About</a>
+        <a href="#products" class="block rounded-lg px-3 py-2">Products</a>
+        <a href="#services" class="block rounded-lg px-3 py-2">Services</a>
+        <a href="#why-us" class="block rounded-lg px-3 py-2">Why Us</a>
+        <a href="#contact" class="block rounded-lg px-3 py-2">Contact</a>
     </div>
 </header>
 
-<!-- HERO SECTION (SINGLE MAIZE FARM BACKGROUND) -->
-<section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
-
-    <!-- BACKGROUND IMAGE -->
-    <div class="absolute inset-0">
-        <img 
-            src="https://source.unsplash.com/1600x900/?maize,farm,cornfield,agriculture"
-            alt="Maize farm"
-            class="w-full h-full object-cover"
-        >
-        <div class="absolute inset-0 bg-black/60"></div>
-    </div>
-
-    <!-- CONTENT -->
-    <div class="relative z-10 max-w-3xl px-6">
-
-        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-            Premium Agricultural Products from Tanzania
-        </h1>
-
-        <p class="mt-6 text-lg text-gray-200">
-            We specialize in sourcing, processing and exporting high-quality maize
-            for local and global markets.
-        </p>
-
-        <div class="mt-8 flex justify-center gap-4">
-            <a href="#products"
-               class="bg-[#0B5D1E] px-6 py-3 rounded-full hover:bg-[#063412] transition">
-                Explore Products
-            </a>
-
-            <a href="#contact"
-               class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
-                Contact Us
-            </a>
+<main>
+    <section class="relative min-h-[720px] overflow-hidden pt-28 text-white">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1601039641847-7857b994d704?auto=format&fit=crop&w=1900&q=85" alt="Avocados growing in Tanzania" class="h-full w-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#06150e]/92 via-[#06150e]/68 to-[#06150e]/25"></div>
+            <div class="absolute inset-0 bg-black/20"></div>
         </div>
 
-    </div>
-</section>
-<!-- STATS -->
-<section class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <button class="absolute left-5 top-1/2 z-10 hidden -translate-y-1/2 text-white/90 md:block" aria-label="Previous slide">
+            <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button class="absolute right-5 top-1/2 z-10 hidden -translate-y-1/2 text-white/90 md:block" aria-label="Next slide">
+            <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
 
-        <div>
-            <h2 class="text-3xl font-bold text-[#0B5D1E]">4+</h2>
-            <p class="text-gray-600">Product Lines</p>
+        <div class="relative z-10 mx-auto max-w-7xl px-5 pb-44 pt-20 lg:px-8 lg:pt-32">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl font-black leading-[1.08] tracking-normal md:text-7xl">
+                    Premium Agricultural Products from <span class="text-[#d2e829]">Tanzania</span>
+                </h1>
+
+                <p class="mt-7 max-w-xl text-lg font-medium leading-8 text-white/95">
+                    WAGE Solutions Limited specializes in sourcing, aggregation, processing, packaging, and marketing of premium maize flour, avocados, spices, and other agricultural products for both local and international markets.
+                </p>
+
+                <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+                    <a href="#products" class="inline-flex items-center justify-center gap-3 rounded-lg bg-[#159332] px-8 py-4 text-sm font-extrabold uppercase shadow-lg shadow-black/20 transition hover:bg-[#117d2b]">
+                        Explore Products
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                    <a href="#contact" class="inline-flex items-center justify-center gap-3 rounded-full border border-white px-8 py-4 text-sm font-extrabold uppercase transition hover:bg-white hover:text-[#0d2418]">
+                        Contact Us
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <h2 class="text-3xl font-bold text-[#0B5D1E]">10+</h2>
-            <p class="text-gray-600">Farm Partners</p>
+        <div class="absolute bottom-24 left-1/2 z-10 flex -translate-x-1/2 gap-3">
+            <span class="h-3.5 w-3.5 rounded-full bg-[#d2e829]"></span>
+            <span class="h-3.5 w-3.5 rounded-full bg-white/90"></span>
+            <span class="h-3.5 w-3.5 rounded-full bg-white/90"></span>
         </div>
+    </section>
 
-        <div>
-            <h2 class="text-3xl font-bold text-[#0B5D1E]">Local</h2>
-            <p class="text-gray-600">Market Supply</p>
+    <section id="why-us" class="relative z-20 -mt-16 px-5 lg:px-8">
+        <div class="mx-auto grid max-w-6xl overflow-hidden rounded-2xl bg-white/95 shadow-2xl shadow-[#092114]/10 ring-1 ring-black/5 backdrop-blur md:grid-cols-4">
+            @foreach ($features as $feature)
+                <div class="border-b border-[#d8ded5] px-7 py-8 text-center last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0">
+                    <svg class="mx-auto h-12 w-12 text-[#155f2b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                        {!! $feature['icon'] !!}
+                    </svg>
+                    <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">{{ $feature['title'] }}</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#1c3028]">{{ $feature['text'] }}</p>
+                </div>
+            @endforeach
         </div>
+    </section>
 
-        <div>
-            <h2 class="text-3xl font-bold text-[#0B5D1E]">Export</h2>
-            <p class="text-gray-600">Ready Products</p>
+    <section id="about" class="bg-white px-5 py-20 lg:px-8">
+        <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">About WAGE</p>
+                <h2 class="mt-3 text-4xl font-black tracking-normal text-[#13241f] md:text-5xl">Who We Are</h2>
+                <p class="mt-6 max-w-xl text-base leading-8 text-[#24352f]">
+                    WAGE Solutions Limited is a Tanzanian agribusiness company focused on the sourcing, aggregation, sorting, packing, processing, and marketing of maize flour, avocados, spices, and other agricultural products from farmers in regions across the country. We connect smallholder farmers to structured markets while improving product quality, handling, and value addition.
+                </p>
+                <a href="#contact" class="mt-8 inline-flex items-center gap-3 rounded-full bg-[#155f2b] px-7 py-3 text-sm font-extrabold uppercase text-white transition hover:bg-[#0f4820]">
+                    Learn More
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+
+            <div class="overflow-hidden rounded-2xl shadow-xl shadow-black/10">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85" alt="WAGE warehouse and delivery trucks" class="h-[360px] w-full object-cover">
+            </div>
         </div>
+    </section>
 
-    </div>
-</section>
-<!-- VISION / MISSION / VALUES -->
-<section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+    <section id="products" class="bg-[#f4f6ef] px-5 py-16 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+            <div class="text-center">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Products</p>
+                <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f]">Quality Products, Naturally Grown</h2>
+            </div>
 
-        <!-- VISION -->
-        <div class="p-8 rounded-2xl border hover:shadow-xl transition text-center">
-            <div class="text-4xl">👁️</div>
-            <h3 class="text-xl font-bold text-[#0B5D1E] mt-4">Vision</h3>
-            <p class="mt-3 text-gray-600">
-                To become a leading agribusiness delivering premium Tanzanian products globally.
-            </p>
+            <div class="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+                @foreach ($products as $product)
+                    <article class="overflow-hidden rounded-lg bg-white text-center shadow-lg shadow-black/5 ring-1 ring-black/5">
+                        <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="h-44 w-full object-cover">
+                        <div class="px-4 py-5">
+                            <h3 class="text-lg font-extrabold text-[#14231e]">{{ $product['name'] }}</h3>
+                            <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ $product['text'] }}</p>
+                        </div>
+                    </article>
+                @endforeach
+            </div>
         </div>
+    </section>
 
-        <!-- MISSION -->
-        <div class="p-8 rounded-2xl border hover:shadow-xl transition text-center">
-            <div class="text-4xl">🎯</div>
-            <h3 class="text-xl font-bold text-[#0B5D1E] mt-4">Mission</h3>
-            <p class="mt-3 text-gray-600">
-                To connect farmers and markets through quality processing, packaging and supply.
-            </p>
+    <section id="services" class="bg-[#eef5ec] px-5 py-16 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+            <div class="text-center">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Services</p>
+                <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f]">From Farm to Market - We Deliver Value</h2>
+            </div>
+
+            <div class="mt-10 grid gap-0 rounded-xl bg-white/30 md:grid-cols-3 lg:grid-cols-6">
+                @foreach ($services as $service)
+                    <article class="border-b border-[#cfd9cb] px-5 py-8 text-center last:border-b-0 md:border-r md:last:border-r-0 lg:border-b-0">
+                        <svg class="mx-auto h-10 w-10 text-[#155f2b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                            {!! $service['icon'] !!}
+                        </svg>
+                        <h3 class="mt-4 text-base font-extrabold leading-tight text-[#13241f]">{{ $service['title'] }}</h3>
+                        <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ $service['text'] }}</p>
+                    </article>
+                @endforeach
+            </div>
         </div>
-
-        <!-- CORE VALUES -->
-        <div class="p-8 rounded-2xl border hover:shadow-xl transition text-center">
-            <div class="text-4xl">🌱</div>
-            <h3 class="text-xl font-bold text-[#0B5D1E] mt-4">Core Values</h3>
-            <p class="mt-3 text-gray-600">
-                Quality • Integrity • Sustainability • Innovation • Farmer Empowerment
-            </p>
-        </div>
-
-    </div>
-</section>
-
+    </section>
+</main>
 </body>
 </html>
