@@ -48,40 +48,26 @@
     </div>
 </header>
 
-<!-- HERO SLIDESHOW -->
-<section x-data="{
-    active: 0,
-    images: [
-        'https://images.unsplash.com/photo-1592928302636-c83cf1b6c3a8',
-        'https://images.unsplash.com/photo-1603048297172-c92544798d5a',
-        'https://images.unsplash.com/photo-1615485290382-441e4d049cb5',
-        'https://images.unsplash.com/photo-1625246333195-78d9c38ad449'
-    ],
-    init() {
-        setInterval(() => {
-            this.active = (this.active + 1) % this.images.length;
-        }, 5000);
-    }
-}"
-class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+<!-- HERO SECTION (STATIC MAIZE FARM BACKGROUND) -->
+<section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
 
-    <template x-for="(img, index) in images" :key="index">
-        <img :src="img"
-             x-show="active === index"
-             x-transition
-             class="absolute inset-0 w-full h-full object-cover">
-    </template>
+    <!-- BACKGROUND IMAGE -->
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1605000797510-6a3c0b2d8b4c"
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60"></div>
+    </div>
 
-    <div class="absolute inset-0 bg-black/60"></div>
-
+    <!-- CONTENT -->
     <div class="relative z-10 max-w-3xl px-6">
+
         <h1 class="text-4xl md:text-6xl font-bold leading-tight">
             Premium Agricultural Products from Tanzania
         </h1>
 
         <p class="mt-6 text-lg text-gray-200">
-            We specialize in sourcing, processing and exporting avocados, maize and premium spices
-            to local and global markets.
+            We specialize in sourcing, processing and exporting high-quality maize,
+            avocados and spices for local and global markets.
         </p>
 
         <div class="mt-8 flex justify-center gap-4">
@@ -95,6 +81,7 @@ class="relative h-screen flex items-center justify-center text-center text-white
                 Contact Us
             </a>
         </div>
+
     </div>
 </section>
 
