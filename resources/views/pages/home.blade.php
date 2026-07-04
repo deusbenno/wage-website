@@ -439,23 +439,23 @@
     </div>
 </section>
 
-  <section id="products" class="bg-[#f4f6ef] px-5 py-16 lg:px-8">
+  <section id="products" class="bg-[#f4f6ef] px-5 py-16 lg:px-8 overflow-hidden">
     <div class="mx-auto max-w-7xl">
         <div class="text-center">
             <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Products</p>
             <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f]">Quality Products, Naturally Grown</h2>
         </div>
 
-        <!-- Premium Products Slideshow / Carousel -->
-        <div class="mt-10 relative group">
-            <h3 class="text-xs font-bold uppercase tracking-wider text-[#24352f]/60 mb-4 px-1">Featured Commodities</h3>
+        <!-- Premium Products Auto-Scrolling Slideshow -->
+        <div class="mt-10 relative">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-[#24352f]/60 mb-4 px-1 text-center">Featured Commodities</h3>
             
-            <!-- Horizontal Carousel Track -->
-            <div id="product-carousel" class="flex gap-6 overflow-x-auto pb-6 scrollbar-none scroll-smooth snap-x snap-mandatory">
+            <!-- The Scrolling Track -->
+            <div class="flex animate-marquee gap-6">
                 
                 <!-- Card 1: Turmeric -->
-                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Turmeric" class="h-44 w-full rounded-lg object-cover">
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/6356711/pexels-photo-6356711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Turmeric" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Pure Turmeric</h4>
@@ -464,121 +464,81 @@
                 </div>
 
                 <!-- Card 2: Ginger -->
-                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.pexels.com/photos/209482/pexels-photo-209482.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ginger" class="h-44 w-full rounded-lg object-cover">
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/4666750/pexels-photo-4666750.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ginger" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Aromatic Ginger</h4>
-                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Pungent, high-grade ginger rhizomes cleaned and processed carefully for maximum flavor shelf-life.</p>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Pungent, high-grade ginger rhizomes cleaned and processed carefully for maximum flavor.</p>
                     </div>
                 </div>
 
                 <!-- Card 3: Cloves -->
-                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.pexels.com/photos/3993527/pexels-photo-3993527.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cloves" class="h-44 w-full rounded-lg object-cover">
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/10757656/pexels-photo-10757656.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cloves" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Zanzibar Cloves</h4>
-                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Premium whole cloves harvested carefully at optimal maturity, featuring strong essential oil retention.</p>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Premium whole cloves harvested carefully at optimal maturity, featuring strong aroma.</p>
                     </div>
                 </div>
 
                 <!-- Card 4: Hot Chillies -->
-                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.pexels.com/photos/66885/pexels-photo-66885.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hot Chillies" class="h-44 w-full rounded-lg object-cover">
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/3315286/pexels-photo-3315286.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hot Chillies" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Hot African Chillies</h4>
-                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Fiery and brightly colored hot peppers sun-dried to perfect humidity metrics for storage safety.</p>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Fiery and brightly colored hot peppers sun-dried to perfect humidity metrics.</p>
                     </div>
                 </div>
 
-                <!-- Card 5: Pepper Chillies -->
-                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.pexels.com/photos/928251/pexels-photo-928251.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pepper Chillies" class="h-44 w-full rounded-lg object-cover">
-                    <div class="mt-4 px-2 pb-2">
-                        <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
-                        <h4 class="mt-2 text-lg font-black text-[#13241f]">Mild Pepper Chillies</h4>
-                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Grown for high color yield and balanced mild heat, tailored for universal condiment mixing.</p>
-                    </div>
-                </div>
-
-                <!-- Card 6: Avocados -->
-                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.pexels.com/photos/5514807/pexels-photo-5514807.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Avocados" class="h-44 w-full rounded-lg object-cover">
+                <!-- Card 5: Avocados -->
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/2365281/pexels-photo-2365281.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Avocados" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Fresh Produce</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Premium Avocados</h4>
-                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Top-grade Hass and Fuerte varieties, sorted gently and packed to meet local and global trade criteria.</p>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Top-grade Hass varieties, sorted gently and packed to meet high trade criteria.</p>
                     </div>
                 </div>
 
-                <!-- Card 7: Maize Flour -->
-                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.pexels.com/photos/4099234/pexels-photo-4099234.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Maize Flour" class="h-44 w-full rounded-lg object-cover">
+                <!-- Card 6: Maize Flour -->
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/1435735/pexels-photo-1435735.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Maize Flour" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Staples</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Fortified Maize Flour</h4>
-                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Nutrient-rich, finely milled white corn flour perfect for preparing local high-quality meals.</p>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Nutrient-rich, finely milled white corn flour perfect for preparing local meals.</p>
                     </div>
                 </div>
 
+                <!-- Duplicated set for seamless infinite loop effect -->
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/6356711/pexels-photo-6356711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Turmeric" class="h-44 w-full rounded-lg object-cover">
+                    <div class="mt-4 px-2 pb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
+                        <h4 class="mt-2 text-lg font-black text-[#13241f]">Pure Turmeric</h4>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Rich in curcumin, dried and processed to pristine grades from selected smallholder farms.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Auto-cycle Slideshow Automation Script -->
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const carousel = document.getElementById("product-carousel");
-        if (!carousel) return;
-
-        let index = 0;
-        let isPaused = false;
-        
-        // Dynamic detection of elements
-        const getCards = () => carousel.querySelectorAll(".carousel-card");
-        
-        const autoCycle = () => {
-            if (isPaused) return;
-            const cards = getCards();
-            if (cards.length === 0) return;
-
-            index++;
-            if (index >= cards.length) {
-                index = 0; // Infinite reset loop
-            }
-
-            const targetCard = cards[index];
-            carousel.scrollTo({
-                left: targetCard.offsetLeft - carousel.offsetLeft,
-                behavior: 'smooth'
-            });
-        };
-
-        // Run automated transition step every 3 seconds
-        let slideInterval = setInterval(autoCycle, 3000);
-
-        // Pause slideshow behavior when user interacts manually
-        carousel.addEventListener("mouseenter", () => isPaused = true);
-        carousel.addEventListener("mouseleave", () => isPaused = false);
-        carousel.addEventListener("touchstart", () => isPaused = true, { passive: true });
-        carousel.addEventListener("touchend", () => {
-            // Give user brief room before restarting timer loop
-            setTimeout(() => { isPaused = false; }, 2000);
-        }, { passive: true });
-    });
-</script>
-
+<!-- Inject this custom CSS into your stylesheet to handle the animation -->
 <style>
-    /* Clean custom utility block to hide standard scrollbar lines globally */
-    .scrollbar-none::-webkit-scrollbar {
-        display: none;
+    @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-320px * 3 - 1.5rem * 3)); }
     }
-    .scrollbar-none {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+    .animate-marquee {
+        display: flex;
+        animation: marquee 20s linear infinite;
+    }
+    .animate-marquee:hover {
+        animation-play-state: paused;
     }
 </style>
 
