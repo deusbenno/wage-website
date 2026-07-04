@@ -8,7 +8,6 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
     <style>
         html {
             scroll-behavior: smooth;
@@ -26,7 +25,6 @@
 </head>
 
 <body x-data="{ feedbackOpen: false }" class="bg-[#f6f8f2] font-sans text-[#10251d] antialiased">
-
 @php
     $features = [
         [
@@ -62,99 +60,279 @@
 
     $services = [
         ['title' => 'Produce Aggregation', 'text' => 'Sourcing from farmers across regions', 'icon' => '<path d="M7 20c0-7 4-12 12-14-.4 7-5 11-12 11"/><path d="M7 20c0-4-2-7-6-9 4-.3 7 1.5 8 5"/>'],
-        ['title' => 'Sorting & Grading', 'text' => 'Ensuring premium quality standards', 'icon' => '<circle cx="5" cy="6" r="2"/><circle cx="17" cy="6" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="7" cy="18" r="2"/><circle cx="19" cy="18" r="2"/>'],
-        ['title' => 'Processing & Value Addition', 'text' => 'Drying, grinding & other processing', 'icon' => '<path d="M3 21h18"/><path d="M5 21V9l6 4V9l8 5v7"/>'],
-        ['title' => 'Packaging', 'text' => 'Hygienic packaging for local & export markets', 'icon' => '<path d="m21 8-9-5-9 5 9 5 9-5z"/>'],
-        ['title' => 'Warehouse Storage', 'text' => 'Safe storage with proper handling systems', 'icon' => '<path d="M3 21h18"/><path d="M4 21V8l8-5 8 5v13"/>'],
-        ['title' => 'Logistics & Delivery', 'text' => 'Reliable transport & timely delivery', 'icon' => '<circle cx="7" cy="17" r="2"/><circle cx="16" cy="17" r="2"/>'],
+        ['title' => 'Sorting & Grading', 'text' => 'Ensuring premium quality standards', 'icon' => '<circle cx="5" cy="6" r="2"/><circle cx="17" cy="6" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="7" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7.5 10.5 11M13.5 11 16 7.5M10.5 13 8 16.5M13.5 13 17 16.5"/>'],
+        ['title' => 'Processing & Value Addition', 'text' => 'Drying, grinding & other processing', 'icon' => '<path d="M3 21h18"/><path d="M5 21V9l6 4V9l8 5v7"/><path d="M7 16h2"/><path d="M13 16h2"/><path d="M17 16h2"/><path d="M9 9V5h4v6"/>'],
+        ['title' => 'Packaging', 'text' => 'Hygienic packaging for local & export markets', 'icon' => '<path d="m21 8-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/><path d="m7.5 5.5 9 5"/>'],
+        ['title' => 'Warehouse Storage', 'text' => 'Safe storage with proper handling systems', 'icon' => '<path d="M3 21h18"/><path d="M4 21V8l8-5 8 5v13"/><path d="M8 21v-8h8v8"/><path d="M8 11h8"/><path d="M10 17h4"/>'],
+        ['title' => 'Logistics & Delivery', 'text' => 'Reliable transport & timely delivery', 'icon' => '<path d="M10 17H5a2 2 0 0 1-2-2V6h11v11"/><path d="M14 9h4l3 4v4h-3"/><circle cx="7" cy="17" r="2"/><circle cx="16" cy="17" r="2"/>'],
     ];
 @endphp
 
-<header x-data="{ open: false, langOpen: false }"
-    class="fixed left-0 top-0 z-50 w-full border-b border-[#d2e829]/20 bg-gradient-to-r from-[#04140c] via-[#0b341c] to-[#062414] text-white shadow-xl">
-
+<header x-data="{ open: false, langOpen: false }" class="fixed left-0 top-0 z-50 w-full border-b border-[#d2e829]/20 bg-gradient-to-r from-[#04140c] via-[#0b341c] to-[#062414] text-white shadow-xl shadow-black/20">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
 
+        <!-- LOGO -->
         <a href="#" class="flex items-center gap-3">
             <span class="grid h-11 w-11 place-items-center rounded-full border border-[#d2e829]/50 text-[#d2e829]">
-                <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M7 20c0-8 4-13 12-15-.4 8-5 12-12 12"/>
+                    <path d="M7 20c0-5-2-8-6-10 5-.4 8 2 9 6"/>
                 </svg>
             </span>
-            <span>
-                <span class="block text-3xl font-black">WAGE</span>
-                <span class="block text-[11px] uppercase tracking-[0.18em]">Solutions Limited</span>
+            <span class="leading-none">
+                <span class="block text-3xl font-black tracking-wide">WAGE</span>
+                <span class="block text-[11px] font-bold uppercase tracking-[0.18em]">Solutions Limited</span>
             </span>
         </a>
 
-        <nav class="hidden lg:flex items-center gap-9 text-sm font-extrabold uppercase">
-            <a href="#" data-i18n="home" class="text-[#d2e829]">Home</a>
-            <a href="#about" data-i18n="about">About</a>
-            <a href="#products" data-i18n="products">Products</a>
-            <a href="#services" data-i18n="services">Services</a>
-            <a href="#why-us" data-i18n="why">Why Us</a>
-            <a href="#contact" data-i18n="contact">Contact</a>
+        <!-- NAV -->
+        <nav class="hidden items-center gap-9 text-sm font-extrabold uppercase lg:flex">
+            <a href="#" class="text-[#d2e829]">Home</a>
+            <a href="#about" class="transition hover:text-[#d2e829]">About</a>
+            <a href="#products" class="transition hover:text-[#d2e829]">Products</a>
+            <a href="#services" class="transition hover:text-[#d2e829]">Services</a>
+            <a href="#why-us" class="transition hover:text-[#d2e829]">Why Us</a>
+            <a href="#contact" class="transition hover:text-[#d2e829]">Contact</a>
         </nav>
 
-        <div class="hidden lg:flex items-center gap-4">
+        <!-- RIGHT SIDE ACTIONS -->
+        <div class="hidden items-center gap-4 lg:flex">
+                <!-- 🌐 LANGUAGE DROPDOWN -->
+<div class="relative">
+    <button @click="langOpen = !langOpen"
+            class="flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-bold uppercase hover:bg-white/10">
 
-            <div class="relative">
-                <button @click="langOpen = !langOpen"
-                    class="flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-bold uppercase">
-                    🌐 Lang
-                </button>
+        🌐 Lang
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m6 9 6 6 6-6"/>
+        </svg>
+    </button>
 
-                <div x-show="langOpen" @click.away="langOpen = false"
-                    x-transition
-                    class="absolute right-0 mt-2 w-48 rounded-lg bg-[#071d12] border border-white/10 shadow-xl">
+    <div x-show="langOpen" @click.away="langOpen = false"
+         x-transition
+         class="absolute right-0 mt-2 w-48 overflow-hidden rounded-lg border border-white/10 bg-[#071d12] shadow-xl">
 
-                    <div class="px-4 py-3 cursor-pointer hover:bg-white/10" onclick="setLang('en')">
-                        🇬🇧 English
-                    </div>
+        <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
+            🇬🇧 English
+        </div>
 
-                    <div class="px-4 py-3 cursor-pointer hover:bg-white/10" onclick="setLang('sw')">
-                        🇹🇿 Swahili
-                    </div>
+        <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
+            🇹🇿 Swahili
+        </div>
 
-                    <div class="px-4 py-3 opacity-50">🇩🇪 Deutsch</div>
-                    <div class="px-4 py-3 opacity-50">🇳🇱 Dutch</div>
-                </div>
-            </div>
+        <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
+            🇩🇪 Deutsch
+        </div>
 
-            <a href="#contact" data-i18n="quote"
-                class="rounded-full border border-[#d2e829] px-7 py-3 text-sm font-extrabold uppercase">
+        <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
+            🇳🇱 Dutch
+        </div>
+    </div>
+</div>
+
+            <!-- GET QUOTE -->
+            <a href="#contact" class="rounded-full border border-[#d2e829] px-7 py-3 text-sm font-extrabold uppercase transition hover:bg-[#d2e829] hover:text-[#092114]">
                 Get a Quote
             </a>
         </div>
 
-        <button @click="open = !open" class="lg:hidden border p-2 rounded-full">☰</button>
+        <!-- MOBILE BUTTON -->
+        <button @click="open = !open" class="rounded-full border border-white/25 p-2 lg:hidden" aria-label="Open navigation">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 7h16M4 12h16M4 17h16"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div x-show="open" x-transition class="space-y-1 border-t border-white/10 bg-gradient-to-b from-[#082015] to-[#0b341c] px-5 py-4 text-sm font-bold uppercase lg:hidden">
+        <a href="#" class="block rounded-lg px-3 py-2 text-[#d2e829]">Home</a>
+        <a href="#about" class="block rounded-lg px-3 py-2">About</a>
+        <a href="#products" class="block rounded-lg px-3 py-2">Products</a>
+        <a href="#services" class="block rounded-lg px-3 py-2">Services</a>
+        <a href="#why-us" class="block rounded-lg px-3 py-2">Why Us</a>
+        <a href="#contact" class="block rounded-lg px-3 py-2">Contact</a>
+
+        <!-- MOBILE LANGUAGE -->
+        <div class="mt-3 border-t border-white/10 pt-3">
+            <p class="px-3 text-xs text-white/60">Language</p>
+
+            <div class="mt-2 space-y-1">
+                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">English</div>
+                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">Swahili</div>
+                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">Deutsch</div>
+                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">Dutch</div>
+            </div>
+        </div>
     </div>
 </header>
-
 <main>
+    <section
+        x-data="{
+            current: 0,
+            slides: [
+                {
+                    label: 'Fresh Avocados',
+                    image: 'https://images.unsplash.com/photo-1601039641847-7857b994d704?auto=format&fit=crop&w=1900&q=85',
+                    alt: 'Fresh avocados growing on a tree'
+                },
+                {
+                    label: 'Maize Flour',
+                    image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=1900&q=85',
+                    alt: 'Maize and maize flour'
+                },
+                {
+                    label: 'Pilipili Spices',
+                    image: 'https://source.unsplash.com/1900x1100/?chili,pepper,spices',
+                    alt: 'Pilipili chili spices'
+                },
+                {
+                    label: 'Fresh Ginger',
+                    image: 'https://images.unsplash.com/photo-1615485500834-bc10199bc727?auto=format&fit=crop&w=1900&q=85',
+                    alt: 'Fresh ginger roots'
+                }
+            ],
+            next() {
+                this.current = (this.current + 1) % this.slides.length;
+            },
+            previous() {
+                this.current = (this.current - 1 + this.slides.length) % this.slides.length;
+            }
+        }"
+        class="relative min-h-[720px] overflow-hidden pt-28 text-white"
+    >
+        <div class="absolute inset-0">
+            <template x-for="(slide, index) in slides" :key="slide.label">
+                <img
+                    x-show="current === index"
+                    x-transition.opacity.duration.500ms
+                    :src="slide.image"
+                    :alt="slide.alt"
+                    class="absolute inset-0 h-full w-full object-cover"
+                >
+            </template>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#06150e]/92 via-[#06150e]/68 to-[#06150e]/25"></div>
+            <div class="absolute inset-0 bg-black/20"></div>
+        </div>
 
-<section class="pt-28 relative min-h-[720px] text-white"
-    x-data="{ current: 0 }">
+        <button type="button" @click="previous()" class="absolute left-5 top-1/2 z-10 hidden -translate-y-1/2 rounded-full bg-black/20 p-2 text-white/90 transition hover:bg-[#d2e829] hover:text-[#082015] md:block" aria-label="Previous slide">
+            <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button type="button" @click="next()" class="absolute right-5 top-1/2 z-10 hidden -translate-y-1/2 rounded-full bg-black/20 p-2 text-white/90 transition hover:bg-[#d2e829] hover:text-[#082015] md:block" aria-label="Next slide">
+            <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
 
-    <div class="absolute inset-0">
-        <img class="absolute inset-0 h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=1900&q=85">
-        <div class="absolute inset-0 bg-black/60"></div>
-    </div>
+        <div class="relative z-10 mx-auto max-w-7xl px-5 pb-44 pt-20 lg:px-8 lg:pt-32">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl font-black leading-[1.08] tracking-normal md:text-7xl">
+                    Premium Agricultural Products from <span class="text-[#d2e829]">Tanzania</span>
+                </h1>
 
-    <div class="relative z-10 max-w-3xl px-6 py-24">
+                <p class="mt-7 max-w-xl text-lg font-medium leading-8 text-white/95">
+                    WAGE Solutions Limited specializes in sourcing, aggregation, processing, packaging, and marketing of premium maize flour, avocados, spices, and other agricultural products for both local and international markets.
+                </p>
 
-        <h1 data-i18n="heroTitle" class="text-5xl font-black">
-            Premium Agricultural Products from Tanzania
-        </h1>
+                <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+                    <a href="#products" class="inline-flex items-center justify-center gap-3 rounded-lg bg-[#159332] px-8 py-4 text-sm font-extrabold uppercase shadow-lg shadow-black/20 transition hover:bg-[#117d2b]">
+                        Explore Products
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                    <a href="#contact" class="inline-flex items-center justify-center gap-3 rounded-full border border-white px-8 py-4 text-sm font-extrabold uppercase transition hover:bg-white hover:text-[#0d2418]">
+                        Contact Us
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-        <p data-i18n="heroText" class="mt-6 text-lg">
-            WAGE Solutions Limited specializes in sourcing, aggregation, processing, packaging, and marketing of agricultural products.
-        </p>
+        <div class="absolute bottom-24 left-1/2 z-10 flex -translate-x-1/2 gap-3">
+            <template x-for="(slide, index) in slides" :key="slide.label">
+                <button
+                    type="button"
+                    @click="current = index"
+                    class="h-3.5 w-3.5 rounded-full transition"
+                    :class="current === index ? 'bg-[#d2e829] scale-110' : 'bg-white/90 hover:bg-white'"
+                    :aria-label="'Show ' + slide.label"
+                ></button>
+            </template>
+        </div>
+    </section>
 
-    </div>
-</section>
+    <section id="why-us" class="relative z-20 -mt-16 px-5 lg:px-8">
+        <div class="mx-auto grid max-w-6xl overflow-hidden rounded-2xl bg-white/95 shadow-2xl shadow-[#092114]/10 ring-1 ring-black/5 backdrop-blur md:grid-cols-4">
+            @foreach ($features as $feature)
+                <div class="border-b border-[#d8ded5] px-7 py-8 text-center last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0">
+                    <svg class="mx-auto h-12 w-12 text-[#155f2b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                        {!! $feature['icon'] !!}
+                    </svg>
+                    <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">{{ $feature['title'] }}</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#1c3028]">{{ $feature['text'] }}</p>
+                </div>
+            @endforeach
+        </div>
+    </section>
 
+    <section id="about" class="bg-white px-5 py-20 lg:px-8">
+        <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">About WAGE</p>
+                <h2 class="mt-3 text-4xl font-black tracking-normal text-[#13241f] md:text-5xl">Who We Are</h2>
+                <p class="mt-6 max-w-xl text-base leading-8 text-[#24352f]">
+                    WAGE Solutions Limited is a Tanzanian agribusiness company focused on the sourcing, aggregation, sorting, packing, processing, and marketing of maize flour, avocados, spices, and other agricultural products from farmers in regions across the country. We connect smallholder farmers to structured markets while improving product quality, handling, and value addition.
+                </p>
+                <a href="#contact" class="mt-8 inline-flex items-center gap-3 rounded-full bg-[#155f2b] px-7 py-3 text-sm font-extrabold uppercase text-white transition hover:bg-[#0f4820]">
+                    Learn More
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+
+            <div class="overflow-hidden rounded-2xl shadow-xl shadow-black/10">
+                <img src="https://source.unsplash.com/1200x800/?agricultural,warehouse,grain,storage" alt="Agricultural warehouse for crop storage" class="h-[360px] w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="bg-[#f4f6ef] px-5 py-16 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+            <div class="text-center">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Products</p>
+                <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f]">Quality Products, Naturally Grown</h2>
+            </div>
+
+            <div class="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+                @foreach ($products as $product)
+                    <article class="overflow-hidden rounded-lg bg-white text-center shadow-lg shadow-black/5 ring-1 ring-black/5">
+                        <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="h-44 w-full object-cover">
+                        <div class="px-4 py-5">
+                            <h3 class="text-lg font-extrabold text-[#14231e]">{{ $product['name'] }}</h3>
+                            <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ $product['text'] }}</p>
+                        </div>
+                    </article>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-[#eef5ec] px-5 py-16 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+            <div class="text-center">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Services</p>
+                <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f]">From Farm to Market - We Deliver Value</h2>
+            </div>
+
+            <div class="mt-10 grid gap-0 rounded-xl bg-white/30 md:grid-cols-3 lg:grid-cols-6">
+                @foreach ($services as $service)
+                    <article class="border-b border-[#cfd9cb] px-5 py-8 text-center last:border-b-0 md:border-r md:last:border-r-0 lg:border-b-0">
+                        <svg class="mx-auto h-10 w-10 text-[#155f2b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                            {!! $service['icon'] !!}
+                        </svg>
+                        <h3 class="mt-4 text-base font-extrabold leading-tight text-[#13241f]">{{ $service['title'] }}</h3>
+                        <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ $service['text'] }}</p>
+                    </article>
+                @endforeach
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer id="contact" class="bg-gradient-to-br from-[#04140c] via-[#0b301d] to-[#071d12] px-5 py-16 text-white lg:px-8">
@@ -162,109 +340,133 @@
         <div>
             <div class="flex items-center gap-3">
                 <span class="grid h-12 w-12 place-items-center rounded-full border border-[#d2e829]/50 text-[#d2e829]">
-                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M7 20c0-8 4-13 12-15-.4 8-5 12-12 12"/>
+                        <path d="M7 20c0-5-2-8-6-10 5-.4 8 2 9 6"/>
                     </svg>
                 </span>
-                <span>
-                    <span class="block text-3xl font-black">WAGE</span>
-                    <span class="block text-[11px] uppercase tracking-[0.18em] text-white/80">Solutions Limited</span>
+                <span class="leading-none">
+                    <span class="block text-3xl font-black tracking-wide">WAGE</span>
+                    <span class="block text-[11px] font-bold uppercase tracking-[0.18em] text-white/80">Solutions Limited</span>
                 </span>
             </div>
 
-            <p class="mt-6 max-w-xl text-white/80 leading-7">
-                Premium Tanzanian agricultural products processed and supplied for local and international markets.
+            <p class="mt-6 max-w-xl text-base leading-8 text-white/78">
+                Premium Tanzanian agricultural products, processed and supplied with care for local and international markets.
             </p>
 
-            <button type="button"
-                @click="feedbackOpen = true"
-                class="mt-8 inline-flex items-center gap-3 rounded-full bg-[#d2e829] px-7 py-3 text-sm font-extrabold uppercase text-[#082015] hover:bg-white transition">
+            <button type="button" @click="feedbackOpen = true" class="mt-8 inline-flex items-center gap-3 rounded-full bg-[#d2e829] px-7 py-3 text-sm font-extrabold uppercase text-[#082015] transition hover:bg-white">
                 Send Feedback
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
             </button>
         </div>
 
         <div class="grid gap-5 sm:grid-cols-2">
-            <div class="rounded-xl border border-white/10 bg-white/5 p-6">
-                <p class="text-sm font-bold uppercase text-[#d2e829]">Business Location</p>
-                <p class="mt-3 text-white/80 leading-7">
-                    Morogoro Region, Mvomero District, Dakawa Ward
+            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">Business Location</p>
+                <p class="mt-3 leading-7 text-white/85">
+                    Morogoro Region, Mvomero District, Dakawa Ward, Wami Sokoine Kibao cha Ranch near Makunganya Mosque
                 </p>
             </div>
 
-            <div class="rounded-xl border border-white/10 bg-white/5 p-6">
-                <p class="text-sm font-bold uppercase text-[#d2e829]">Postal Address</p>
-                <p class="mt-3 text-white/80">P.O. Box 3294, Morogoro, Tanzania</p>
+            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">Postal Address</p>
+                <p class="mt-3 leading-7 text-white/85">P.O. Box 3294, Morogoro, Tanzania</p>
             </div>
 
-            <div class="rounded-xl border border-white/10 bg-white/5 p-6">
-                <p class="text-sm font-bold uppercase text-[#d2e829]">Telephone</p>
-                <a href="tel:+255786052912" class="block mt-3 text-white/80 hover:text-[#d2e829]">
-                    +255 786 052 912
-                </a>
-                <a href="tel:+255792240381" class="block text-white/80 hover:text-[#d2e829]">
-                    +255 792 240 381
-                </a>
+            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">Telephone</p>
+                <div class="mt-3 space-y-2 text-white/85">
+                    <a href="tel:+255786052912" class="block transition hover:text-[#d2e829]">+255 786 052 912</a>
+                    <a href="tel:+255792240381" class="block transition hover:text-[#d2e829]">+255 792 240 381</a>
+                </div>
             </div>
 
-            <div class="rounded-xl border border-white/10 bg-white/5 p-6">
-                <p class="text-sm font-bold uppercase text-[#d2e829]">Email</p>
-                <a href="mailto:getupala@yahoo.co.uk" class="block mt-3 text-white/80 hover:text-[#d2e829]">
-                    getupala@yahoo.co.uk
-                </a>
+            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">Email</p>
+                <a href="mailto:getupala@yahoo.co.uk" class="mt-3 block break-words text-white/85 transition hover:text-[#d2e829]">getupala@yahoo.co.uk</a>
             </div>
         </div>
     </div>
 
-    <div class="mt-12 border-t border-white/10 pt-6 text-center text-white/60 text-sm">
-        &copy; {{ date('Y') }} WAGE Solutions Limited. All rights reserved.
+    <div class="mx-auto mt-12 grid max-w-7xl gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+        <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+            <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">Find Us on the Map</p>
+            <h2 class="mt-3 text-3xl font-black">Dakawa, Mvomero, Morogoro</h2>
+            <p class="mt-4 leading-7 text-white/78">
+                The map points visitors to Dakawa Ward in Mvomero District, Morogoro Region. For exact arrival guidance, contact WAGE Solutions Limited using the phone numbers above.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Dakawa%20Mvomero%20Morogoro%20Tanzania" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-3 rounded-full border border-[#d2e829] px-6 py-3 text-sm font-extrabold uppercase text-[#d2e829] transition hover:bg-[#d2e829] hover:text-[#082015]">
+                Open Google Maps
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+        </div>
+
+        <div class="overflow-hidden rounded-xl border border-white/10 bg-white/[0.08] shadow-2xl shadow-black/20">
+            <iframe
+                title="WAGE Solutions Limited location in Dakawa, Mvomero, Morogoro"
+                src="https://www.google.com/maps?q=Dakawa%20Mvomero%20Morogoro%20Tanzania&output=embed"
+                class="h-[360px] w-full"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+    </div>
+
+    <div class="mx-auto mt-12 flex max-w-7xl flex-col gap-4 border-t border-white/10 pt-6 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
+        <p>&copy; {{ date('Y') }} WAGE Solutions Limited. All rights reserved.</p>
+        <div class="flex gap-5 font-bold uppercase">
+            <a href="#" class="transition hover:text-[#d2e829]">Home</a>
+            <a href="#products" class="transition hover:text-[#d2e829]">Products</a>
+            <a href="#services" class="transition hover:text-[#d2e829]">Services</a>
+        </div>
     </div>
 </footer>
 
-<script>
-const translations = {
-    en: {
-        home: "Home",
-        about: "About",
-        products: "Products",
-        services: "Services",
-        why: "Why Us",
-        contact: "Contact",
-        quote: "Get a Quote",
-        heroTitle: "Premium Agricultural Products from Tanzania",
-        heroText: "WAGE Solutions Limited specializes in sourcing, aggregation, processing, packaging, and marketing of agricultural products."
-    },
-    sw: {
-        home: "Nyumbani",
-        about: "Kuhusu Sisi",
-        products: "Bidhaa",
-        services: "Huduma",
-        why: "Kwa Nini Sisi",
-        contact: "Mawasiliano",
-        quote: "Omba Bei",
-        heroTitle: "Bidhaa Bora za Kilimo kutoka Tanzania",
-        heroText: "WAGE Solutions Limited inajihusisha na ukusanyaji na uchakataji wa mazao ya kilimo."
-    }
-};
+<div x-show="feedbackOpen" x-transition.opacity class="fixed inset-0 z-[80] grid place-items-center bg-black/70 px-5" style="display: none;">
+    <div @click.away="feedbackOpen = false" class="w-full max-w-xl rounded-2xl bg-white p-6 shadow-2xl">
+        <div class="flex items-start justify-between gap-4">
+            <div>
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">WAGE Feedback</p>
+                <h2 class="mt-1 text-3xl font-black text-[#13241f]">Send Feedback</h2>
+            </div>
+            <button type="button" @click="feedbackOpen = false" class="grid h-10 w-10 place-items-center rounded-full bg-[#eef5ec] text-[#13241f] transition hover:bg-[#d2e829]" aria-label="Close feedback form">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+        </div>
 
-function setLang(lang) {
-    localStorage.setItem("wage_lang", lang);
-    applyLang(lang);
-}
+        <form class="mt-6 space-y-4" @submit.prevent="feedbackOpen = false">
+            <div class="grid gap-4 sm:grid-cols-2">
+                <label class="block">
+                    <span class="text-sm font-bold text-[#24352f]">Full Name</span>
+                    <input type="text" required class="mt-2 w-full rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20">
+                </label>
+                <label class="block">
+                    <span class="text-sm font-bold text-[#24352f]">Phone or Email</span>
+                    <input type="text" required class="mt-2 w-full rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20">
+                </label>
+            </div>
 
-function applyLang(lang) {
-    const t = translations[lang];
-    if (!t) return;
+            <label class="block">
+                <span class="text-sm font-bold text-[#24352f]">Subject</span>
+                <input type="text" required class="mt-2 w-full rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20">
+            </label>
 
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (t[key]) el.innerText = t[key];
-    });
-}
+            <label class="block">
+                <span class="text-sm font-bold text-[#24352f]">Message</span>
+                <textarea rows="5" required class="mt-2 w-full resize-none rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20"></textarea>
+            </label>
 
-window.addEventListener("DOMContentLoaded", () => {
-    applyLang(localStorage.getItem("wage_lang") || "en");
-});
-</script>
-
+            <div class="flex flex-col gap-3 pt-2 sm:flex-row sm:justify-end">
+                <button type="button" @click="feedbackOpen = false" class="rounded-full border border-[#cfd9cb] px-6 py-3 text-sm font-extrabold uppercase text-[#24352f] transition hover:bg-[#eef5ec]">
+                    Cancel
+                </button>
+                <button type="submit" class="rounded-full bg-[#15812d] px-7 py-3 text-sm font-extrabold uppercase text-white transition hover:bg-[#0f5f22]">
+                    Submit Feedback
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
