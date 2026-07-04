@@ -465,13 +465,13 @@
                 <!-- Turmeric -->
                 <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md ring-1 ring-black/5">
 
-                    <img src="https://media.istockphoto.com/id/1372144940/photo/curcuma-longa-powder-and-rhizomes.webp"
+                    <img src="https://i.pinimg.com/webp/1200x/04/bf/48/04bf48a613d52da69acc73ad7c935c73.webp"
                          alt="Turmeric"
                          class="h-44 w-full rounded-lg object-cover">
 
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">
-                            {{ __('products_spice') }}
+                            spice
                         </span>
 
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">
@@ -493,7 +493,7 @@
 
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">
-                            {{ __('products_spice') }}
+                            spice
                         </span>
 
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">
@@ -515,7 +515,8 @@
 
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">
-                            {{ __('products_spice') }}
+                        spice
+
                         </span>
 
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">
@@ -537,7 +538,7 @@
 
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">
-                            {{ __('products_spice') }}
+                            spice
                         </span>
 
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">
@@ -559,7 +560,7 @@
 
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">
-                            {{ __('products_fresh') }}
+                            fresh products
                         </span>
 
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">
@@ -581,7 +582,7 @@
 
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">
-                            {{ __('products_staples') }}
+                            staples
                         </span>
 
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">
