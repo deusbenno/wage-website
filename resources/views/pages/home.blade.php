@@ -68,8 +68,10 @@
     ];
 @endphp
 
-<header x-data="{ open: false }" class="fixed left-0 top-0 z-50 w-full border-b border-[#d2e829]/20 bg-gradient-to-r from-[#04140c] via-[#0b341c] to-[#062414] text-white shadow-xl shadow-black/20">
+<header x-data="{ open: false, langOpen: false }" class="fixed left-0 top-0 z-50 w-full border-b border-[#d2e829]/20 bg-gradient-to-r from-[#04140c] via-[#0b341c] to-[#062414] text-white shadow-xl shadow-black/20">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+
+        <!-- LOGO -->
         <a href="#" class="flex items-center gap-3">
             <span class="grid h-11 w-11 place-items-center rounded-full border border-[#d2e829]/50 text-[#d2e829]">
                 <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -83,6 +85,7 @@
             </span>
         </a>
 
+        <!-- NAV -->
         <nav class="hidden items-center gap-9 text-sm font-extrabold uppercase lg:flex">
             <a href="#" class="text-[#d2e829]">Home</a>
             <a href="#about" class="transition hover:text-[#d2e829]">About</a>
@@ -92,10 +95,46 @@
             <a href="#contact" class="transition hover:text-[#d2e829]">Contact</a>
         </nav>
 
-        <a href="#contact" class="hidden rounded-full border border-[#d2e829] px-7 py-3 text-sm font-extrabold uppercase transition hover:bg-[#d2e829] hover:text-[#092114] lg:inline-flex">
-            Get a Quote
-        </a>
+        <!-- RIGHT SIDE ACTIONS -->
+        <div class="hidden items-center gap-4 lg:flex">
 
+            <!-- 🌐 LANGUAGE DROPDOWN -->
+            <div class="relative">
+                <button @click="langOpen = !langOpen"
+                        class="flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-bold uppercase hover:bg-white/10">
+                    
+                    🌐 Lang
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                </button>
+
+                <!-- DROPDOWN -->
+                <div x-show="langOpen" @click.away="langOpen = false"
+                     x-transition
+                     class="absolute right-0 mt-2 w-44 overflow-hidden rounded-lg border border-white/10 bg-[#071d12] shadow-xl">
+
+                    <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
+                        🇬🇧 English
+                    </div>
+
+                    <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
+                        🇹🇿 Swahili
+                    </div>
+
+                    <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
+                        🇫🇷 French
+                    </div>
+                </div>
+            </div>
+
+            <!-- GET QUOTE -->
+            <a href="#contact" class="rounded-full border border-[#d2e829] px-7 py-3 text-sm font-extrabold uppercase transition hover:bg-[#d2e829] hover:text-[#092114]">
+                Get a Quote
+            </a>
+        </div>
+
+        <!-- MOBILE BUTTON -->
         <button @click="open = !open" class="rounded-full border border-white/25 p-2 lg:hidden" aria-label="Open navigation">
             <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M4 7h16M4 12h16M4 17h16"/>
@@ -103,6 +142,7 @@
         </button>
     </div>
 
+    <!-- MOBILE MENU -->
     <div x-show="open" x-transition class="space-y-1 border-t border-white/10 bg-gradient-to-b from-[#082015] to-[#0b341c] px-5 py-4 text-sm font-bold uppercase lg:hidden">
         <a href="#" class="block rounded-lg px-3 py-2 text-[#d2e829]">Home</a>
         <a href="#about" class="block rounded-lg px-3 py-2">About</a>
@@ -110,9 +150,19 @@
         <a href="#services" class="block rounded-lg px-3 py-2">Services</a>
         <a href="#why-us" class="block rounded-lg px-3 py-2">Why Us</a>
         <a href="#contact" class="block rounded-lg px-3 py-2">Contact</a>
+
+        <!-- MOBILE LANGUAGE -->
+        <div class="mt-3 border-t border-white/10 pt-3">
+            <p class="px-3 text-xs text-white/60">Language</p>
+
+            <div class="mt-2 space-y-1">
+                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">🇬🇧 English</div>
+                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">🇹🇿 Swahili</div>
+                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">🇫🇷 French</div>
+            </div>
+        </div>
     </div>
 </header>
-
 <main>
     <section
         x-data="{
