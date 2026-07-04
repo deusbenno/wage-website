@@ -431,7 +431,7 @@
         </div>
 
         <div class="overflow-hidden rounded-2xl shadow-xl shadow-black/10 lg:h-full flex items-center">
-            <img src="https://images.unsplash.com/photo-1595275372297-f5d64f8ca31a?auto=format&fit=crop&w=1200&q=80"
+            <img src="https://i.pinimg.com/736x/2a/fd/d1/2afdd1af2261b3dd272c081b82ffdbc1.jpg"
                  alt="african warehouse"
                  class="h-[360px] w-full object-cover">
         </div>
