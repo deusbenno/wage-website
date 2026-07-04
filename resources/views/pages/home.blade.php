@@ -439,7 +439,7 @@
     </div>
 </section>
 
-    <section id="products" class="bg-[#f4f6ef] px-5 py-16 lg:px-8">
+  <section id="products" class="bg-[#f4f6ef] px-5 py-16 lg:px-8">
     <div class="mx-auto max-w-7xl">
         <div class="text-center">
             <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Products</p>
@@ -447,15 +447,15 @@
         </div>
 
         <!-- Premium Products Slideshow / Carousel -->
-        <div class="mt-10">
+        <div class="mt-10 relative group">
             <h3 class="text-xs font-bold uppercase tracking-wider text-[#24352f]/60 mb-4 px-1">Featured Commodities</h3>
             
-            <!-- Horizontal Scroll Container with Snap Alignment -->
-            <div class="flex gap-6 overflow-x-auto pb-6 scrollbar-thin scroll-smooth snap-x snap-mandatory">
+            <!-- Horizontal Carousel Track -->
+            <div id="product-carousel" class="flex gap-6 overflow-x-auto pb-6 scrollbar-none scroll-smooth snap-x snap-mandatory">
                 
                 <!-- Card 1: Turmeric -->
-                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80" alt="Turmeric" class="h-44 w-full rounded-lg object-cover">
+                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Turmeric" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Pure Turmeric</h4>
@@ -464,8 +464,8 @@
                 </div>
 
                 <!-- Card 2: Ginger -->
-                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80" alt="Ginger" class="h-44 w-full rounded-lg object-cover">
+                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/209482/pexels-photo-209482.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ginger" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Aromatic Ginger</h4>
@@ -474,8 +474,8 @@
                 </div>
 
                 <!-- Card 3: Cloves -->
-                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.unsplash.com/photo-1614882510344-8d487224f8d9?auto=format&fit=crop&w=600&q=80" alt="Cloves" class="h-44 w-full rounded-lg object-cover">
+                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/3993527/pexels-photo-3993527.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cloves" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Zanzibar Cloves</h4>
@@ -484,8 +484,8 @@
                 </div>
 
                 <!-- Card 4: Hot Chillies -->
-                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=80" alt="Hot Chillies" class="h-44 w-full rounded-lg object-cover">
+                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/66885/pexels-photo-66885.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hot Chillies" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Hot African Chillies</h4>
@@ -494,8 +494,8 @@
                 </div>
 
                 <!-- Card 5: Pepper Chillies -->
-                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.unsplash.com/photo-1518111151441-2679c16262cb?auto=format&fit=crop&w=600&q=80" alt="Pepper Chillies" class="h-44 w-full rounded-lg object-cover">
+                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/928251/pexels-photo-928251.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pepper Chillies" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Mild Pepper Chillies</h4>
@@ -504,8 +504,8 @@
                 </div>
 
                 <!-- Card 6: Avocados -->
-                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&w=600&q=80" alt="Avocados" class="h-44 w-full rounded-lg object-cover">
+                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/5514807/pexels-photo-5514807.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Avocados" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Fresh Produce</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Premium Avocados</h4>
@@ -514,8 +514,8 @@
                 </div>
 
                 <!-- Card 7: Maize Flour -->
-                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
-                    <img src="https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?auto=format&fit=crop&w=600&q=80" alt="Maize Flour" class="h-44 w-full rounded-lg object-cover">
+                <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.pexels.com/photos/4099234/pexels-photo-4099234.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Maize Flour" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Staples</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Fortified Maize Flour</h4>
@@ -525,6 +525,62 @@
 
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Auto-cycle Slideshow Automation Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const carousel = document.getElementById("product-carousel");
+        if (!carousel) return;
+
+        let index = 0;
+        let isPaused = false;
+        
+        // Dynamic detection of elements
+        const getCards = () => carousel.querySelectorAll(".carousel-card");
+        
+        const autoCycle = () => {
+            if (isPaused) return;
+            const cards = getCards();
+            if (cards.length === 0) return;
+
+            index++;
+            if (index >= cards.length) {
+                index = 0; // Infinite reset loop
+            }
+
+            const targetCard = cards[index];
+            carousel.scrollTo({
+                left: targetCard.offsetLeft - carousel.offsetLeft,
+                behavior: 'smooth'
+            });
+        };
+
+        // Run automated transition step every 3 seconds
+        let slideInterval = setInterval(autoCycle, 3000);
+
+        // Pause slideshow behavior when user interacts manually
+        carousel.addEventListener("mouseenter", () => isPaused = true);
+        carousel.addEventListener("mouseleave", () => isPaused = false);
+        carousel.addEventListener("touchstart", () => isPaused = true, { passive: true });
+        carousel.addEventListener("touchend", () => {
+            // Give user brief room before restarting timer loop
+            setTimeout(() => { isPaused = false; }, 2000);
+        }, { passive: true });
+    });
+</script>
+
+<style>
+    /* Clean custom utility block to hide standard scrollbar lines globally */
+    .scrollbar-none::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-none {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
 
         <!-- Dynamic Loop Area for Other Custom Products 
         <div class="mt-12">
