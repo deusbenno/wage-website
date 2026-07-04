@@ -97,19 +97,6 @@
 
         <!-- RIGHT SIDE ACTIONS -->
         <div class="hidden items-center gap-4 lg:flex">
-
-            <!-- 🌐 LANGUAGE DROPDOWN -->
-            <div class="relative">
-                <button @click="langOpen = !langOpen"
-                        class="flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-bold uppercase hover:bg-white/10">
-                    
-                    🌐 Lang
-                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="m6 9 6 6 6-6"/>
-                    </svg>
-                </button>
-
-                <!-- DROPDOWN -->
                 <!-- 🌐 LANGUAGE DROPDOWN -->
 <div class="relative">
     <button @click="langOpen = !langOpen"
