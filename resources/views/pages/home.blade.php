@@ -456,7 +456,7 @@
                 <!-- Card 1: Turmeric -->
                 <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
                     <!-- PASTE YOUR TURMERIC LINK BELOW -->
-                    <img src="PASTE_TURMERIC_IMAGE_URL_HERE" alt="Turmeric" class="h-44 w-full rounded-lg object-cover">
+                    <img src="https://media.istockphoto.com/id/1372144940/photo/curcuma-longa-powder-and-rhizomes.webp?a=1&b=1&s=612x612&w=0&k=20&c=ksLkLagK-KTQRtPGgoNN9DA1nX_oX5RwmhbVRW0FdIs=" alt="Turmeric" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Pure Turmeric</h4>
@@ -467,7 +467,7 @@
                 <!-- Card 2: Ginger -->
                 <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
                     <!-- PASTE YOUR GINGER LINK BELOW -->
-                    <img src="PASTE_GINGER_IMAGE_URL_HERE" alt="Ginger" class="h-44 w-full rounded-lg object-cover">
+                    <img src="https://i.pinimg.com/webp/736x/b1/df/30/b1df30c984239d72b391a480f03c05fc.webp" alt="Ginger" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Aromatic Ginger</h4>
@@ -478,7 +478,7 @@
                 <!-- Card 3: Cloves -->
                 <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
                     <!-- PASTE YOUR CLOVES LINK BELOW -->
-                    <img src="PASTE_CLOVES_IMAGE_URL_HERE" alt="Cloves" class="h-44 w-full rounded-lg object-cover">
+                    <img src="https://media.istockphoto.com/id/471346177/photo/cloves-closeup.jpg?s=612x612&w=0&k=20&c=A9ndvh6JRULUPL7ZK0xb0uVyMjPyFUTnKyzg4fkbwfY=" alt="Cloves" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Zanzibar Cloves</h4>
@@ -489,7 +489,7 @@
                 <!-- Card 4: Hot Chillies -->
                 <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
                     <!-- PASTE YOUR HOT CHILLIES LINK BELOW -->
-                    <img src="PASTE_HOT_CHILLIES_IMAGE_URL_HERE" alt="Hot Chillies" class="h-44 w-full rounded-lg object-cover">
+                    <img src="https://i.pinimg.com/736x/7e/fd/62/7efd62cbb1eeb44200d30f4d756ed4af.jpg" alt="Hot Chillies" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Hot African Chillies</h4>
@@ -500,7 +500,7 @@
                 <!-- Card 5: Pepper Chillies -->
                 <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
                     <!-- PASTE YOUR PEPPER CHILLIES LINK BELOW -->
-                    <img src="PASTE_PEPPER_CHILLIES_IMAGE_URL_HERE" alt="Pepper Chillies" class="h-44 w-full rounded-lg object-cover">
+                    <img src="https://i.pinimg.com/1200x/ba/e3/65/bae365a8aad8b2017ae93993c897753d.jpg" alt="Pepper Chillies" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Mild Pepper Chillies</h4>
@@ -522,7 +522,7 @@
                 <!-- Card 7: Maize Flour -->
                 <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
                     <!-- PASTE YOUR MAIZE LINK BELOW -->
-                    <img src="PASTE_MAIZE_FLOUR_IMAGE_URL_HERE" alt="Maize Flour" class="h-44 w-full rounded-lg object-cover">
+                    <img src="https://i.pinimg.com/1200x/0a/0b/9b/0a0b9ba61fe09f87827477c8283ec1f9.jpg" alt="Maize Flour" class="h-44 w-full rounded-lg object-cover">
                     <div class="mt-4 px-2 pb-2">
                         <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Staples</span>
                         <h4 class="mt-2 text-lg font-black text-[#13241f]">Fortified Maize Flour</h4>
