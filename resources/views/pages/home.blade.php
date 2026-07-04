@@ -86,14 +86,12 @@
         </a>
 
         <!-- NAV -->
-        <nav class="hidden items-center gap-9 text-sm font-extrabold uppercase lg:flex">
-            <a href="#" class="text-[#d2e829]">Home</a>
-            <a href="#about" class="transition hover:text-[#d2e829]">About</a>
-            <a href="#products" class="transition hover:text-[#d2e829]">Products</a>
-            <a href="#services" class="transition hover:text-[#d2e829]">Services</a>
-            <a href="#why-us" class="transition hover:text-[#d2e829]">Why Us</a>
-            <a href="#contact" class="transition hover:text-[#d2e829]">Contact</a>
-        </nav>
+    <a href="#" class="text-[#d2e829]">{{ __('home.home') }}</a>
+<a href="#about" class="transition hover:text-[#d2e829]">{{ __('home.about') }}</a>
+<a href="#products" class="transition hover:text-[#d2e829]">{{ __('home.products') }}</a>
+<a href="#services" class="transition hover:text-[#d2e829]">{{ __('home.services') }}</a>
+<a href="#why-us" class="transition hover:text-[#d2e829]">{{ __('home.why_us') }}</a>
+<a href="#contact" class="transition hover:text-[#d2e829]">{{ __('home.contact') }}</a>
 
         <!-- RIGHT SIDE ACTIONS -->
         <div class="hidden items-center gap-4 lg:flex">
@@ -112,27 +110,16 @@
          x-transition
          class="absolute right-0 mt-2 w-48 overflow-hidden rounded-lg border border-white/10 bg-[#071d12] shadow-xl">
 
-        <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
-            🇬🇧 English
-        </div>
-
-        <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
-            🇹🇿 Swahili
-        </div>
-
-        <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
-            🇩🇪 Deutsch
-        </div>
-
-        <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
-            🇳🇱 Dutch
-        </div>
+        <a href="/lang/en">EN</a>
+<a href="/lang/sw">SW</a>
+<a href="/lang/de">DE</a>
+<a href="/lang/nl">NL</a>
     </div>
 </div>
 
             <!-- GET QUOTE -->
             <a href="#contact" class="rounded-full border border-[#d2e829] px-7 py-3 text-sm font-extrabold uppercase transition hover:bg-[#d2e829] hover:text-[#092114]">
-                Get a Quote
+                {{ __('home.get_quote') }}
             </a>
         </div>
 
@@ -146,13 +133,12 @@
 
     <!-- MOBILE MENU -->
     <div x-show="open" x-transition class="space-y-1 border-t border-white/10 bg-gradient-to-b from-[#082015] to-[#0b341c] px-5 py-4 text-sm font-bold uppercase lg:hidden">
-        <a href="#" class="block rounded-lg px-3 py-2 text-[#d2e829]">Home</a>
-        <a href="#about" class="block rounded-lg px-3 py-2">About</a>
-        <a href="#products" class="block rounded-lg px-3 py-2">Products</a>
-        <a href="#services" class="block rounded-lg px-3 py-2">Services</a>
-        <a href="#why-us" class="block rounded-lg px-3 py-2">Why Us</a>
-        <a href="#contact" class="block rounded-lg px-3 py-2">Contact</a>
-
+      <a href="#" class="block rounded-lg px-3 py-2 text-[#d2e829]">{{ __('home.home') }}</a>
+<a href="#about" class="block rounded-lg px-3 py-2">{{ __('home.about') }}</a>
+<a href="#products" class="block rounded-lg px-3 py-2">{{ __('home.products') }}</a>
+<a href="#services" class="block rounded-lg px-3 py-2">{{ __('home.services') }}</a>
+<a href="#why-us" class="block rounded-lg px-3 py-2">{{ __('home.why_us') }}</a>
+<a href="#contact" class="block rounded-lg px-3 py-2">{{ __('home.contact') }}</a>
         <!-- MOBILE LANGUAGE -->
         <div class="mt-3 border-t border-white/10 pt-3">
             <p class="px-3 text-xs text-white/60">Language</p>

@@ -6,24 +6,33 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\ProfileController;
 use App\Models\Feedback;
 
+/*
+|--------------------------------------------------------------------------
+| ADMIN DASHBOARD
+|--------------------------------------------------------------------------
+*/
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 })->middleware(['auth'])->name('admin.dashboard');
+
 
 /*
 |--------------------------------------------------------------------------
 | LANGUAGE SWITCH
 |--------------------------------------------------------------------------
 */
-Route::get('/lang/{locale}', function (Request $request, $locale) {
+Route::get('/lang/{locale}', function ($locale) {
 
-    if (!in_array($locale, ['en', 'sw', 'fr'])) {
+    $allowedLocales = ['en', 'sw', 'de', 'nl'];
+
+    if (!in_array($locale, $allowedLocales)) {
         abort(404);
     }
 
-    Session::put('locale', $locale);
+    session(['locale' => $locale]);
 
     return redirect()->back();
+
 })->name('lang.switch');
 
 
@@ -49,7 +58,7 @@ Route::get('/about', function () {
 
 /*
 |--------------------------------------------------------------------------
-| DASHBOARD
+| USER DASHBOARD
 |--------------------------------------------------------------------------
 */
 Route::get('/dashboard', function () {
@@ -64,12 +73,14 @@ Route::get('/dashboard', function () {
 */
 Route::middleware('auth')->group(function () {
 
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::get('/profile', [ProfileController::class, 'edit'])
+        ->name('profile.edit');
 
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::patch('/profile', [ProfileController::class, 'update'])
+        ->name('profile.update');
 
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
+    Route::delete('/profile', [ProfileController::class, 'destroy'])
+        ->name('profile.destroy');
 });
 
 
@@ -88,16 +99,17 @@ Route::post('/feedback', function (Request $request) {
     Feedback::create([
         'name' => $request->name,
         'message' => $request->message,
-        'status' => 'pending'
+        'status' => 'pending',
     ]);
 
     return redirect()->back()->with('success', 'Feedback sent successfully!');
+
 })->name('feedback.store');
 
 
 /*
 |--------------------------------------------------------------------------
-| ADMIN FEEDBACK (ADMIN SIDE)
+| ADMIN FEEDBACK SYSTEM
 |--------------------------------------------------------------------------
 */
 Route::get('/admin/feedback', function () {

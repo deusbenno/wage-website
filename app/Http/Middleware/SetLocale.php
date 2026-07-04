@@ -10,12 +10,10 @@ class SetLocale
 {
     public function handle($request, Closure $next)
     {
+        // Get language from session (fallback: English)
         $locale = Session::get('locale', 'en');
 
-        if (!in_array($locale, ['en', 'sw', 'fr'])) {
-            $locale = 'en';
-        }
-
+        // Apply application language
         App::setLocale($locale);
 
         return $next($request);
