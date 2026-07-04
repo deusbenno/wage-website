@@ -526,7 +526,7 @@
             </div>
         </div>
 
-        <!-- Dynamic Loop Area for Other Custom Products -->
+        <!-- Dynamic Loop Area for Other Custom Products 
         <div class="mt-12">
             <h3 class="text-xs font-bold uppercase tracking-wider text-[#24352f]/60 mb-6 px-1">All Catalog Items</h3>
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
@@ -540,7 +540,7 @@
                     </article>
                 @endforeach
             </div>
-        </div>
+        </div>-->
     </div>
 </section>
 
