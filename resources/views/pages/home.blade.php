@@ -159,7 +159,7 @@
                 <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">English</div>
                 <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">Swahili</div>
                 <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">Deutsch</div>
-                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">dutch</div>
+                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">Dutch</div>
             </div>
         </div>
     </div>
