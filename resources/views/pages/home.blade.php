@@ -667,27 +667,87 @@
     </div>
 </section>
 
-<section id="services" class="bg-[#eef5ec] px-5 py-16 lg:px-8">
+<section id="services" class="bg-[#f8faf7] px-5 py-20 lg:px-8">
     <div class="mx-auto max-w-7xl">
-        <div class="text-center">
+        <div class="text-center max-w-3xl mx-auto">
             <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Services</p>
-            <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f]">From Farm to Market - We Deliver Value</h2>
+            <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f] sm:text-5xl">From Farm to Market - We Deliver Value</h2>
+            <p class="mt-4 text-base leading-7 text-[#24352f]/80">We optimize the entire agricultural supply chain in Tanzania, ensuring farmers get fair market access while buyers receive premium grade commodities.</p>
         </div>
 
-        <div class="mt-10 grid gap-0 rounded-xl bg-white/30 md:grid-cols-3 lg:grid-cols-6">
-            @foreach ($services as $service)
-                <article class="border-b border-[#cfd9cb] px-5 py-8 text-center last:border-b-0 md:border-r md:last:border-r-0 lg:border-b-0">
-                    <svg class="mx-auto h-10 w-10 text-[#155f2b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                        {!! $service['icon'] !!}
+        <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            
+            <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
+                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#15812d]/10 text-[#15812d] mb-5">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 20h10" /><path d="M10 20v-4" /><path d="M14 20v-4" /><path d="M12 16V4h4" /><circle cx="12" cy="4" r="2" />
+                        <path d="M19 9a7 7 0 0 0-14 0c0 3 2 5 2 7h10s2-2 2-7Z" />
                     </svg>
-                    <h3 class="mt-4 text-base font-extrabold leading-tight text-[#13241f]">{{ $service['title'] }}</h3>
-                    <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ $service['text'] }}</p>
-                </article>
-            @endforeach
+                </div>
+                <h3 class="text-xl font-black text-[#13241f]">Produce Aggregation</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">Sourcing high-yield crops directly from dedicated smallholder farmers across major agricultural regions.</p>
+            </article>
+
+            <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
+                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#15812d]/10 text-[#15812d] mb-5">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                        <path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" />
+                        <path d="M9 2h6v4H9z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-black text-[#13241f]">Sorting & Grading</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">Ensuring premium, export-ready quality standards through meticulous screening and classification metrics.</p>
+            </article>
+
+            <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
+                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#15812d]/10 text-[#15812d] mb-5">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 20V10l4-2v4l4-2v4l4-2v4l4-2v10H2Z" />
+                        <path d="M17 14h2" /><path d="M17 18h2" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-black text-[#13241f]">Processing & Value Addition</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">Advanced drying, precision grinding, and multi-stage milling to unlock top market value from standard yields.</p>
+            </article>
+
+            <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
+                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#15812d]/10 text-[#15812d] mb-5">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-black text-[#13241f]">Packaging</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">Hygienic, robust packaging designed flawlessly for domestic shelves and demanding international export conditions.</p>
+            </article>
+
+            <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
+                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#15812d]/10 text-[#15812d] mb-5">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-black text-[#13241f]">Warehouse Storage</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">Safe, pest-free storage facilities equipped with standardized humidity and clean product handling systems.</p>
+            </article>
+
+            <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
+                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#15812d]/10 text-[#15812d] mb-5">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="1" y="3" width="15" height="13" rx="2" ry="2" />
+                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                        <circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-black text-[#13241f]">Logistics & Delivery</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">Dependable supply chain transport offering swift distribution channels and precise delivery timelines.</p>
+            </article>
+
         </div>
     </div>
 </section>
-</main>
 
 <footer id="contact" class="bg-gradient-to-br from-[#04140c] via-[#0b301d] to-[#071d12] px-5 py-16 text-white lg:px-8">
     <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1.15fr]">
