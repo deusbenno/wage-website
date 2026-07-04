@@ -369,7 +369,7 @@
             <h2 class="mt-3 text-4xl font-black tracking-normal text-[#13241f] md:text-5xl">Who We Are</h2>
             
             <p class="mt-6 max-w-2xl text-base leading-8 text-[#24352f]">
-                WAGE Solutions Limited is a Tanzanian agribusiness company focused on the sourcing, aggregation, sorting, packing, processing, and marketing of maize flour, avocados, spices, and other agricultural products from farmers in regions across the country. We connect smallholder farmers to structured markets while improving product quality, handling, and value addition.
+                WAGE Solutions Limited is a Tanzanian agribusiness company focused on the sourcing, aggregation, sorting, packing, processing, and marketing of avocados, spices such as tumeric, ginger, chills and cloves, and other agricultural products from farmers in regions across the country. We connect smallholder farmers to structured markets while improving product quality, handling, and value addition.
             </p>
 
             <!-- Vision & Mission Grid -->
