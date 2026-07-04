@@ -4,5 +4,10 @@
   "about": "Kuhusu Sisi",
   "feedback": "Maoni",
   "send": "Tuma",
-  "dashboard": "Dashibodi"
+  "dashboard": "Dashibodi",
+
+  "home.hero_title": "Bidhaa Bora za Kilimo kutoka Tanzania",
+  "home.hero_description": "WAGE Solutions Limited inajihusisha na ukusanyaji, usindikaji, upakiaji na uuzaji wa bidhaa bora za unga wa mahindi, parachichi, viungo na bidhaa nyingine za kilimo kwa masoko ya ndani na nje.",
+  "home.explore_products": "Chunguza Bidhaa",
+  "home.contact_us": "Wasiliana Nasi"
 }

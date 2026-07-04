@@ -4,5 +4,10 @@
   "about": "About Us",
   "feedback": "Feedback",
   "send": "Send",
-  "dashboard": "Dashboard"
+  "dashboard": "Dashboard",
+
+  "home.hero_title": "Premium Agricultural Products from Tanzania",
+  "home.hero_description": "WAGE Solutions Limited specializes in sourcing, aggregation, processing, packaging, and marketing of premium maize flour, avocados, spices, and other agricultural products for both local and international markets.",
+  "home.explore_products": "Explore Products",
+  "home.contact_us": "Contact Us"
 }

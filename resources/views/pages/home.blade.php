@@ -144,10 +144,10 @@
             <p class="px-3 text-xs text-white/60">Language</p>
 
             <div class="mt-2 space-y-1">
-                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">English</div>
-                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">Swahili</div>
-                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">Deutsch</div>
-                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">Dutch</div>
+                 <a href="/lang/en">EN</a>
+<a href="/lang/sw">SW</a>
+<a href="/lang/de">DE</a>
+<a href="/lang/nl">NL</a>
             </div>
         </div>
     </div>
@@ -211,20 +211,20 @@
         <div class="relative z-10 mx-auto max-w-7xl px-5 pb-44 pt-20 lg:px-8 lg:pt-32">
             <div class="max-w-2xl">
                 <h1 class="text-5xl font-black leading-[1.08] tracking-normal md:text-7xl">
-                    Premium Agricultural Products from <span class="text-[#d2e829]">Tanzania</span>
+                    {{ __('home.hero_title') }}
                 </h1>
 
                 <p class="mt-7 max-w-xl text-lg font-medium leading-8 text-white/95">
-                    WAGE Solutions Limited specializes in sourcing, aggregation, processing, packaging, and marketing of premium maize flour, avocados, spices, and other agricultural products for both local and international markets.
+                    {{ __('home.hero_description') }}
                 </p>
 
                 <div class="mt-10 flex flex-col gap-4 sm:flex-row">
                     <a href="#products" class="inline-flex items-center justify-center gap-3 rounded-lg bg-[#159332] px-8 py-4 text-sm font-extrabold uppercase shadow-lg shadow-black/20 transition hover:bg-[#117d2b]">
-                        Explore Products
+                        {{ __('home.explore_products') }}
                         <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                     </a>
                     <a href="#contact" class="inline-flex items-center justify-center gap-3 rounded-full border border-white px-8 py-4 text-sm font-extrabold uppercase transition hover:bg-white hover:text-[#0d2418]">
-                        Contact Us
+                        {{ __('home.contact_us') }}
                         <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                     </a>
                 </div>
