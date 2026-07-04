@@ -110,23 +110,38 @@
                 </button>
 
                 <!-- DROPDOWN -->
-                <div x-show="langOpen" @click.away="langOpen = false"
-                     x-transition
-                     class="absolute right-0 mt-2 w-44 overflow-hidden rounded-lg border border-white/10 bg-[#071d12] shadow-xl">
+                <!-- 🌐 LANGUAGE DROPDOWN -->
+<div class="relative">
+    <button @click="langOpen = !langOpen"
+            class="flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-bold uppercase hover:bg-white/10">
 
-                    <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
-                        🇬🇧 English
-                    </div>
+        🌐 Lang
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m6 9 6 6 6-6"/>
+        </svg>
+    </button>
 
-                    <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
-                        🇹🇿 Swahili
-                    </div>
+    <div x-show="langOpen" @click.away="langOpen = false"
+         x-transition
+         class="absolute right-0 mt-2 w-48 overflow-hidden rounded-lg border border-white/10 bg-[#071d12] shadow-xl">
 
-                    <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
-                        🇫🇷 French
-                    </div>
-                </div>
-            </div>
+        <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
+            🇬🇧 English
+        </div>
+
+        <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
+            🇹🇿 Swahili
+        </div>
+
+        <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
+            🇩🇪 Deutsch
+        </div>
+
+        <div class="cursor-pointer px-4 py-3 hover:bg-white/10 flex items-center gap-2">
+            🇳🇱 Dutch
+        </div>
+    </div>
+</div>
 
             <!-- GET QUOTE -->
             <a href="#contact" class="rounded-full border border-[#d2e829] px-7 py-3 text-sm font-extrabold uppercase transition hover:bg-[#d2e829] hover:text-[#092114]">
