@@ -156,9 +156,10 @@
             <p class="px-3 text-xs text-white/60">Language</p>
 
             <div class="mt-2 space-y-1">
-                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">🇬🇧 English</div>
-                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">🇹🇿 Swahili</div>
-                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">🇫🇷 French</div>
+                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">English</div>
+                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">Swahili</div>
+                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">Deutsch</div>
+                <div class="px-3 py-2 hover:bg-white/10 flex items-center gap-2">dutch</div>
             </div>
         </div>
     </div>
