@@ -251,12 +251,12 @@
     <div class="mx-auto max-w-6xl overflow-hidden rounded-2xl bg-white/95 shadow-2xl shadow-[#092114]/10 ring-1 ring-black/5 backdrop-blur">
 
         <div class="px-6 py-8 text-center md:px-10">
-            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Why Choose Us</p>
+            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">W{{ __('home.why_us_title') }}</p>
             <h2 class="mt-2 text-3xl font-black tracking-normal text-[#13241f] md:text-4xl">
-                Reliable Agricultural Supply for Local and Global Markets
+                {{ __('why_us_heading') }}
             </h2>
             <p class="mx-auto mt-4 max-w-3xl text-base leading-8 text-[#24352f]">
-                WAGE Solutions Limited works closely with farmers to source, process, package, and supply quality agricultural products with care, consistency, and market-ready standards.
+                {{ __('why_us_description') }}
             </p>
         </div>
 
@@ -272,10 +272,10 @@
                                 <path d="M7 20c0-5-2-8-6-10 5-.4 8 2 9 6"/>
                             </svg>
                             <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">
-                                Premium Product Categories
+                                {{ __('why_us_1_title') }}
                             </h3>
                             <p class="mt-2 text-sm leading-6 text-[#1c3028]">
-                                Spices such as ginger, turmeric, chills, also avocados, maize flour &amp; more products from Tanzania
+                                {{ __('why_us_1_text') }}
                             </p>
                         </div>
                     </div>
@@ -289,10 +289,10 @@
                                 <path d="M12 2a15.3 15.3 0 0 0 0 20"/>
                             </svg>
                             <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">
-                                Local &amp; International Markets
+                                {{ __('why_us_2_title') }}
                             </h3>
                             <p class="mt-2 text-sm leading-6 text-[#1c3028]">
-                                Serving Local Buyers and Global Markets
+                                {{ __('why_us_2_text') }}
                             </p>
                         </div>
                     </div>
@@ -305,10 +305,10 @@
                                 <path d="m8.5 17.5-1.8 4.2 5.3-2.1 5.3 2.1-1.8-4.2"/>
                             </svg>
                             <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">
-                                Quality Processing
+                                {{ __('why_us_3_title') }}
                             </h3>
                             <p class="mt-2 text-sm leading-6 text-[#1c3028]">
-                                Advanced Processing, Sorting &amp; Packaging
+                                {{ __('why_us_3_text') }}
                             </p>
                         </div>
                     </div>
@@ -322,10 +322,10 @@
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                             </svg>
                             <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">
-                                Farmer Partnerships
+                                {{ __('why_us_4_title') }}
                             </h3>
                             <p class="mt-2 text-sm leading-6 text-[#1c3028]">
-                                Working Together for Sustainable Growth
+                                {{ __('why_us_4_text') }}
                             </p>
                         </div>
                     </div>
