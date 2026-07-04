@@ -367,15 +367,15 @@
 
         <div>
             <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">
-                {{ __('home.about_title') }}
+                {{ __('about_title') }}
             </p>
 
             <h2 class="mt-3 text-4xl font-black tracking-normal text-[#13241f] md:text-5xl">
-                {{ __('home.about_heading') }}
+                {{ __('about_heading') }}
             </h2>
 
             <p class="mt-6 max-w-2xl text-base leading-8 text-[#24352f]">
-                {{ __('home.about_description') }}
+                {{ __('about_description') }}
             </p>
 
             <!-- Vision & Mission Grid -->
@@ -392,10 +392,10 @@
 
                     <div>
                         <h3 class="text-lg font-bold text-[#13241f]">
-                            {{ __('home.about_vision_title') }}
+                            {{ __('about_vision_title') }}
                         </h3>
                         <p class="mt-2 text-sm leading-6 text-[#24352f]">
-                            {{ __('home.about_vision_text') }}
+                            {{ __('about_vision_text') }}
                         </p>
                     </div>
                 </div>
@@ -412,10 +412,10 @@
 
                     <div>
                         <h3 class="text-lg font-bold text-[#13241f]">
-                            {{ __('home.about_mission_title') }}
+                            {{ __('about_mission_title') }}
                         </h3>
                         <p class="mt-2 text-sm leading-6 text-[#24352f]">
-                            {{ __('home.about_mission_text') }}
+                            {{ __('about_mission_text') }}
                         </p>
                     </div>
                 </div>
@@ -423,7 +423,7 @@
             </div>
 
             <a href="#contact" class="mt-10 inline-flex items-center gap-3 rounded-full bg-[#155f2b] px-7 py-3 text-sm font-extrabold uppercase text-white transition hover:bg-[#0f4820]">
-                {{ __('home.about_button') }}
+                {{ __('about_button') }}
                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
                 </svg>
