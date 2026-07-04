@@ -164,17 +164,17 @@
                 },
                 {
                     label: 'Maize Flour',
-                    image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=1900&q=85',
+                    image: 'https://i.pinimg.com/1200x/7f/e7/ec/7fe7ecc851e117eeb0eaf9b5f8bf69c7.jpg',
                     alt: 'Maize and maize flour'
                 },
                 {
                     label: 'Pilipili Spices',
-                    image: 'https://source.unsplash.com/1900x1100/?chili,pepper,spices',
+                    image: 'https://i.pinimg.com/1200x/de/2b/6f/de2b6ffd4507e89ae490a40646cf4a87.jpg',
                     alt: 'Pilipili chili spices'
                 },
                 {
                     label: 'Fresh Ginger',
-                    image: 'https://images.unsplash.com/photo-1615485500834-bc10199bc727?auto=format&fit=crop&w=1900&q=85',
+                    image: 'https://i.pinimg.com/1200x/ca/f1/04/caf1047a6afba73759121f439ce27451.jpg',
                     alt: 'Fresh ginger roots'
                 }
             ],
