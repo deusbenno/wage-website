@@ -244,32 +244,120 @@
         </div>
     </section>
 
-    <section id="why-us" class="relative z-20 -mt-16 px-5 lg:px-8">
-    <div class="mx-auto grid max-w-6xl overflow-hidden rounded-2xl bg-white/95 shadow-2xl shadow-[#092114]/10 ring-1 ring-black/5 backdrop-blur md:grid-cols-4">
+    <section id="why-us"
+    x-data="{ current: 0, total: 4 }"
+    class="relative z-20 -mt-16 px-5 lg:px-8"
+>
+    <div class="mx-auto max-w-6xl overflow-hidden rounded-2xl bg-white/95 shadow-2xl shadow-[#092114]/10 ring-1 ring-black/5 backdrop-blur">
 
-        @foreach ($features as $feature)
-            <div class="border-b border-[#d8ded5] px-7 py-8 text-center last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0">
+        <div class="px-6 py-8 text-center md:px-10">
+            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Why Choose Us</p>
+            <h2 class="mt-2 text-3xl font-black tracking-normal text-[#13241f] md:text-4xl">
+                Reliable Agricultural Supply for Local and Global Markets
+            </h2>
+            <p class="mx-auto mt-4 max-w-3xl text-base leading-8 text-[#24352f]">
+                WAGE Solutions Limited works closely with farmers to source, process, package, and supply quality agricultural products with care, consistency, and market-ready standards.
+            </p>
+        </div>
 
-                <svg class="mx-auto h-12 w-12 text-[#155f2b]"
-                     viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="1.9"
-                     stroke-linecap="round"
-                     stroke-linejoin="round">
-                    {!! $feature['icon'] !!}
-                </svg>
+        <div class="relative px-6 pb-8 md:px-10">
+            <div class="overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-out"
+                     :style="'transform: translateX(-' + (current * 100) + '%)'">
 
-                <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">
-                    {{ $feature['title'] }}
-                </h3>
+                    <div class="w-full flex-shrink-0 px-1">
+                        <div class="rounded-xl border border-[#d8ded5] bg-[#f8faf4] px-7 py-8 text-center">
+                            <svg class="mx-auto h-12 w-12 text-[#155f2b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 20c0-8 4-13 12-15-.4 8-5 12-12 12"/>
+                                <path d="M7 20c0-5-2-8-6-10 5-.4 8 2 9 6"/>
+                            </svg>
+                            <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">
+                                Premium Product Categories
+                            </h3>
+                            <p class="mt-2 text-sm leading-6 text-[#1c3028]">
+                                Spices such as ginger, turmeric, chills, also avocados, maize flour &amp; more products from Tanzania
+                            </p>
+                        </div>
+                    </div>
 
-                <p class="mt-2 text-sm leading-6 text-[#1c3028]">
-                    {{ $feature['text'] }}
-                </p>
+                    <div class="w-full flex-shrink-0 px-1">
+                        <div class="rounded-xl border border-[#d8ded5] bg-[#f8faf4] px-7 py-8 text-center">
+                            <svg class="mx-auto h-12 w-12 text-[#155f2b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M2 12h20"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 0 20"/>
+                                <path d="M12 2a15.3 15.3 0 0 0 0 20"/>
+                            </svg>
+                            <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">
+                                Local &amp; International Markets
+                            </h3>
+                            <p class="mt-2 text-sm leading-6 text-[#1c3028]">
+                                Serving Local Buyers and Global Markets
+                            </p>
+                        </div>
+                    </div>
 
+                    <div class="w-full flex-shrink-0 px-1">
+                        <div class="rounded-xl border border-[#d8ded5] bg-[#f8faf4] px-7 py-8 text-center">
+                            <svg class="mx-auto h-12 w-12 text-[#155f2b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m15.5 7.5-5.2 5.2-1.8-1.8"/>
+                                <path d="M12 2l2.2 2 3-.5.9 2.9 2.7 1.4-1.4 2.7.5 3-2.9.9-1.4 2.7-2.7-1.4-3 .5-.9-2.9-2.7-1.4 1.4-2.7-.5-3 2.9-.9z"/>
+                                <path d="m8.5 17.5-1.8 4.2 5.3-2.1 5.3 2.1-1.8-4.2"/>
+                            </svg>
+                            <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">
+                                Quality Processing
+                            </h3>
+                            <p class="mt-2 text-sm leading-6 text-[#1c3028]">
+                                Advanced Processing, Sorting &amp; Packaging
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 px-1">
+                        <div class="rounded-xl border border-[#d8ded5] bg-[#f8faf4] px-7 py-8 text-center">
+                            <svg class="mx-auto h-12 w-12 text-[#155f2b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                            <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">
+                                Farmer Partnerships
+                            </h3>
+                            <p class="mt-2 text-sm leading-6 text-[#1c3028]">
+                                Working Together for Sustainable Growth
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        @endforeach
+
+            <button type="button"
+                    @click="current = (current - 1 + total) % total"
+                    class="absolute left-3 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-full bg-[#155f2b] text-white shadow-lg transition hover:bg-[#0f4820]"
+                    aria-label="Previous why us point">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                    <path d="m15 18-6-6 6-6"/>
+                </svg>
+            </button>
+
+            <button type="button"
+                    @click="current = (current + 1) % total"
+                    class="absolute right-3 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-full bg-[#155f2b] text-white shadow-lg transition hover:bg-[#0f4820]"
+                    aria-label="Next why us point">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                    <path d="m9 18 6-6-6-6"/>
+                </svg>
+            </button>
+
+            <div class="mt-6 flex justify-center gap-2">
+                <button type="button" @click="current = 0" class="h-3 w-3 rounded-full transition" :class="current === 0 ? 'bg-[#155f2b]' : 'bg-[#cfd9cb]'"></button>
+                <button type="button" @click="current = 1" class="h-3 w-3 rounded-full transition" :class="current === 1 ? 'bg-[#155f2b]' : 'bg-[#cfd9cb]'"></button>
+                <button type="button" @click="current = 2" class="h-3 w-3 rounded-full transition" :class="current === 2 ? 'bg-[#155f2b]' : 'bg-[#cfd9cb]'"></button>
+                <button type="button" @click="current = 3" class="h-3 w-3 rounded-full transition" :class="current === 3 ? 'bg-[#155f2b]' : 'bg-[#cfd9cb]'"></button>
+            </div>
+        </div>
 
     </div>
 </section>
