@@ -440,13 +440,96 @@
 </section>
 
     <section id="products" class="bg-[#f4f6ef] px-5 py-16 lg:px-8">
-        <div class="mx-auto max-w-7xl">
-            <div class="text-center">
-                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Products</p>
-                <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f]">Quality Products, Naturally Grown</h2>
-            </div>
+    <div class="mx-auto max-w-7xl">
+        <div class="text-center">
+            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Products</p>
+            <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f]">Quality Products, Naturally Grown</h2>
+        </div>
 
-            <div class="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+        <!-- Premium Products Slideshow / Carousel -->
+        <div class="mt-10">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-[#24352f]/60 mb-4 px-1">Featured Commodities</h3>
+            
+            <!-- Horizontal Scroll Container with Snap Alignment -->
+            <div class="flex gap-6 overflow-x-auto pb-6 scrollbar-thin scroll-smooth snap-x snap-mandatory">
+                
+                <!-- Card 1: Turmeric -->
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80" alt="Turmeric" class="h-44 w-full rounded-lg object-cover">
+                    <div class="mt-4 px-2 pb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
+                        <h4 class="mt-2 text-lg font-black text-[#13241f]">Pure Turmeric</h4>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Rich in curcumin, dried and processed to pristine grades from selected smallholder farms.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Ginger -->
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80" alt="Ginger" class="h-44 w-full rounded-lg object-cover">
+                    <div class="mt-4 px-2 pb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
+                        <h4 class="mt-2 text-lg font-black text-[#13241f]">Aromatic Ginger</h4>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Pungent, high-grade ginger rhizomes cleaned and processed carefully for maximum flavor shelf-life.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Cloves -->
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.unsplash.com/photo-1614882510344-8d487224f8d9?auto=format&fit=crop&w=600&q=80" alt="Cloves" class="h-44 w-full rounded-lg object-cover">
+                    <div class="mt-4 px-2 pb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
+                        <h4 class="mt-2 text-lg font-black text-[#13241f]">Zanzibar Cloves</h4>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Premium whole cloves harvested carefully at optimal maturity, featuring strong essential oil retention.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Hot Chillies -->
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=80" alt="Hot Chillies" class="h-44 w-full rounded-lg object-cover">
+                    <div class="mt-4 px-2 pb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
+                        <h4 class="mt-2 text-lg font-black text-[#13241f]">Hot African Chillies</h4>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Fiery and brightly colored hot peppers sun-dried to perfect humidity metrics for storage safety.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5: Pepper Chillies -->
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.unsplash.com/photo-1518111151441-2679c16262cb?auto=format&fit=crop&w=600&q=80" alt="Pepper Chillies" class="h-44 w-full rounded-lg object-cover">
+                    <div class="mt-4 px-2 pb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Spice</span>
+                        <h4 class="mt-2 text-lg font-black text-[#13241f]">Mild Pepper Chillies</h4>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Grown for high color yield and balanced mild heat, tailored for universal condiment mixing.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6: Avocados -->
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&w=600&q=80" alt="Avocados" class="h-44 w-full rounded-lg object-cover">
+                    <div class="mt-4 px-2 pb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Fresh Produce</span>
+                        <h4 class="mt-2 text-lg font-black text-[#13241f]">Premium Avocados</h4>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Top-grade Hass and Fuerte varieties, sorted gently and packed to meet local and global trade criteria.</p>
+                    </div>
+                </div>
+
+                <!-- Card 7: Maize Flour -->
+                <div class="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md shadow-black/5 ring-1 ring-black/5">
+                    <img src="https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?auto=format&fit=crop&w=600&q=80" alt="Maize Flour" class="h-44 w-full rounded-lg object-cover">
+                    <div class="mt-4 px-2 pb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">Staples</span>
+                        <h4 class="mt-2 text-lg font-black text-[#13241f]">Fortified Maize Flour</h4>
+                        <p class="mt-1 text-sm leading-6 text-[#24352f]">Nutrient-rich, finely milled white corn flour perfect for preparing local high-quality meals.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Dynamic Loop Area for Other Custom Products -->
+        <div class="mt-12">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-[#24352f]/60 mb-6 px-1">All Catalog Items</h3>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
                 @foreach ($products as $product)
                     <article class="overflow-hidden rounded-lg bg-white text-center shadow-lg shadow-black/5 ring-1 ring-black/5">
                         <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="h-44 w-full object-cover">
@@ -458,28 +541,29 @@
                 @endforeach
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="services" class="bg-[#eef5ec] px-5 py-16 lg:px-8">
-        <div class="mx-auto max-w-7xl">
-            <div class="text-center">
-                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Services</p>
-                <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f]">From Farm to Market - We Deliver Value</h2>
-            </div>
-
-            <div class="mt-10 grid gap-0 rounded-xl bg-white/30 md:grid-cols-3 lg:grid-cols-6">
-                @foreach ($services as $service)
-                    <article class="border-b border-[#cfd9cb] px-5 py-8 text-center last:border-b-0 md:border-r md:last:border-r-0 lg:border-b-0">
-                        <svg class="mx-auto h-10 w-10 text-[#155f2b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                            {!! $service['icon'] !!}
-                        </svg>
-                        <h3 class="mt-4 text-base font-extrabold leading-tight text-[#13241f]">{{ $service['title'] }}</h3>
-                        <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ $service['text'] }}</p>
-                    </article>
-                @endforeach
-            </div>
+<section id="services" class="bg-[#eef5ec] px-5 py-16 lg:px-8">
+    <div class="mx-auto max-w-7xl">
+        <div class="text-center">
+            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Services</p>
+            <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f]">From Farm to Market - We Deliver Value</h2>
         </div>
-    </section>
+
+        <div class="mt-10 grid gap-0 rounded-xl bg-white/30 md:grid-cols-3 lg:grid-cols-6">
+            @foreach ($services as $service)
+                <article class="border-b border-[#cfd9cb] px-5 py-8 text-center last:border-b-0 md:border-r md:last:border-r-0 lg:border-b-0">
+                    <svg class="mx-auto h-10 w-10 text-[#155f2b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                        {!! $service['icon'] !!}
+                    </svg>
+                    <h3 class="mt-4 text-base font-extrabold leading-tight text-[#13241f]">{{ $service['title'] }}</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ $service['text'] }}</p>
+                </article>
+            @endforeach
+        </div>
+    </div>
+</section>
 </main>
 
 <footer id="contact" class="bg-gradient-to-br from-[#04140c] via-[#0b301d] to-[#071d12] px-5 py-16 text-white lg:px-8">
