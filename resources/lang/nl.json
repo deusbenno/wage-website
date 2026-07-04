@@ -49,6 +49,36 @@
 "about_mission_title": "Onze missie",
 "about_mission_text": "Kwalitatieve landbouwproducten inkopen, hun waarde verhogen door verwerking en verpakking en betrouwbare producten leveren aan lokale en internationale markten.",
 
-"about_button": "Meer informatie"
+"about_button": "Meer informatie",
+
+
+  "products_title": "Onze Producten",
+  "products_heading": "Kwaliteitsproducten, natuurlijk geteeld",
+  "products_featured": "Uitgelichte Producten",
+
+  "product_turmeric_title": "Pure Kurkuma",
+  "product_turmeric_text": "Rijk aan curcumine, zorgvuldig gedroogd en verwerkt van geselecteerde kleine boeren.",
+
+  "product_ginger_title": "Aromatische Gember",
+  "product_ginger_text": "Hoogwaardige gemberwortels, zorgvuldig gereinigd en verwerkt voor maximale versheid.",
+
+  "product_cloves_title": "Zanzibar Kruidnagel",
+  "product_cloves_text": "Premium kruidnagel met hoge kwaliteit en sterke etherische oliën.",
+
+  "product_chili_hot_title": "Hete Afrikaanse chilipepers",
+  "product_chili_hot_text": "Zon-gedroogde, felrode chilipepers met perfecte vochtbalans.",
+
+  "product_chili_mild_title": "Milde chilipepers",
+  "product_chili_mild_text": "Gekweekt voor kleur en milde hitte voor veelzijdig gebruik.",
+
+  "product_avocado_title": "Premium avocado's",
+  "product_avocado_text": "Topkwaliteit Hass- en Fuerte-variëteiten voor lokale en internationale markten.",
+
+  "product_maize_title": "Versterkte maïsmeel",
+  "product_maize_text": "Fijn gemalen maïsmeel voor hoogwaardige lokale gerechten.",
+
+  "product_spice_tag": "Kruiden",
+  "product_fresh_tag": "Verse producten",
+  "product_staples_tag": "Basisvoedsel"
 
 }

@@ -50,6 +50,36 @@
 "about_mission_title": "Dhamira Yetu",
 "about_mission_text": "Kukusanya mazao bora kutoka kwa wakulima, kuongeza thamani kupitia usindikaji, uhifadhi na ufungashaji bora, na kusambaza bidhaa bora kwa soko la ndani na nje huku tukijenga kipato endelevu.",
 
-"about_button": "Jifunze Zaidi"
+"about_button": "Jifunze Zaidi",
+
+  "products_title": "Bidhaa Zetu",
+  "products_heading": "Bidhaa Bora Zilizolimwa Kwa Asili",
+  "products_featured": "Bidhaa Maalum",
+
+  "product_turmeric_title": "Manjano Safi",
+  "product_turmeric_text": "Yenye curcumin nyingi, iliyokaushwa na kuchakatwa kwa viwango bora kutoka kwa wakulima wadogo waliochaguliwa.",
+
+  "product_ginger_title": "Tangawizi Yenye Harufu Kali",
+  "product_ginger_text": "Tangawizi bora iliyosafishwa na kuchakatwa kwa uangalifu ili kuhifadhi ubora wake.",
+
+  "product_cloves_title": "Karafuu za Zanzibar",
+  "product_cloves_text": "Karafuu bora zilizovunwa kwa wakati sahihi zikiwa na mafuta muhimu ya hali ya juu.",
+
+  "product_chili_hot_title": "Pilipili Kali za Afrika",
+  "product_chili_hot_text": "Pilipili nyekundu kali zilizokaushwa  kwa viwango sahihi vya kuhifadhi.",
+
+  "product_chili_mild_title": "Pilipili Nyepesi",
+  "product_chili_mild_text": "Zilizolimwa kwa rangi nzuri na moto mdogo unaofaa kwa matumizi ya kawaida.",
+
+  "product_avocado_title": "Parachichi Bora",
+  "product_avocado_text": "Parachichi aina ya Hass na Fuerte zilizopangwa kwa uangalifu kwa soko la ndani na nje.",
+
+  "product_maize_title": "Unga wa Mahindi Ulioimarishwa",
+  "product_maize_text": "Unga bora wa mahindi uliosagwa vizuri kwa matumizi ya chakula cha ubora.",
+
+  "product_spice_tag": "Viungo",
+  "product_fresh_tag": "Bidhaa Safi",
+  "product_staples_tag": "Chakula Kikuu"
+
 
 }

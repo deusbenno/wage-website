@@ -49,6 +49,37 @@
 "about_mission_title": "Unsere Mission",
 "about_mission_text": "Hochwertige landwirtschaftliche Produkte von Bauern zu beziehen, ihren Wert durch Verarbeitung und Verpackung zu steigern und zuverlässige Produkte für lokale und internationale Märkte zu liefern.",
 
-"about_button": "Mehr erfahren"
+"about_button": "Mehr erfahren",
+
+
+  "products_title": "Unsere Produkte",
+  "products_heading": "Qualitätsprodukte aus natürlichem Anbau",
+  "products_featured": "Ausgewählte Produkte",
+
+  "product_turmeric_title": "Reiner Kurkuma",
+  "product_turmeric_text": "Reich an Curcumin, schonend getrocknet und verarbeitet von ausgewählten Kleinbauern.",
+
+  "product_ginger_title": "Aromatischer Ingwer",
+  "product_ginger_text": "Hochwertige Ingwerknollen, sorgfältig gereinigt und verarbeitet für maximale Frische.",
+
+  "product_cloves_title": "Gewürznelken aus Sansibar",
+  "product_cloves_text": "Premium-Gewürznelken mit hoher Qualität und starkem ätherischem Ölgehalt.",
+
+  "product_chili_hot_title": "Scharfe afrikanische Chilischoten",
+  "product_chili_hot_text": "Sonnengereifte, intensiv rote Chilischoten mit optimalem Trocknungsgrad.",
+
+  "product_chili_mild_title": "Milde Chilischoten",
+  "product_chili_mild_text": "Für ausgewogene Schärfe und hohe Farbausbeute angebaut.",
+
+  "product_avocado_title": "Premium Avocados",
+  "product_avocado_text": "Hochwertige Hass- und Fuerte-Avocados für lokale und internationale Märkte.",
+
+  "product_maize_title": "Angereichertes Maismehl",
+  "product_maize_text": "Fein gemahlenes Maismehl für hochwertige lokale Speisen.",
+
+  "product_spice_tag": "Gewürz",
+  "product_fresh_tag": "Frische Produkte",
+  "product_staples_tag": "Grundnahrungsmittel"
+
 
 }
