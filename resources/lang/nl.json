@@ -9,5 +9,18 @@
   "home.hero_title": "Premium landbouwproducten uit Tanzania",
   "home.hero_description": "WAGE Solutions Limited is gespecialiseerd in inkoop, verzameling, verwerking, verpakking en marketing van hoogwaardige maïsmeel, avocado's, specerijen en andere landbouwproducten voor lokale en internationale markten.",
   "home.explore_products": "Producten bekijken",
-  "home.contact_us": "Contact opnemen"
+  "home.contact_us": "Contact opnemen",
+
+  "features.premium_categories_title": "Premium Productcategorieën",
+  "features.premium_categories_text": "Maïsmeel, avocado's, kruiden en meer",
+
+  "features.market_title": "Lokale & Internationale Markten",
+  "features.market_text": "Bediening van lokale en wereldwijde klanten",
+
+  "features.processing_title": "Kwaliteitsverwerking",
+  "features.processing_text": "Geavanceerde verwerking, sortering en verpakking",
+
+  "features.farmer_title": "Samenwerking met boeren",
+  "features.farmer_text": "Samen werken aan duurzame groei"
+
 }

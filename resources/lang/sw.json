@@ -9,5 +9,19 @@
   "home.hero_title": "Bidhaa Bora za Kilimo kutoka Tanzania",
   "home.hero_description": "WAGE Solutions Limited inajihusisha na ukusanyaji, usindikaji, upakiaji na uuzaji wa bidhaa bora za unga wa mahindi, parachichi, viungo na bidhaa nyingine za kilimo kwa masoko ya ndani na nje.",
   "home.explore_products": "Chunguza Bidhaa",
-  "home.contact_us": "Wasiliana Nasi"
+  "home.contact_us": "Wasiliana Nasi",
+
+  
+  "features.premium_categories_title": "Aina Bora za Bidhaa",
+  "features.premium_categories_text": "Unga wa mahindi, parachichi, viungo na zaidi",
+
+  "features.market_title": "Masoko ya Ndani na Kimataifa",
+  "features.market_text": "Kuhudumia wanunuzi wa ndani na nje",
+
+  "features.processing_title": "Usindikaji Bora",
+  "features.processing_text": "Usindikaji, upangaji na upakiaji wa kisasa",
+
+  "features.farmer_title": "Ushirikiano na Wakulima",
+  "features.farmer_text": "Kufanya kazi pamoja kwa maendeleo endelevu"
+
 }

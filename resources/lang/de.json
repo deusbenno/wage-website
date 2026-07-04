@@ -9,5 +9,18 @@
   "home.hero_title": "Premium landwirtschaftliche Produkte aus Tansania",
   "home.hero_description": "WAGE Solutions Limited ist spezialisiert auf Beschaffung, Sammlung, Verarbeitung, Verpackung und Vermarktung von hochwertigem Maismehl, Avocados, Gewürzen und weiteren landwirtschaftlichen Produkten für lokale und internationale Märkte.",
   "home.explore_products": "Produkte entdecken",
-  "home.contact_us": "Kontakt aufnehmen"
+  "home.contact_us": "Kontakt aufnehmen",
+
+  "features.premium_categories_title": "Premium-Produktkategorien",
+  "features.premium_categories_text": "Maismehl, Avocados, Gewürze & mehr",
+
+  "features.market_title": "Lokale & Internationale Märkte",
+  "features.market_text": "Bedienung lokaler und globaler Käufer",
+
+  "features.processing_title": "Qualitätsverarbeitung",
+  "features.processing_text": "Moderne Verarbeitung, Sortierung & Verpackung",
+
+  "features.farmer_title": "Partnerschaft mit Bauern",
+  "features.farmer_text": "Gemeinsam für nachhaltiges Wachstum"
+
 }

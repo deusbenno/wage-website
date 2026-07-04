@@ -245,18 +245,34 @@
     </section>
 
     <section id="why-us" class="relative z-20 -mt-16 px-5 lg:px-8">
-        <div class="mx-auto grid max-w-6xl overflow-hidden rounded-2xl bg-white/95 shadow-2xl shadow-[#092114]/10 ring-1 ring-black/5 backdrop-blur md:grid-cols-4">
-            @foreach ($features as $feature)
-                <div class="border-b border-[#d8ded5] px-7 py-8 text-center last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0">
-                    <svg class="mx-auto h-12 w-12 text-[#155f2b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                        {!! $feature['icon'] !!}
-                    </svg>
-                    <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">{{ $feature['title'] }}</h3>
-                    <p class="mt-2 text-sm leading-6 text-[#1c3028]">{{ $feature['text'] }}</p>
-                </div>
-            @endforeach
-        </div>
-    </section>
+    <div class="mx-auto grid max-w-6xl overflow-hidden rounded-2xl bg-white/95 shadow-2xl shadow-[#092114]/10 ring-1 ring-black/5 backdrop-blur md:grid-cols-4">
+
+        @foreach ($features as $feature)
+            <div class="border-b border-[#d8ded5] px-7 py-8 text-center last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0">
+
+                <svg class="mx-auto h-12 w-12 text-[#155f2b]"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.9"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                    {!! $feature['icon'] !!}
+                </svg>
+
+                <h3 class="mt-4 text-lg font-extrabold leading-tight text-[#0b301d]">
+                    {{ $feature['title'] }}
+                </h3>
+
+                <p class="mt-2 text-sm leading-6 text-[#1c3028]">
+                    {{ $feature['text'] }}
+                </p>
+
+            </div>
+        @endforeach
+
+    </div>
+</section>
 
     <section id="about" class="bg-white px-5 py-20 lg:px-8">
         <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
