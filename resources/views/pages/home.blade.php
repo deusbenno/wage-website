@@ -670,9 +670,9 @@
 <section id="services" class="bg-[#f8faf7] px-5 py-20 lg:px-8">
     <div class="mx-auto max-w-7xl">
         <div class="text-center max-w-3xl mx-auto">
-            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Services</p>
-            <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f] sm:text-5xl">From Farm to Market - We Deliver Value</h2>
-            <p class="mt-4 text-base leading-7 text-[#24352f]/80">We optimize the entire agricultural supply chain in Tanzania, ensuring farmers get fair market access while buyers receive premium grade commodities.</p>
+            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">{{ __('services_title') }}</p>
+            <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f] sm:text-5xl">{{ __('services_heading') }}</h2>
+            <p class="mt-4 text-base leading-7 text-[#24352f]/80">{{ __('services_description') }}</p>
         </div>
 
         <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -684,8 +684,8 @@
                         <path d="M19 9a7 7 0 0 0-14 0c0 3 2 5 2 7h10s2-2 2-7Z" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-black text-[#13241f]">Produce Aggregation</h3>
-                <p class="mt-2 text-sm leading-6 text-[#24352f]">Sourcing high-yield crops directly from dedicated smallholder farmers across major agricultural regions.</p>
+                <h3 class="text-xl font-black text-[#13241f]">{{ __('service_aggregation_title') }}</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ __('service_aggregation_text') }}</p>
             </article>
 
             <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
@@ -696,8 +696,8 @@
                         <path d="M9 2h6v4H9z" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-black text-[#13241f]">Sorting & Grading</h3>
-                <p class="mt-2 text-sm leading-6 text-[#24352f]">Ensuring premium, export-ready quality standards through meticulous screening and classification metrics.</p>
+                <h3 class="text-xl font-black text-[#13241f]">{{ __('service_sorting_title') }}</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ __('service_sorting_text') }}</p>
             </article>
 
             <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
@@ -707,8 +707,8 @@
                         <path d="M17 14h2" /><path d="M17 18h2" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-black text-[#13241f]">Processing & Value Addition</h3>
-                <p class="mt-2 text-sm leading-6 text-[#24352f]">Advanced drying, precision grinding, and multi-stage milling to unlock top market value from standard yields.</p>
+                <h3 class="text-xl font-black text-[#13241f]">{{ __('service_processing_title') }}</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ __('service_processing_text') }}</p>
             </article>
 
             <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
@@ -718,8 +718,8 @@
                         <polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-black text-[#13241f]">Packaging</h3>
-                <p class="mt-2 text-sm leading-6 text-[#24352f]">Hygienic, robust packaging designed flawlessly for domestic shelves and demanding international export conditions.</p>
+                <h3 class="text-xl font-black text-[#13241f]">{{ __('service_packaging_title') }}</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ __('service_packaging_text') }}</p>
             </article>
 
             <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
@@ -729,8 +729,8 @@
                         <polyline points="9 22 9 12 15 12 15 22" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-black text-[#13241f]">Warehouse Storage</h3>
-                <p class="mt-2 text-sm leading-6 text-[#24352f]">Safe, pest-free storage facilities equipped with standardized humidity and clean product handling systems.</p>
+                <h3 class="text-xl font-black text-[#13241f]">{{ __('service_storage_title') }}</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ __('service_storage_text') }}</p>
             </article>
 
             <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
@@ -741,8 +741,8 @@
                         <circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-black text-[#13241f]">Logistics & Delivery</h3>
-                <p class="mt-2 text-sm leading-6 text-[#24352f]">Dependable supply chain transport offering swift distribution channels and precise delivery timelines.</p>
+                <h3 class="text-xl font-black text-[#13241f]">{{ __('service_logistics_title') }}</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ __('service_logistics_text') }}</p>
             </article>
 
         </div>
