@@ -251,7 +251,7 @@
     <div class="mx-auto max-w-6xl overflow-hidden rounded-2xl bg-white/95 shadow-2xl shadow-[#092114]/10 ring-1 ring-black/5 backdrop-blur">
 
         <div class="px-6 py-8 text-center md:px-10">
-            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">W{{ __('home.why_us_title') }}</p>
+            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">{{ __('why_us_title') }}</p>
             <h2 class="mt-2 text-3xl font-black tracking-normal text-[#13241f] md:text-4xl">
                 {{ __('why_us_heading') }}
             </h2>
