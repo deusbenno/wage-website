@@ -79,7 +79,31 @@
 
   "product_spice_tag": "Gewürz",
   "product_fresh_tag": "Frische Produkte",
-  "product_staples_tag": "Grundnahrungsmittel"
+  "product_staples_tag": "Grundnahrungsmittel",
+
+  
+  "services_title": "Unsere Dienstleistungen",
+  "services_heading": "Vom Bauernhof bis zum Markt – Wir schaffen Mehrwert",
+  "services_description": "Wir optimieren die gesamte landwirtschaftliche Lieferkette in Tansania und verbinden Landwirte mit lokalen und internationalen Märkten.",
+
+  "service_aggregation_title": "Produktbündelung",
+  "service_aggregation_text": "Beschaffung hochwertiger Ernten direkt von Kleinbauern in den wichtigsten Anbaugebieten.",
+
+  "service_sorting_title": "Sortierung und Qualitätsbewertung",
+  "service_sorting_text": "Sicherstellung exportfähiger Qualitätsstandards durch sorgfältige Prüfung und Klassifizierung.",
+
+  "service_processing_title": "Verarbeitung und Wertschöpfung",
+  "service_processing_text": "Modernes Trocknen, Mahlen und Verarbeiten zur Steigerung des Marktwertes landwirtschaftlicher Produkte.",
+
+  "service_packaging_title": "Verpackung",
+  "service_packaging_text": "Hygienische und hochwertige Verpackung für nationale und internationale Märkte.",
+
+  "service_storage_title": "Lagerung",
+  "service_storage_text": "Sichere Lager mit kontrollierter Luftfeuchtigkeit und professionellen Lagerbedingungen.",
+
+  "service_logistics_title": "Logistik und Lieferung",
+  "service_logistics_text": "Zuverlässige Transport- und Lieferlösungen für eine pünktliche Warenverteilung."
+
 
 
 }

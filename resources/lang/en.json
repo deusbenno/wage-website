@@ -75,5 +75,29 @@
 "product_avocado_text": "Top-grade Hass and Fuerte avocados, carefully sorted for local and export markets.",
 
 "product_maize_title": "Fortified Maize Flour",
-"product_maize_text": "Nutrient-rich finely milled maize flour ideal for traditional high-quality meals."
+"product_maize_text": "Nutrient-rich finely milled maize flour ideal for traditional high-quality meals.",
+
+
+  "services_title": "Our Services",
+  "services_heading": "From Farm to Market - We Deliver Value",
+  "services_description": "We optimize the entire agricultural supply chain in Tanzania, ensuring farmers get fair market access while buyers receive premium grade commodities.",
+
+  "service_aggregation_title": "Produce Aggregation",
+  "service_aggregation_text": "Sourcing high-yield crops directly from dedicated smallholder farmers across major agricultural regions.",
+
+  "service_sorting_title": "Sorting & Grading",
+  "service_sorting_text": "Ensuring premium, export-ready quality standards through meticulous screening and classification metrics.",
+
+  "service_processing_title": "Processing & Value Addition",
+  "service_processing_text": "Advanced drying, precision grinding, and multi-stage milling to unlock top market value from standard yields.",
+
+  "service_packaging_title": "Packaging",
+  "service_packaging_text": "Hygienic, robust packaging designed flawlessly for domestic shelves and demanding international export conditions.",
+
+  "service_storage_title": "Warehouse Storage",
+  "service_storage_text": "Safe, pest-free storage facilities equipped with standardized humidity and clean product handling systems.",
+
+  "service_logistics_title": "Logistics & Delivery",
+  "service_logistics_text": "Dependable supply chain transport offering swift distribution channels and precise delivery timelines."
+
 }

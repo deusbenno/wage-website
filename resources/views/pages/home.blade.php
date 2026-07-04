@@ -25,48 +25,6 @@
 </head>
 
 <body x-data="{ feedbackOpen: false }" class="bg-[#f6f8f2] font-sans text-[#10251d] antialiased">
-@php
-    $features = [
-        [
-            'title' => 'Premium Product Categories',
-            'text' => 'Maize Flour, Avocados, Spices & More',
-            'icon' => '<path d="M7 20c0-8 4-13 12-15-.4 8-5 12-12 12"/><path d="M7 20c0-5-2-8-6-10 5-.4 8 2 9 6"/>',
-        ],
-        [
-            'title' => 'Local & International Markets',
-            'text' => 'Serving Local Buyers and Global Markets',
-            'icon' => '<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 0 20"/><path d="M12 2a15.3 15.3 0 0 0 0 20"/>',
-        ],
-        [
-            'title' => 'Quality Processing',
-            'text' => 'Advanced Processing, Sorting & Packaging',
-            'icon' => '<path d="m15.5 7.5-5.2 5.2-1.8-1.8"/><path d="M12 2l2.2 2 3-.5.9 2.9 2.7 1.4-1.4 2.7.5 3-2.9.9-1.4 2.7-2.7-1.4-3 .5-.9-2.9-2.7-1.4 1.4-2.7-.5-3 2.9-.9z"/><path d="m8.5 17.5-1.8 4.2 5.3-2.1 5.3 2.1-1.8-4.2"/>',
-        ],
-        [
-            'title' => 'Farmer Partnerships',
-            'text' => 'Working Together for Sustainable Growth',
-            'icon' => '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
-        ],
-    ];
-
-    $products = [
-        ['name' => 'Maize Flour', 'text' => 'High quality maize flour for diverse uses', 'image' => 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=700&q=80'],
-        ['name' => 'Fresh Avocados', 'text' => 'Premium avocados, sourced from trusted farmers', 'image' => 'https://images.unsplash.com/photo-1601039641847-7857b994d704?auto=format&fit=crop&w=700&q=80'],
-        ['name' => 'Ginger', 'text' => 'Fresh ginger, dried ginger & ginger powder', 'image' => 'https://images.unsplash.com/photo-1615485500834-bc10199bc727?auto=format&fit=crop&w=700&q=80'],
-        ['name' => 'Turmeric', 'text' => 'Fresh turmeric, dried turmeric & turmeric powder', 'image' => 'https://images.unsplash.com/photo-1615485291234-9d694218aeb3?auto=format&fit=crop&w=700&q=80'],
-        ['name' => 'Cloves', 'text' => 'High quality cloves for local & export markets', 'image' => 'https://source.unsplash.com/700x500/?cloves,spice'],
-        ['name' => 'Other Products', 'text' => 'Other agricultural products based on seasonality & demand', 'image' => 'https://images.unsplash.com/photo-1615484477778-ca3b77940c25?auto=format&fit=crop&w=700&q=80'],
-    ];
-
-    $services = [
-        ['title' => 'Produce Aggregation', 'text' => 'Sourcing from farmers across regions', 'icon' => '<path d="M7 20c0-7 4-12 12-14-.4 7-5 11-12 11"/><path d="M7 20c0-4-2-7-6-9 4-.3 7 1.5 8 5"/>'],
-        ['title' => 'Sorting & Grading', 'text' => 'Ensuring premium quality standards', 'icon' => '<circle cx="5" cy="6" r="2"/><circle cx="17" cy="6" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="7" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7.5 10.5 11M13.5 11 16 7.5M10.5 13 8 16.5M13.5 13 17 16.5"/>'],
-        ['title' => 'Processing & Value Addition', 'text' => 'Drying, grinding & other processing', 'icon' => '<path d="M3 21h18"/><path d="M5 21V9l6 4V9l8 5v7"/><path d="M7 16h2"/><path d="M13 16h2"/><path d="M17 16h2"/><path d="M9 9V5h4v6"/>'],
-        ['title' => 'Packaging', 'text' => 'Hygienic packaging for local & export markets', 'icon' => '<path d="m21 8-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/><path d="m7.5 5.5 9 5"/>'],
-        ['title' => 'Warehouse Storage', 'text' => 'Safe storage with proper handling systems', 'icon' => '<path d="M3 21h18"/><path d="M4 21V8l8-5 8 5v13"/><path d="M8 21v-8h8v8"/><path d="M8 11h8"/><path d="M10 17h4"/>'],
-        ['title' => 'Logistics & Delivery', 'text' => 'Reliable transport & timely delivery', 'icon' => '<path d="M10 17H5a2 2 0 0 1-2-2V6h11v11"/><path d="M14 9h4l3 4v4h-3"/><circle cx="7" cy="17" r="2"/><circle cx="16" cy="17" r="2"/>'],
-    ];
-@endphp
 
 <header x-data="{ open: false, langOpen: false }" class="fixed left-0 top-0 z-50 w-full border-b border-[#d2e829]/20 bg-gradient-to-r from-[#04140c] via-[#0b341c] to-[#062414] text-white shadow-xl shadow-black/20">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
@@ -670,9 +628,9 @@
 <section id="services" class="bg-[#f8faf7] px-5 py-20 lg:px-8">
     <div class="mx-auto max-w-7xl">
         <div class="text-center max-w-3xl mx-auto">
-            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">Our Services</p>
-            <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f] sm:text-5xl">From Farm to Market - We Deliver Value</h2>
-            <p class="mt-4 text-base leading-7 text-[#24352f]/80">We optimize the entire agricultural supply chain in Tanzania, ensuring farmers get fair market access while buyers receive premium grade commodities.</p>
+            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">{{ __('services_title') }}</p>
+            <h2 class="mt-2 text-4xl font-black tracking-normal text-[#13241f] sm:text-5xl">{{ __('services_heading') }}</h2>
+            <p class="mt-4 text-base leading-7 text-[#24352f]/80">{{ __('services_description') }}</p>
         </div>
 
         <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -684,8 +642,8 @@
                         <path d="M19 9a7 7 0 0 0-14 0c0 3 2 5 2 7h10s2-2 2-7Z" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-black text-[#13241f]">Produce Aggregation</h3>
-                <p class="mt-2 text-sm leading-6 text-[#24352f]">Sourcing high-yield crops directly from dedicated smallholder farmers across major agricultural regions.</p>
+                <h3 class="text-xl font-black text-[#13241f]">{{ __('service_aggregation_title') }}</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ __('service_aggregation_text') }}</p>
             </article>
 
             <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
@@ -696,8 +654,8 @@
                         <path d="M9 2h6v4H9z" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-black text-[#13241f]">Sorting & Grading</h3>
-                <p class="mt-2 text-sm leading-6 text-[#24352f]">Ensuring premium, export-ready quality standards through meticulous screening and classification metrics.</p>
+                <h3 class="text-xl font-black text-[#13241f]">{{ __('service_sorting_title') }}</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ __('service_sorting_text') }}</p>
             </article>
 
             <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
@@ -707,8 +665,8 @@
                         <path d="M17 14h2" /><path d="M17 18h2" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-black text-[#13241f]">Processing & Value Addition</h3>
-                <p class="mt-2 text-sm leading-6 text-[#24352f]">Advanced drying, precision grinding, and multi-stage milling to unlock top market value from standard yields.</p>
+                <h3 class="text-xl font-black text-[#13241f]">{{ __('service_processing_title') }}</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ __('service_processing_text') }}</p>
             </article>
 
             <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
@@ -718,8 +676,8 @@
                         <polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-black text-[#13241f]">Packaging</h3>
-                <p class="mt-2 text-sm leading-6 text-[#24352f]">Hygienic, robust packaging designed flawlessly for domestic shelves and demanding international export conditions.</p>
+                <h3 class="text-xl font-black text-[#13241f]">{{ __('service_packaging_title') }}</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ __('service_packaging_text') }}</p>
             </article>
 
             <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
@@ -729,8 +687,8 @@
                         <polyline points="9 22 9 12 15 12 15 22" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-black text-[#13241f]">Warehouse Storage</h3>
-                <p class="mt-2 text-sm leading-6 text-[#24352f]">Safe, pest-free storage facilities equipped with standardized humidity and clean product handling systems.</p>
+                <h3 class="text-xl font-black text-[#13241f]">{{ __('service_storage_title') }}</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ __('service_storage_text') }}</p>
             </article>
 
             <article class="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#cfd9cb]/40">
@@ -741,8 +699,8 @@
                         <circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
                     </svg>
                 </div>
-                <h3 class="text-xl font-black text-[#13241f]">Logistics & Delivery</h3>
-                <p class="mt-2 text-sm leading-6 text-[#24352f]">Dependable supply chain transport offering swift distribution channels and precise delivery timelines.</p>
+                <h3 class="text-xl font-black text-[#13241f]">{{ __('service_logistics_title') }}</h3>
+                <p class="mt-2 text-sm leading-6 text-[#24352f]">{{ __('service_logistics_text') }}</p>
             </article>
 
         </div>

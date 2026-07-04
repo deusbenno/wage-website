@@ -79,6 +79,29 @@
 
   "product_spice_tag": "Kruiden",
   "product_fresh_tag": "Verse producten",
-  "product_staples_tag": "Basisvoedsel"
+  "product_staples_tag": "Basisvoedsel",
+
+  "services_title": "Onze Diensten",
+  "services_heading": "Van Boerderij tot Markt - Wij Leveren Waarde",
+  "services_description": "Wij optimaliseren de volledige agrarische toeleveringsketen in Tanzania zodat boeren eerlijke markttoegang krijgen en kopers producten van topkwaliteit ontvangen.",
+
+  "service_aggregation_title": "Productverzameling",
+  "service_aggregation_text": "Het verzamelen van hoogwaardige landbouwproducten rechtstreeks van kleinschalige boeren.",
+
+  "service_sorting_title": "Sorteren en Kwaliteitscontrole",
+  "service_sorting_text": "Het waarborgen van exportkwaliteit door zorgvuldige selectie en classificatie.",
+
+  "service_processing_title": "Verwerking en Waardetoevoeging",
+  "service_processing_text": "Geavanceerd drogen, malen en verwerken om de marktwaarde van producten te verhogen.",
+
+  "service_packaging_title": "Verpakking",
+  "service_packaging_text": "Hygiënische en duurzame verpakking voor zowel lokale als internationale markten.",
+
+  "service_storage_title": "Magazijnopslag",
+  "service_storage_text": "Veilige opslagfaciliteiten met gecontroleerde vochtigheid en professionele productbehandeling.",
+
+  "service_logistics_title": "Logistiek en Levering",
+  "service_logistics_text": "Betrouwbare transport- en distributiediensten voor tijdige levering."
+
 
 }

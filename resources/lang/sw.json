@@ -79,7 +79,30 @@
 
   "product_spice_tag": "Viungo",
   "product_fresh_tag": "Bidhaa Safi",
-  "product_staples_tag": "Chakula Kikuu"
+  "product_staples_tag": "Chakula Kikuu",
 
+  
+  "services_title": "Huduma Zetu",
+  "services_heading": "Kutoka Shambani Hadi Sokoni - Tunatoa Thamani",
+  "services_description": "Tunaboresha mnyororo mzima wa usambazaji wa mazao nchini Tanzania ili kuhakikisha wakulima wanapata masoko yenye haki na wanunuzi wanapata bidhaa za ubora wa juu.",
 
+  "service_aggregation_title": "Ukusanyaji wa Mazao",
+  "service_aggregation_text": "Kukusanya mazao bora moja kwa moja kutoka kwa wakulima wadogo katika maeneo mbalimbali ya kilimo.",
+
+  "service_sorting_title": "Upangaji na Uchambuzi wa Ubora",
+  "service_sorting_text": "Kuhakikisha bidhaa zinakidhi viwango vya ubora vinavyohitajika kwa masoko ya ndani na nje.",
+
+  "service_processing_title": "Usindikaji na Uongezaji Thamani",
+  "service_processing_text": "Kukausha, kusaga na kusindika mazao kwa teknolojia za kisasa ili kuongeza thamani yake sokoni.",
+
+  "service_packaging_title": "Ufungashaji",
+  "service_packaging_text": "Ufungashaji wa usafi na ubora unaokidhi mahitaji ya masoko ya ndani na kimataifa.",
+
+  "service_storage_title": "Uhifadhi Ghalani",
+  "service_storage_text": "Maghala salama yenye mazingira bora ya kuhifadhi bidhaa dhidi ya wadudu na unyevu.",
+
+  "service_logistics_title": "Usafirishaji na Uwasilishaji",
+  "service_logistics_text": "Huduma za usafirishaji wa uhakika zenye kuhakikisha bidhaa zinafika kwa wakati."
 }
+
+
