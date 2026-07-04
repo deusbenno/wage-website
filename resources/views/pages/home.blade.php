@@ -418,7 +418,7 @@
 
         <!-- Image Wrapper -->
         <div class="overflow-hidden rounded-2xl shadow-xl shadow-black/10 lg:h-full flex items-center">
-            <img src="https://images.unsplash.com/photo-1595275372297-f5d64f8ca31a?auto=format&fit=crop&w=1200&q=80" alt="African agricultural logistics and grain storage warehouse" class="h-[450px] lg:h-[550px] w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1595275372297-f5d64f8ca31a?auto=format&fit=crop&w=1200&q=80" alt="African agricultural warehouse for crop storage" class="h-[360px] w-full object-cover">
         </div>
     </div>
 </section>
