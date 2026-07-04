@@ -363,24 +363,65 @@
 </section>
 
     <section id="about" class="bg-white px-5 py-20 lg:px-8">
-        <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">About WAGE</p>
-                <h2 class="mt-3 text-4xl font-black tracking-normal text-[#13241f] md:text-5xl">Who We Are</h2>
-                <p class="mt-6 max-w-xl text-base leading-8 text-[#24352f]">
-                    WAGE Solutions Limited is a Tanzanian agribusiness company focused on the sourcing, aggregation, sorting, packing, processing, and marketing of maize flour, avocados, spices, and other agricultural products from farmers in regions across the country. We connect smallholder farmers to structured markets while improving product quality, handling, and value addition.
-                </p>
-                <a href="#contact" class="mt-8 inline-flex items-center gap-3 rounded-full bg-[#155f2b] px-7 py-3 text-sm font-extrabold uppercase text-white transition hover:bg-[#0f4820]">
-                    Learn More
-                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                </a>
+    <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+        <div>
+            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">About WAGE</p>
+            <h2 class="mt-3 text-4xl font-black tracking-normal text-[#13241f] md:text-5xl">Who We Are</h2>
+            
+            <p class="mt-6 max-w-2xl text-base leading-8 text-[#24352f]">
+                WAGE Solutions Limited is a Tanzanian agribusiness company focused on the sourcing, aggregation, sorting, packing, processing, and marketing of maize flour, avocados, spices, and other agricultural products from farmers in regions across the country. We connect smallholder farmers to structured markets while improving product quality, handling, and value addition.
+            </p>
+
+            <!-- Vision & Mission Grid -->
+            <div class="mt-10 grid gap-8 sm:grid-cols-2">
+                <!-- Vision -->
+                <div class="flex flex-col gap-3">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#15812d]/10 text-[#15812d]">
+                        <!-- Eye/Globe Icon -->
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-[#13241f]">Our Vision</h3>
+                        <p class="mt-2 text-sm leading-6 text-[#24352f]">
+                            To become a leading Tanzanian agribusiness company in the aggregation, value addition, and supply of maize flour, avocados, spices, and other premium agricultural products to local and international markets.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mission -->
+                <div class="flex flex-col gap-3">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#15812d]/10 text-[#15812d]">
+                        <!-- Target/Bullseye Icon -->
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-[#13241f]">Our Mission</h3>
+                        <p class="mt-2 text-sm leading-6 text-[#24352f]">
+                            To source quality agricultural produce from farmers, improve its market value through proper handling, storage, processing and packaging, and deliver reliable, high-quality products to domestic and international buyers while creating sustainable income opportunities across the agricultural value chain.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="overflow-hidden rounded-2xl shadow-xl shadow-black/10">
-                <img src="https://source.unsplash.com/1200x800/?agricultural,warehouse,grain,storage" alt="Agricultural warehouse for crop storage" class="h-[360px] w-full object-cover">
-            </div>
+            <a href="#contact" class="mt-10 inline-flex items-center gap-3 rounded-full bg-[#155f2b] px-7 py-3 text-sm font-extrabold uppercase text-white transition hover:bg-[#0f4820]">
+                Learn More
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
         </div>
-    </section>
+
+        <!-- Image Wrapper -->
+        <div class="overflow-hidden rounded-2xl shadow-xl shadow-black/10 lg:h-full flex items-center">
+            <img src="https://images.unsplash.com/photo-1595275372297-f5d64f8ca31a?auto=format&fit=crop&w=1200&q=80" alt="African agricultural logistics and grain storage warehouse" class="h-[450px] lg:h-[550px] w-full object-cover">
+        </div>
+    </div>
+</section>
 
     <section id="products" class="bg-[#f4f6ef] px-5 py-16 lg:px-8">
         <div class="mx-auto max-w-7xl">
