@@ -101,7 +101,43 @@
   "service_storage_text": "Veilige opslagfaciliteiten met gecontroleerde vochtigheid en professionele productbehandeling.",
 
   "service_logistics_title": "Logistiek en Levering",
-  "service_logistics_text": "Betrouwbare transport- en distributiediensten voor tijdige levering."
+  "service_logistics_text": "Betrouwbare transport- en distributiediensten voor tijdige levering.",
+
+  
+  "footer.brand_name": "WAGE Solutions Limited",
+  "footer.description": "Premium Tanzaniaanse landbouwproducten, zorgvuldig verwerkt en geleverd voor lokale en internationale markten.",
+
+  "footer.feedback_button": "Feedback verzenden",
+
+  "footer.location_title": "Bedrijfslocatie",
+  "footer.location_text": "Morogoro-regio, Mvomero-district, Dakawa-ward, Wami Sokoine Kibao cha Ranch nabij Makunganya Moskee",
+
+  "footer.postal_title": "Postadres",
+
+  "footer.phone_title": "Telefoon",
+
+  "footer.email_title": "E-mail",
+
+  "footer.map_title": "Vind ons op de kaart",
+  "footer.map_heading": "Dakawa, Mvomero, Morogoro",
+  "footer.map_description": "De kaart toont Dakawa in het district Mvomero, regio Morogoro. Neem contact op met WAGE Solutions Limited via de bovenstaande telefoonnummers voor exacte aanwijzingen.",
+
+  "footer.map_button": "Open Google Maps",
+
+  "footer.nav_home": "Home",
+  "footer.nav_products": "Producten",
+  "footer.nav_services": "Diensten",
+
+  "footer.copyright": "© :year WAGE Solutions Limited. Alle rechten voorbehouden.",
+
+  "feedback.title_small": "WAGE Feedback",
+  "feedback.title": "Feedback verzenden",
+  "feedback.full_name": "Volledige naam",
+  "feedback.contact": "Telefoon of e-mail",
+  "feedback.subject": "Onderwerp",
+  "feedback.message": "Bericht",
+  "feedback.cancel": "Annuleren",
+  "feedback.submit": "Feedback verzenden"
 
 
 }

@@ -48,7 +48,7 @@
 "about_vision_text": "Kuwa kampuni inayoongoza Tanzania katika ukusanyaji, kuongeza thamani na usambazaji wa unga wa mahindi, parachichi, viungo na bidhaa bora za kilimo ndani na nje ya nchi.",
 
 "about_mission_title": "Dhamira Yetu",
-"about_mission_text": "Kukusanya mazao bora kutoka kwa wakulima, kuongeza thamani kupitia usindikaji, uhifadhi na ufungashaji bora, na kusambaza bidhaa bora kwa soko la ndani na nje huku tukijenga kipato endelevu.",
+"about_mission_text": "Kukusanya mazao bora kutoka kwa wakulima, kuongeza thamani kupitia usindikaji, uhifadhi na ufungaji bora, na kusambaza bidhaa bora kwa soko la ndani na nje huku tukijenga kipato endelevu.",
 
 "about_button": "Jifunze Zaidi",
 
@@ -95,14 +95,51 @@
   "service_processing_title": "Usindikaji na Uongezaji Thamani",
   "service_processing_text": "Kukausha, kusaga na kusindika mazao kwa teknolojia za kisasa ili kuongeza thamani yake sokoni.",
 
-  "service_packaging_title": "Ufungashaji",
-  "service_packaging_text": "Ufungashaji wa usafi na ubora unaokidhi mahitaji ya masoko ya ndani na kimataifa.",
+  "service_packaging_title": "Ufungaji",
+  "service_packaging_text": "Ufungaji wa usafi na ubora unaokidhi mahitaji ya masoko ya ndani na kimataifa.",
 
   "service_storage_title": "Uhifadhi Ghalani",
   "service_storage_text": "Maghala salama yenye mazingira bora ya kuhifadhi bidhaa dhidi ya wadudu na unyevu.",
 
   "service_logistics_title": "Usafirishaji na Uwasilishaji",
-  "service_logistics_text": "Huduma za usafirishaji wa uhakika zenye kuhakikisha bidhaa zinafika kwa wakati."
+  "service_logistics_text": "Huduma za usafirishaji wa uhakika zenye kuhakikisha bidhaa zinafika kwa wakati.",
+
+  
+  "footer.brand_name": "WAGE Solutions Limited",
+  "footer.description": "Bidhaa bora za kilimo za Tanzania, zinazosindikwa na kusambazwa kwa uangalifu kwa masoko ya ndani na kimataifa.",
+
+  "footer.feedback_button": "Tuma Maoni",
+
+  "footer.location_title": "Mahali pa Biashara",
+  "footer.location_text": "Mkoa wa Morogoro, Wilaya ya Mvomero, Kata ya Dakawa, Wami Sokoine Kibao cha Ranchi karibu na Msikiti wa Makunganya",
+
+  "footer.postal_title": "Anwani ya Posta",
+
+  "footer.phone_title": "Simu",
+
+  "footer.email_title": "Barua Pepe",
+
+  "footer.map_title": "Tupate kwenye Ramani",
+  "footer.map_heading": "Dakawa, Mvomero, Morogoro",
+  "footer.map_description": "Ramani inaonyesha eneo la Dakawa Wilayani Mvomero, Mkoa wa Morogoro. Kwa maelekezo zaidi wasiliana na WAGE Solutions Limited kupitia namba za simu hapo juu.",
+
+  "footer.map_button": "Fungua Google Maps",
+
+  "footer.nav_home": "Nyumbani",
+  "footer.nav_products": "Bidhaa",
+  "footer.nav_services": "Huduma",
+
+  "footer.copyright": "© :year WAGE Solutions Limited. Haki zote zimehifadhiwa.",
+
+  "feedback.title_small": "Maoni ya WAGE",
+  "feedback.title": "Tuma Maoni",
+  "feedback.full_name": "Jina Kamili",
+  "feedback.contact": "Simu au Barua Pepe",
+  "feedback.subject": "Mada",
+  "feedback.message": "Ujumbe",
+  "feedback.cancel": "Ghairi",
+  "feedback.submit": "Tuma Maoni"
+
 }
 
 

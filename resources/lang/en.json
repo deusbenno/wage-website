@@ -97,6 +97,42 @@
 "service_storage_text": "Safe, pest-free storage facilities equipped with standardized humidity and clean product handling systems.",
 
 "service_logistics_title": "Logistics & Delivery",
-"service_logistics_text": "Dependable supply chain transport offering swift distribution channels and precise delivery timelines."
+"service_logistics_text": "Dependable supply chain transport offering swift distribution channels and precise delivery timelines.",
+
+
+  "footer.brand_name": "WAGE Solutions Limited",
+  "footer.description": "Premium Tanzanian agricultural products, processed and supplied with care for local and international markets.",
+
+  "footer.feedback_button": "Send Feedback",
+
+  "footer.location_title": "Business Location",
+  "footer.location_text": "Morogoro Region, Mvomero District, Dakawa Ward, Wami Sokoine Kibao cha Ranch near Makunganya Mosque",
+
+  "footer.postal_title": "Postal Address",
+
+  "footer.phone_title": "Telephone",
+
+  "footer.email_title": "Email",
+
+  "footer.map_title": "Find Us on the Map",
+  "footer.map_heading": "Dakawa, Mvomero, Morogoro",
+  "footer.map_description": "The map points visitors to Dakawa Ward in Mvomero District, Morogoro Region. For exact arrival guidance, contact WAGE Solutions Limited using the phone numbers above.",
+
+  "footer.map_button": "Open Google Maps",
+
+  "footer.nav_home": "Home",
+  "footer.nav_products": "Products",
+  "footer.nav_services": "Services",
+
+  "footer.copyright": "© :year WAGE Solutions Limited. All rights reserved.",
+
+  "feedback.title_small": "WAGE Feedback",
+  "feedback.title": "Send Feedback",
+  "feedback.full_name": "Full Name",
+  "feedback.contact": "Phone or Email",
+  "feedback.subject": "Subject",
+  "feedback.message": "Message",
+  "feedback.cancel": "Cancel",
+  "feedback.submit": "Submit Feedback"
 
 }
