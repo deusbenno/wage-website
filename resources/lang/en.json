@@ -100,39 +100,29 @@
 "service_logistics_text": "Dependable supply chain transport offering swift distribution channels and precise delivery timelines.",
 
 
-  "footer.brand_name": "WAGE Solutions Limited",
-  "footer.description": "Premium Tanzanian agricultural products, processed and supplied with care for local and international markets.",
+ 
+  "footer_description": "Premium Tanzanian agricultural products, processed and supplied with care for local and international markets.",
+  "send_feedback": "Send Feedback",
 
-  "footer.feedback_button": "Send Feedback",
+  "business_location": "Business Location",
+  "postal_address": "Postal Address",
+  "telephone": "Telephone",
+  "email": "Email",
 
-  "footer.location_title": "Business Location",
-  "footer.location_text": "Morogoro Region, Mvomero District, Dakawa Ward, Wami Sokoine Kibao cha Ranch near Makunganya Mosque",
+  "find_us_map": "Find Us on the Map",
+  "map_description": "The map points visitors to Dakawa Ward in Mvomero District, Morogoro Region. For exact arrival guidance, contact WAGE Solutions Limited using the phone numbers above.",
+  "open_google_maps": "Open Google Maps",
 
-  "footer.postal_title": "Postal Address",
+  "all_rights_reserved": "All rights reserved.",
 
-  "footer.phone_title": "Telephone",
+  "feedback_title": "WAGE Feedback",
+  "submit_feedback": "Submit Feedback",
 
-  "footer.email_title": "Email",
+  "full_name": "Full Name",
+  "phone_or_email": "Phone or Email",
+  "subject": "Subject",
+  "message": "Message",
+  "cancel": "Cancel"
 
-  "footer.map_title": "Find Us on the Map",
-  "footer.map_heading": "Dakawa, Mvomero, Morogoro",
-  "footer.map_description": "The map points visitors to Dakawa Ward in Mvomero District, Morogoro Region. For exact arrival guidance, contact WAGE Solutions Limited using the phone numbers above.",
-
-  "footer.map_button": "Open Google Maps",
-
-  "footer.nav_home": "Home",
-  "footer.nav_products": "Products",
-  "footer.nav_services": "Services",
-
-  "footer.copyright": "© :year WAGE Solutions Limited. All rights reserved.",
-
-  "feedback.title_small": "WAGE Feedback",
-  "feedback.title": "Send Feedback",
-  "feedback.full_name": "Full Name",
-  "feedback.contact": "Phone or Email",
-  "feedback.subject": "Subject",
-  "feedback.message": "Message",
-  "feedback.cancel": "Cancel",
-  "feedback.submit": "Submit Feedback"
 
 }

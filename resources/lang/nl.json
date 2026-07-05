@@ -104,40 +104,30 @@
   "service_logistics_text": "Betrouwbare transport- en distributiediensten voor tijdige levering.",
 
   
-  "footer.brand_name": "WAGE Solutions Limited",
-  "footer.description": "Premium Tanzaniaanse landbouwproducten, zorgvuldig verwerkt en geleverd voor lokale en internationale markten.",
 
-  "footer.feedback_button": "Feedback verzenden",
+  "footer_description": "Premium Tanzaniaanse landbouwproducten, zorgvuldig verwerkt en geleverd voor lokale en internationale markten.",
+  "send_feedback": "Feedback verzenden",
 
-  "footer.location_title": "Bedrijfslocatie",
-  "footer.location_text": "Morogoro-regio, Mvomero-district, Dakawa-ward, Wami Sokoine Kibao cha Ranch nabij Makunganya Moskee",
+  "business_location": "Bedrijfslocatie",
+  "postal_address": "Postadres",
+  "telephone": "Telefoon",
+  "email": "E-mail",
 
-  "footer.postal_title": "Postadres",
+  "find_us_map": "Vind ons op de kaart",
+  "map_description": "De kaart toont Dakawa in het district Mvomero, regio Morogoro. Neem contact op met WAGE Solutions Limited via de bovenstaande telefoonnummers voor exacte aanwijzingen.",
+  "open_google_maps": "Open Google Maps",
 
-  "footer.phone_title": "Telefoon",
+  "all_rights_reserved": "Alle rechten voorbehouden.",
 
-  "footer.email_title": "E-mail",
+  "feedback_title": "WAGE Feedback",
+  "submit_feedback": "Feedback verzenden",
 
-  "footer.map_title": "Vind ons op de kaart",
-  "footer.map_heading": "Dakawa, Mvomero, Morogoro",
-  "footer.map_description": "De kaart toont Dakawa in het district Mvomero, regio Morogoro. Neem contact op met WAGE Solutions Limited via de bovenstaande telefoonnummers voor exacte aanwijzingen.",
+  "full_name": "Volledige naam",
+  "phone_or_email": "Telefoon of e-mail",
+  "subject": "Onderwerp",
+  "message": "Bericht",
+  "cancel": "Annuleren"
 
-  "footer.map_button": "Open Google Maps",
-
-  "footer.nav_home": "Home",
-  "footer.nav_products": "Producten",
-  "footer.nav_services": "Diensten",
-
-  "footer.copyright": "© :year WAGE Solutions Limited. Alle rechten voorbehouden.",
-
-  "feedback.title_small": "WAGE Feedback",
-  "feedback.title": "Feedback verzenden",
-  "feedback.full_name": "Volledige naam",
-  "feedback.contact": "Telefoon of e-mail",
-  "feedback.subject": "Onderwerp",
-  "feedback.message": "Bericht",
-  "feedback.cancel": "Annuleren",
-  "feedback.submit": "Feedback verzenden"
 
 
 }

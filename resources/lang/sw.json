@@ -105,40 +105,30 @@
   "service_logistics_text": "Huduma za usafirishaji wa uhakika zenye kuhakikisha bidhaa zinafika kwa wakati.",
 
   
-  "footer.brand_name": "WAGE Solutions Limited",
-  "footer.description": "Bidhaa bora za kilimo za Tanzania, zinazosindikwa na kusambazwa kwa uangalifu kwa masoko ya ndani na kimataifa.",
 
-  "footer.feedback_button": "Tuma Maoni",
+  "footer_description": "Bidhaa bora za kilimo za Tanzania, zinazosindikwa na kusambazwa kwa uangalifu kwa masoko ya ndani na kimataifa.",
+  "send_feedback": "Tuma Maoni",
 
-  "footer.location_title": "Mahali pa Biashara",
-  "footer.location_text": "Mkoa wa Morogoro, Wilaya ya Mvomero, Kata ya Dakawa, Wami Sokoine Kibao cha Ranchi karibu na Msikiti wa Makunganya",
+  "business_location": "Mahali pa Biashara",
+  "postal_address": "Anwani ya Posta",
+  "telephone": "Simu",
+  "email": "Barua Pepe",
 
-  "footer.postal_title": "Anwani ya Posta",
+  "find_us_map": "Tupate kwenye Ramani",
+  "map_description": "Ramani inaonyesha eneo la Dakawa Wilayani Mvomero, Mkoa wa Morogoro. Kwa maelekezo zaidi wasiliana na WAGE Solutions Limited kupitia namba za simu hapo juu.",
+  "open_google_maps": "Fungua Google Maps",
 
-  "footer.phone_title": "Simu",
+  "all_rights_reserved": "Haki zote zimehifadhiwa.",
 
-  "footer.email_title": "Barua Pepe",
+  "feedback_title": "Maoni ya WAGE",
+  "submit_feedback": "Tuma Maoni",
 
-  "footer.map_title": "Tupate kwenye Ramani",
-  "footer.map_heading": "Dakawa, Mvomero, Morogoro",
-  "footer.map_description": "Ramani inaonyesha eneo la Dakawa Wilayani Mvomero, Mkoa wa Morogoro. Kwa maelekezo zaidi wasiliana na WAGE Solutions Limited kupitia namba za simu hapo juu.",
+  "full_name": "Jina Kamili",
+  "phone_or_email": "Simu au Barua Pepe",
+  "subject": "Mada",
+  "message": "Ujumbe",
+  "cancel": "Ghairi"
 
-  "footer.map_button": "Fungua Google Maps",
-
-  "footer.nav_home": "Nyumbani",
-  "footer.nav_products": "Bidhaa",
-  "footer.nav_services": "Huduma",
-
-  "footer.copyright": "© :year WAGE Solutions Limited. Haki zote zimehifadhiwa.",
-
-  "feedback.title_small": "Maoni ya WAGE",
-  "feedback.title": "Tuma Maoni",
-  "feedback.full_name": "Jina Kamili",
-  "feedback.contact": "Simu au Barua Pepe",
-  "feedback.subject": "Mada",
-  "feedback.message": "Ujumbe",
-  "feedback.cancel": "Ghairi",
-  "feedback.submit": "Tuma Maoni"
 
 }
 
