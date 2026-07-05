@@ -600,12 +600,9 @@
     <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1.15fr]">
         <div>
             <div class="flex items-center gap-3">
-                <span class="grid h-12 w-12 place-items-center rounded-full border border-[#d2e829]/50 text-[#d2e829]">
-                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M7 20c0-8 4-13 12-15-.4 8-5 12-12 12"/>
-                        <path d="M7 20c0-5-2-8-6-10 5-.4 8 2 9 6"/>
-                    </svg>
-                </span>
+                <img src="{{ asset('images/logo.png') }}"
+     alt="WAGE Solutions Limited Logo"
+     class="h-14 w-auto">
                 <span class="leading-none">
                     <span class="block text-3xl font-black tracking-wide">WAGE</span>
                     <span class="block text-[11px] font-bold uppercase tracking-[0.18em] text-white/80">Solutions Limited</span>
