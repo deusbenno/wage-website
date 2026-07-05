@@ -599,6 +599,139 @@
         </form>
     </div>
 </div>
+<footer id="contact" class="bg-gradient-to-br from-[#04140c] via-[#0b301d] to-[#071d12] px-5 py-16 text-white lg:px-8">
+    <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1.15fr]">
+        <div>
+            <div class="flex items-center gap-3">
+                <span class="grid h-12 w-12 place-items-center rounded-full border border-[#d2e829]/50 text-[#d2e829]">
+                    <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 20c0-8 4-13 12-15-.4 8-5 12-12 12"/>
+                        <path d="M7 20c0-5-2-8-6-10 5-.4 8 2 9 6"/>
+                    </svg>
+                </span>
+                <span class="leading-none">
+                    <span class="block text-3xl font-black tracking-wide">WAGE</span>
+                    <span class="block text-[11px] font-bold uppercase tracking-[0.18em] text-white/80">Solutions Limited</span>
+                </span>
+            </div>
+
+            <p class="mt-6 max-w-xl text-base leading-8 text-white/78">
+                {{ __('footer_description') }}
+            </p>
+
+            <button type="button" @click="feedbackOpen = true" class="mt-8 inline-flex items-center gap-3 rounded-full bg-[#d2e829] px-7 py-3 text-sm font-extrabold uppercase text-[#082015] transition hover:bg-white">
+                {{ __('send_feedback') }}
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2">
+            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">{{ __('business_location') }}</p>
+                <p class="mt-3 leading-7 text-white/85">
+                    Morogoro Region, Mvomero District, Dakawa Ward, Wami Sokoine Kibao cha Ranch near Makunganya Mosque
+                </p>
+            </div>
+
+            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">{{ __('postal_address') }}</p>
+                <p class="mt-3 leading-7 text-white/85">P.O. Box 3294, Morogoro, Tanzania</p>
+            </div>
+
+            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">{{ __('telephone') }}</p>
+                <div class="mt-3 space-y-2 text-white/85">
+                    <a href="tel:+255786052912" class="block transition hover:text-[#d2e829]">+255 786 052 912</a>
+                    <a href="tel:+255679135676" class="block transition hover:text-[#d2e829]">+255 679 135 676</a>
+                </div>
+            </div>
+
+            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">{{ __('email') }}</p>
+                <a href="mailto:getupala@yahoo.co.uk" class="mt-3 block break-words text-white/85 transition hover:text-[#d2e829]">info@wagesolutions.com</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto mt-12 grid max-w-7xl gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+        <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
+            <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">{{ __('find_us_map') }}</p>
+            <h2 class="mt-3 text-3xl font-black">Dakawa, Mvomero, Morogoro</h2>
+            <p class="mt-4 leading-7 text-white/78">
+                {{ __('map_description') }}
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Dakawa%20Mvomero%20Morogoro%20Tanzania" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-3 rounded-full border border-[#d2e829] px-6 py-3 text-sm font-extrabold uppercase text-[#d2e829] transition hover:bg-[#d2e829] hover:text-[#082015]">
+                {{ __('open_google_maps') }}
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+        </div>
+
+        <div class="overflow-hidden rounded-xl border border-white/10 bg-white/[0.08] shadow-2xl shadow-black/20">
+            <iframe
+                title="WAGE Solutions Limited location in Dakawa, Mvomero, Morogoro"
+                src="https://www.google.com/maps?q=Dakawa%20Mvomero%20Morogoro%20Tanzania&output=embed"
+                class="h-[360px] w-full"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+    </div>
+
+    <div class="mx-auto mt-12 flex max-w-7xl flex-col gap-4 border-t border-white/10 pt-6 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
+        <p>&copy; {{ date('Y') }} WAGE Solutions Limited. {{ __('all_rights_reserved') }}</p>
+        <div class="flex gap-5 font-bold uppercase">
+            <a href="#" class="transition hover:text-[#d2e829]">Home</a>
+            <a href="#products" class="transition hover:text-[#d2e829]">Products</a>
+            <a href="#services" class="transition hover:text-[#d2e829]">Services</a>
+        </div>
+    </div>
+</footer>
+
+<div x-show="feedbackOpen" x-transition.opacity class="fixed inset-0 z-[80] grid place-items-center bg-black/70 px-5" style="display: none;">
+    <div @click.away="feedbackOpen = false" class="w-full max-w-xl rounded-2xl bg-white p-6 shadow-2xl">
+        <div class="flex items-start justify-between gap-4">
+            <div>
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">{{ __('feedback_title') }}</p>
+                <h2 class="mt-1 text-3xl font-black text-[#13241f]">{{ __('submit_feedback') }}</h2>
+            </div>
+            <button type="button" @click="feedbackOpen = false" class="grid h-10 w-10 place-items-center rounded-full bg-[#eef5ec] text-[#13241f] transition hover:bg-[#d2e829]" aria-label="Close feedback form">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+        </div>
+
+        <form class="mt-6 space-y-4" @submit.prevent="feedbackOpen = false">
+            <div class="grid gap-4 sm:grid-cols-2">
+                <label class="block">
+                    <span class="text-sm font-bold text-[#24352f]">{{ __('full_name') }}</span>
+                    <input type="text" required class="mt-2 w-full rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20">
+                </label>
+                <label class="block">
+                    <span class="text-sm font-bold text-[#24352f]">{{ __('phone_or_email') }}</span>
+                    <input type="text" required class="mt-2 w-full rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20">
+                </label>
+            </div>
+
+            <label class="block">
+                <span class="text-sm font-bold text-[#24352f]">{{ __('subject') }}</span>
+                <input type="text" required class="mt-2 w-full rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20">
+            </label>
+
+            <label class="block">
+                <span class="text-sm font-bold text-[#24352f]">{{ __('message') }}</span>
+                <textarea rows="5" required class="mt-2 w-full resize-none rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20"></textarea>
+            </label>
+
+            <div class="flex flex-col gap-3 pt-2 sm:flex-row sm:justify-end">
+                <button type="button" @click="feedbackOpen = false" class="rounded-full border border-[#cfd9cb] px-6 py-3 text-sm font-extrabold uppercase text-[#24352f] transition hover:bg-[#eef5ec]">
+                    {{ __('cancel') }}
+                </button>
+                <button type="submit" class="rounded-full bg-[#15812d] px-7 py-3 text-sm font-extrabold uppercase text-white transition hover:bg-[#0f5f22]">
+                    {{ __('submit_feedback') }}
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>
