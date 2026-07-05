@@ -171,7 +171,7 @@
             slides: [
                 {
                     label: 'Fresh Avocados',
-                    image: 'https://i.pinimg.com/736x/17/29/16/17291665de1aa52b1d4b43366b99b69e.jpg',
+                    image: 'https://i.pinimg.com/1200x/2c/93/87/2c93879744d6ed3770e2cfd1f0e3db31.jpg',
                     alt: 'Fresh avocados growing on a tree'
                 },
                 {
