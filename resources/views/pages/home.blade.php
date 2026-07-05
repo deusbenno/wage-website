@@ -131,14 +131,15 @@
         </button>
     </div>
 
-    <!-- MOBILE MENU -->
+    <!-- MOBILE MENU 
     <div x-show="open" x-transition class="space-y-1 border-t border-white/10 bg-gradient-to-b from-[#082015] to-[#0b341c] px-5 py-4 text-sm font-bold uppercase lg:hidden">
       <a href="#" class="block rounded-lg px-3 py-2 text-[#d2e829]">{{ __('home.home') }}</a>
 <a href="#about" class="block rounded-lg px-3 py-2">{{ __('home.about') }}</a>
 <a href="#products" class="block rounded-lg px-3 py-2">{{ __('home.products') }}</a>
 <a href="#services" class="block rounded-lg px-3 py-2">{{ __('home.services') }}</a>
 <a href="#why-us" class="block rounded-lg px-3 py-2">{{ __('home.why_us') }}</a>
-<a href="#contact" class="block rounded-lg px-3 py-2">{{ __('home.contact') }}</a>
+<a href="#contact" class="block rounded-lg px-3 py-2">{{ __('home.contact') }}</a>--> 
+
         <!-- MOBILE LANGUAGE -->
         <div class="mt-3 border-t border-white/10 pt-3">
             <p class="px-3 text-xs text-white/60">Language</p>
