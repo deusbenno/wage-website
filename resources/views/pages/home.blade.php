@@ -72,28 +72,28 @@ $services = [
         'title' => __('service1_title'),
         'text' => __('service1_text'),
         'description' => __('service1_description'),
-        'image' => 'https://images.unsplash.com/photo-1595856456094-1a5c68962ff3?auto=format&fit=crop&w=700&q=80',
+        'image' => 'https://i.pinimg.com/1200x/4e/f9/b3/4ef9b3da8cd9152d90fa9234e9c398a1.jpg',
         'icon' => '<path d="M7 20c0-7 4-12 12-14-.4 7-5 11-12 11"/><path d="M7 20c0-4-2-7-6-9 4-.3 7 1.5 8 5"/>'
     ],
     [
         'title' => __('service2_title'),
         'text' => __('service2_text'),
         'description' => __('service2_description'),
-        'image' => 'https://images.unsplash.com/photo-1591129210712-4022db2e65d2?auto=format&fit=crop&w=700&q=80',
+        'image' => 'https://i.pinimg.com/1200x/d1/3e/04/d13e0411f3b6db4b9131c3cf73c3a3e0.jpg',
         'icon' => '<circle cx="5" cy="6" r="2"/><circle cx="17" cy="6" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="7" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7.5 10.5 11M13.5 11 16 7.5M10.5 13 8 16.5M13.5 13 17 16.5"/>'
     ],
     [
         'title' => __('service3_title'),
         'text' => __('service3_text'),
         'description' => __('service3_description'),
-        'image' => 'https://images.unsplash.com/photo-1615485291234-9d694218aeb3?auto=format&fit=crop&w=700&q=80',
+        'image' => 'https://i.pinimg.com/736x/19/57/5b/19575bb3dfac8580cac14273bddd409b.jpg',
         'icon' => '<path d="M3 21h18"/><path d="M5 21V9l6 4V9l8 5v7"/><path d="M7 16h2"/><path d="M13 16h2"/><path d="M17 16h2"/><path d="M9 9V5h4v6"/>'
     ],
     [
         'title' => __('service4_title'),
         'text' => __('service4_text'),
         'description' => __('service4_description'),
-        'image' => 'https://images.unsplash.com/photo-1628102491629-77858e80eb0b?auto=format&fit=crop&w=700&q=80',
+        'image' => 'https://i.pinimg.com/736x/50/e3/98/50e398cd6baf1a9727dd10b09a140e00.jpg',
         'icon' => '<path d="m21 8-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/><path d="m7.5 5.5 9 5"/>'
     ],
     [
