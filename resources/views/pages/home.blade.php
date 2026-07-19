@@ -68,12 +68,48 @@
     ];
 
     $services = [
-        ['title' => 'Produce Aggregation', 'text' => 'Sourcing from farmers across regions', 'icon' => '<path d="M7 20c0-7 4-12 12-14-.4 7-5 11-12 11"/><path d="M7 20c0-4-2-7-6-9 4-.3 7 1.5 8 5"/>'],
-        ['title' => 'Sorting & Grading', 'text' => 'Ensuring premium quality standards', 'icon' => '<circle cx="5" cy="6" r="2"/><circle cx="17" cy="6" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="7" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7.5 10.5 11M13.5 11 16 7.5M10.5 13 8 16.5M13.5 13 17 16.5"/>'],
-        ['title' => 'Processing & Value Addition', 'text' => 'Drying, grinding & other processing', 'icon' => '<path d="M3 21h18"/><path d="M5 21V9l6 4V9l8 5v7"/><path d="M7 16h2"/><path d="M13 16h2"/><path d="M17 16h2"/><path d="M9 9V5h4v6"/>'],
-        ['title' => 'Packaging', 'text' => 'Hygienic packaging for local & export markets', 'icon' => '<path d="m21 8-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/><path d="m7.5 5.5 9 5"/>'],
-        ['title' => 'Warehouse Storage', 'text' => 'Safe storage with proper handling systems', 'icon' => '<path d="M3 21h18"/><path d="M4 21V8l8-5 8 5v13"/><path d="M8 21v-8h8v8"/><path d="M8 11h8"/><path d="M10 17h4"/>'],
-        ['title' => 'Logistics & Delivery', 'text' => 'Reliable transport & timely delivery', 'icon' => '<path d="M10 17H5a2 2 0 0 1-2-2V6h11v11"/><path d="M14 9h4l3 4v4h-3"/><circle cx="7" cy="17" r="2"/><circle cx="16" cy="17" r="2"/>'],
+        [
+            'title' => 'Produce Aggregation', 
+            'text' => 'Sourcing from farmers across regions',
+            'description' => 'Tunafanya kazi kwa karibu na mtandao mpana wa wakulima nchi nzima. Tunakusanya mazao ya kilimo moja kwa moja shambani ili kuhakikisha tunapata bidhaa bora, safi na kwa bei nzuri, huku tukiwainua wakulima wadogo kiuchumi.',
+            'image' => 'https://images.unsplash.com/photo-1595856456094-1a5c68962ff3?auto=format&fit=crop&w=700&q=80',
+            'icon' => '<path d="M7 20c0-7 4-12 12-14-.4 7-5 11-12 11"/><path d="M7 20c0-4-2-7-6-9 4-.3 7 1.5 8 5"/>'
+        ],
+        [
+            'title' => 'Sorting & Grading', 
+            'text' => 'Ensuring premium quality standards', 
+            'description' => 'Kila zao linaloingia ghalani mwetu hupitia mchakato mkali wa kuchambuliwa na kupangwa katika madaraja. Hii inatuhakikishia kuwa wateja wetu wanapata bidhaa zinazokidhi viwango vya ubora wa masoko ya ndani na kimataifa.',
+            'image' => 'https://images.unsplash.com/photo-1591129210712-4022db2e65d2?auto=format&fit=crop&w=700&q=80',
+            'icon' => '<circle cx="5" cy="6" r="2"/><circle cx="17" cy="6" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="7" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7.5 10.5 11M13.5 11 16 7.5M10.5 13 8 16.5M13.5 13 17 16.5"/>'
+        ],
+        [
+            'title' => 'Processing & Value Addition', 
+            'text' => 'Drying, grinding & other processing', 
+            'description' => 'Tunaongeza thamani kwenye mazao kupitia usagishaji, ukaushaji, na usindikaji mwingine wa kisasa. Kwa mfano, tunasaga mahindi kupata unga bora na kusindika viungo (spices) ili vihifadhike vizuri na kutumika kwa urahisi zaidi.',
+            'image' => 'https://images.unsplash.com/photo-1615485291234-9d694218aeb3?auto=format&fit=crop&w=700&q=80',
+            'icon' => '<path d="M3 21h18"/><path d="M5 21V9l6 4V9l8 5v7"/><path d="M7 16h2"/><path d="M13 16h2"/><path d="M17 16h2"/><path d="M9 9V5h4v6"/>'
+        ],
+        [
+            'title' => 'Packaging', 
+            'text' => 'Hygienic packaging for local & export markets', 
+            'description' => 'Tunatumia vifungashio vya kisasa, salama na vinavyotunza ubora wa bidhaa kwa muda mrefu. Vifungashio vyetu vinakidhi viwango vya afya na vimeundwa kuvutia masoko ya reja reja, jumla na yale ya nje ya nchi (export).',
+            'image' => 'https://images.unsplash.com/photo-1628102491629-77858e80eb0b?auto=format&fit=crop&w=700&q=80',
+            'icon' => '<path d="m21 8-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/><path d="m7.5 5.5 9 5"/>'
+        ],
+        [
+            'title' => 'Warehouse Storage', 
+            'text' => 'Safe storage with proper handling systems', 
+            'description' => 'Tuna maghala ya kisasa (warehouses) yenye mifumo thabiti ya kudhibiti unyevu, joto na wadudu. Hii inahakikisha kuwa mazao yanakuwa salama na hayapotezi ubora wake wakati yakisubiri kusafirishwa au kuingizwa sokoni.',
+            'image' => 'https://i.pinimg.com/736x/2a/fd/d1/2afdd1af2261b3dd272c081b82ffdbc1.jpg',
+            'icon' => '<path d="M3 21h18"/><path d="M4 21V8l8-5 8 5v13"/><path d="M8 21v-8h8v8"/><path d="M8 11h8"/><path d="M10 17h4"/>'
+        ],
+        [
+            'title' => 'Logistics & Delivery', 
+            'text' => 'Reliable transport & timely delivery', 
+            'description' => 'Usafirishaji ni uti wa mgongo wa biashara yetu. Tuna mtandao mzuri wa usafirishaji unaotuhakikishia mzigo wako unakufikia kwa wakati sahihi, ukiwa salama, na kwa gharama nafuu, iwe ni ndani ya nchi au kimataifa.',
+            'image' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=700&q=80',
+            'icon' => '<path d="M10 17H5a2 2 0 0 1-2-2V6h11v11"/><path d="M14 9h4l3 4v4h-3"/><circle cx="7" cy="17" r="2"/><circle cx="16" cy="17" r="2"/>'
+        ],
     ];
 @endphp
 
@@ -524,208 +560,98 @@
                              alt="Avocados"
                              class="h-44 w-full rounded-lg object-cover">
                         <div class="mt-4 px-2 pb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">fresh products</span>
-                            <h4 class="mt-2 text-lg font-black text-[#13241f]">{{ __('product_avocado_title') }}</h4>
-                            <p class="mt-1 text-sm leading-6 text-[#24352f]">{{ __('product_avocado_text') }}</p>
+                            <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">fruit</span>
+                            <h4 class="mt-2 text-lg font-black text-[#13241f]">{{ __('product_avocados_title') ?? 'Fresh Avocados' }}</h4>
+                            <p class="mt-1 text-sm leading-6 text-[#24352f]">{{ __('product_avocados_text') ?? 'Premium avocados sourced from trusted farmers.' }}</p>
                         </div>
                     </div>
-
-                    <!-- Maize Flour -->
-                    <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md ring-1 ring-black/5">
-                        <img src="https://i.pinimg.com/1200x/0a/0b/9b/0a0b9ba61fe09f87827477c8283ec1f9.jpg"
-                             alt="Maize Flour"
-                             class="h-44 w-full rounded-lg object-cover">
-                        <div class="mt-4 px-2 pb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#15812d] bg-[#15812d]/10 px-2 py-0.5 rounded-md">staples</span>
-                            <h4 class="mt-2 text-lg font-black text-[#13241f]">{{ __('product_maize_title') }}</h4>
-                            <p class="mt-1 text-sm leading-6 text-[#24352f]">{{ __('product_maize_text') }}</p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
     </section>
-</main>
 
-<!-- FLOATING FEEDBACK BUTTON TRIGGER -->
-<div class="fixed bottom-5 right-5 z-40">
-    <button @click="feedbackOpen = true" class="flex items-center gap-2 rounded-full bg-[#15812d] px-5 py-3 font-bold text-white shadow-xl hover:bg-[#116924] transition">
-        {{ __('feedback') }}
-    </button>
-</div>
-
-<!-- FIXED RESPONSIVE FEEDBACK MODAL OVERLAY -->
-<div x-show="feedbackOpen" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" x-transition>
-    <div @click.away="feedbackOpen = false" class="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl relative flex flex-col max-h-[90vh] md:max-h-[85vh]">
-        
-        <!-- Modal Title Header -->
-        <div class="flex items-center justify-between pb-3 border-b border-gray-100 mb-4 flex-shrink-0">
-            <h3 class="text-xl font-black text-[#13241f]">{{ __('send_feedback') }}</h3>
-            <button @click="feedbackOpen = false" class="text-gray-400 hover:text-gray-600 p-1 rounded-lg">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-        </div>
-
-        <!-- Scrollable Form Container -->
-        <form action="#" method="POST" class="flex-1 overflow-y-auto pr-1 space-y-4">
-            <div>
-                <label class="block text-xs font-bold uppercase text-[#24352f] mb-1">{{ __('your_name') }}</label>
-                <input type="text" required class="w-full rounded-lg border border-gray-300 p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#15812d]">
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase text-[#24352f] mb-1">{{ __('email_address') }}</label>
-                <input type="email" required class="w-full rounded-lg border border-gray-300 p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#15812d]">
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase text-[#24352f] mb-1">{{ __('your_message') }}</label>
-                <textarea rows="4" required class="w-full rounded-lg border border-gray-300 p-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#15812d]"></textarea>
-            </div>
-
-            <!-- Action Buttons at bottom inside form workflow -->
-            <div class="pt-2 flex justify-end gap-3 sticky bottom-0 bg-white border-t border-gray-50 mt-4 py-2">
-                <button type="button" @click="feedbackOpen = false" class="px-4 py-2 text-sm font-bold text-gray-500 hover:bg-gray-100 rounded-lg transition">
-                    {{ __('cancel') }}
-                </button>
-                <button type="submit" class="px-6 py-2 text-sm font-bold text-white bg-[#15812d] hover:bg-[#116924] rounded-lg transition shadow-md">
-                    {{ __('submit_feedback') }}
-                </button>
-            </div>
-        </form>
-    </div>
-</div>
-<footer id="contact" class="bg-gradient-to-br from-[#04140c] via-[#0b301d] to-[#071d12] px-5 py-16 text-white lg:px-8">
-    <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1.15fr]">
-        <div>
-            <div class="flex items-center gap-3">
-                <img src="{{ asset('images/logo.png') }}"
-     alt="WAGE Solutions Limited Logo"
-     class="h-14 w-auto">
-                <span class="leading-none">
-                    <span class="block text-3xl font-black tracking-wide">WAGE</span>
-                    <span class="block text-[11px] font-bold uppercase tracking-[0.18em] text-white/80">Solutions Limited</span>
-                </span>
-            </div>
-
-            <p class="mt-6 max-w-xl text-base leading-8 text-white/78">
-                {{ __('footer_description') }}
-            </p>
-
-            <button type="button" @click="feedbackOpen = true" class="mt-8 inline-flex items-center gap-3 rounded-full bg-[#d2e829] px-7 py-3 text-sm font-extrabold uppercase text-[#082015] transition hover:bg-white">
-                {{ __('send_feedback') }}
-                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
-            </button>
-        </div>
-
-        <div class="grid gap-5 sm:grid-cols-2">
-            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
-                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">{{ __('business_location') }}</p>
-                <p class="mt-3 leading-7 text-white/85">
-                    Morogoro Region, Mvomero District, Dakawa Ward, Wami Sokoine Kibao cha Ranch near Makunganya Mosque
+    <!-- SERVICES SECTION -->
+    <section id="services" class="relative bg-white px-5 py-24 lg:px-8 overflow-hidden">
+        <div class="mx-auto max-w-7xl">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">
+                    {{ __('home.services_title') ?? 'Our Services' }}
+                </p>
+                <h2 class="mt-3 text-4xl font-black tracking-normal text-[#13241f] md:text-5xl">
+                    Tunachokifanya Bora Zaidi
+                </h2>
+                <p class="mt-5 text-lg leading-8 text-[#24352f]">
+                    Tunatoa suluhisho la uhakika katika mnyororo mzima wa thamani wa mazao ya kilimo, kuhakikisha ubora kuanzia shambani mpaka kumfikia mlaji wa mwisho.
                 </p>
             </div>
 
-            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
-                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">{{ __('postal_address') }}</p>
-                <p class="mt-3 leading-7 text-white/85">P.O. Box 3294, Morogoro, Tanzania</p>
-            </div>
+            <!-- Vertical Cards Container -->
+            <div class="mt-20 flex flex-col gap-12 lg:gap-16">
+                @foreach($services as $index => $service)
+                <!-- Individual Service Card -->
+                <div class="group relative flex flex-col overflow-hidden rounded-[2rem] bg-[#f8faf4] shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl md:flex-row @if($index % 2 != 0) md:flex-row-reverse @endif">
 
-            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
-                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">{{ __('telephone') }}</p>
-                <div class="mt-3 space-y-2 text-white/85">
-                    <a href="tel:+255786052912" class="block transition hover:text-[#d2e829]">+255 786 052 912</a>
-                    <a href="tel:+255679135676" class="block transition hover:text-[#d2e829]">+255 679 135 676</a>
+                    <!-- Image with Icon Overlay -->
+                    <div class="relative h-72 w-full overflow-hidden md:h-auto md:w-5/12">
+                        <img src="{{ $service['image'] }}" 
+                             alt="{{ $service['title'] }}" 
+                             class="h-full w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110">
+                        
+                        <!-- Floating Icon -->
+                        <div class="absolute bottom-4 right-4 rounded-2xl bg-white/90 p-4 text-[#15812d] shadow-xl backdrop-blur-md transition-transform duration-500 group-hover:-translate-y-2 md:bottom-auto md:top-6 md:left-6 md:right-auto">
+                            <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                {!! $service['icon'] !!}
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Content Details -->
+                    <div class="flex w-full flex-col justify-center p-8 sm:p-10 md:w-7/12 lg:p-14">
+                        <h3 class="text-2xl font-black text-[#13241f] transition-colors duration-300 group-hover:text-[#15812d] md:text-3xl">
+                            {{ $service['title'] }}
+                        </h3>
+                        
+                        <p class="mt-3 inline-block font-extrabold uppercase tracking-wider text-sm text-[#87a922]">
+                            {{ $service['text'] }}
+                        </p>
+                        
+                        <p class="mt-5 text-base leading-relaxed text-[#24352f] md:text-lg">
+                            {{ $service['description'] }}
+                        </p>
+
+                        <!-- Call to Action / Learn More -->
+                        <div class="mt-8">
+                            <a href="#contact" class="inline-flex items-center gap-2 rounded-full border-2 border-[#15812d] px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-[#15812d] transition-all hover:bg-[#15812d] hover:text-white">
+                                Ulizia Huduma Hii
+                                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
+                @endforeach
             </div>
 
-            <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
-                <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">{{ __('email') }}</p>
-                <a href="mailto:getupala@yahoo.co.uk" class="mt-3 block break-words text-white/85 transition hover:text-[#d2e829]">info@wagesolutions.com</a>
-            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="mx-auto mt-12 grid max-w-7xl gap-6 lg:grid-cols-[0.85fr_1.15fr]">
-        <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
-            <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">{{ __('find_us_map') }}</p>
-            <h2 class="mt-3 text-3xl font-black">Dakawa, Mvomero, Morogoro</h2>
-            <p class="mt-4 leading-7 text-white/78">
-                {{ __('map_description') }}
-            </p>
-            <a href="https://www.google.com/maps/search/?api=1&query=Dakawa%20Mvomero%20Morogoro%20Tanzania" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-3 rounded-full border border-[#d2e829] px-6 py-3 text-sm font-extrabold uppercase text-[#d2e829] transition hover:bg-[#d2e829] hover:text-[#082015]">
-                {{ __('open_google_maps') }}
-                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-            </a>
-        </div>
+</main>
 
-        <div class="overflow-hidden rounded-xl border border-white/10 bg-white/[0.08] shadow-2xl shadow-black/20">
-            <iframe
-                title="WAGE Solutions Limited location in Dakawa, Mvomero, Morogoro"
-                src="https://www.google.com/maps?q=Dakawa%20Mvomero%20Morogoro%20Tanzania&output=embed"
-                class="h-[360px] w-full"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-        </div>
-    </div>
-
-    <div class="mx-auto mt-12 flex max-w-7xl flex-col gap-4 border-t border-white/10 pt-6 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
-        <p>&copy; {{ date('Y') }} WAGE Solutions Limited. {{ __('all_rights_reserved') }}</p>
-        <div class="flex gap-5 font-bold uppercase">
-            <a href="#" class="transition hover:text-[#d2e829]">Home</a>
-            <a href="#products" class="transition hover:text-[#d2e829]">Products</a>
-            <a href="#services" class="transition hover:text-[#d2e829]">Services</a>
+<!-- SIMPLE FOOTER / CONTACT PLACEHOLDER -->
+<footer id="contact" class="bg-[#0b341c] text-white py-12 px-5 lg:px-8">
+    <div class="mx-auto max-w-7xl text-center">
+        <h2 class="text-3xl font-black mb-4">Wasiliana Nasi</h2>
+        <p class="text-white/80 mb-8 max-w-xl mx-auto">Tuko tayari kufanya kazi na wewe na kukupa huduma zetu zilizobora.</p>
+        <a href="mailto:info@wagesolutions.com" class="inline-block rounded-full bg-[#d2e829] text-[#092114] px-8 py-3 text-sm font-extrabold uppercase transition hover:bg-white">
+            Tuma Barua Pepe (Email)
+        </a>
+        <div class="mt-12 text-sm text-white/50">
+            &copy; {{ date('Y') }} WAGE Solutions Limited. All rights reserved.
         </div>
     </div>
 </footer>
-
-<div x-show="feedbackOpen" x-transition.opacity class="fixed inset-0 z-[80] grid place-items-center bg-black/70 px-5" style="display: none;">
-    <div @click.away="feedbackOpen = false" class="w-full max-w-xl rounded-2xl bg-white p-6 shadow-2xl">
-        <div class="flex items-start justify-between gap-4">
-            <div>
-                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">{{ __('feedback_title') }}</p>
-                <h2 class="mt-1 text-3xl font-black text-[#13241f]">{{ __('submit_feedback') }}</h2>
-            </div>
-            <button type="button" @click="feedbackOpen = false" class="grid h-10 w-10 place-items-center rounded-full bg-[#eef5ec] text-[#13241f] transition hover:bg-[#d2e829]" aria-label="Close feedback form">
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-            </button>
-        </div>
-
-        <form class="mt-6 space-y-4" @submit.prevent="feedbackOpen = false">
-            <div class="grid gap-4 sm:grid-cols-2">
-                <label class="block">
-                    <span class="text-sm font-bold text-[#24352f]">{{ __('full_name') }}</span>
-                    <input type="text" required class="mt-2 w-full rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20">
-                </label>
-                <label class="block">
-                    <span class="text-sm font-bold text-[#24352f]">{{ __('phone_or_email') }}</span>
-                    <input type="text" required class="mt-2 w-full rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20">
-                </label>
-            </div>
-
-            <label class="block">
-                <span class="text-sm font-bold text-[#24352f]">{{ __('subject') }}</span>
-                <input type="text" required class="mt-2 w-full rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20">
-            </label>
-
-            <label class="block">
-                <span class="text-sm font-bold text-[#24352f]">{{ __('message') }}</span>
-                <textarea rows="5" required class="mt-2 w-full resize-none rounded-lg border border-[#cfd9cb] px-4 py-3 outline-none transition focus:border-[#15812d] focus:ring-2 focus:ring-[#15812d]/20"></textarea>
-            </label>
-
-            <div class="flex flex-col gap-3 pt-2 sm:flex-row sm:justify-end">
-                <button type="button" @click="feedbackOpen = false" class="rounded-full border border-[#cfd9cb] px-6 py-3 text-sm font-extrabold uppercase text-[#24352f] transition hover:bg-[#eef5ec]">
-                    {{ __('cancel') }}
-                </button>
-                <button type="submit" class="rounded-full bg-[#15812d] px-7 py-3 text-sm font-extrabold uppercase text-white transition hover:bg-[#0f5f22]">
-                    {{ __('submit_feedback') }}
-                </button>
-            </div>
-        </form>
-    </div>
-</div>
 
 </body>
 </html>
