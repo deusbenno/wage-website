@@ -127,7 +127,33 @@
   "phone_or_email": "Simu au Barua Pepe",
   "subject": "Mada",
   "message": "Ujumbe",
-  "cancel": "Ghairi"
+  "cancel": "Ghairi",
+
+  
+    "service1_title": "Ukusanyaji wa Mazao ya Kilimo",
+    "service1_text": "Kukusanya mazao bora moja kwa moja kutoka kwa wakulima",
+    "service1_description": "Tunafanya kazi kwa karibu na mtandao mpana wa wakulima nchini kote, tukikusanya mazao moja kwa moja kutoka shambani ili kuhakikisha ubora wa bidhaa, bei nzuri na kuinua kipato cha wakulima wadogo.",
+
+    "service2_title": "Upangaji na Uainishaji wa Mazao",
+    "service2_text": "Kuhakikisha viwango vya juu vya ubora",
+    "service2_description": "Kila zao linaloingia kwenye ghala letu hupitia mchakato makini wa kuchambuliwa na kuainishwa ili kuhakikisha linakidhi viwango vya ubora vinavyohitajika katika masoko ya ndani na kimataifa.",
+
+    "service3_title": "Usindikaji na Uongezaji Thamani",
+    "service3_text": "Ukaushaji, usagaji na usindikaji wa kisasa",
+    "service3_description": "Tunaongeza thamani ya mazao kupitia ukaushaji, usagaji na mbinu nyingine za kisasa za usindikaji. Kwa mfano, tunasaga mahindi kuwa unga bora na kusindika viungo ili kuongeza ubora na muda wa kuhifadhi.",
+
+    "service4_title": "Huduma za Ufungashaji wa Kitaalamu",
+    "service4_text": "Ufungashaji salama kwa masoko ya ndani na nje",
+    "service4_description": "Tunatumia vifungashio vya kisasa na salama vinavyohifadhi ubora wa bidhaa huku vikikidhi viwango vya afya kwa masoko ya rejareja, jumla na ya kimataifa.",
+
+    "service5_title": "Uhifadhi wa Kisasa Maghalani",
+    "service5_text": "Uhifadhi salama unaolinda ubora",
+    "service5_description": "Maghala yetu ya kisasa yana mifumo ya kudhibiti unyevu, joto na wadudu ili kuhakikisha mazao yanabaki salama na yenye ubora kabla ya kusambazwa.",
+
+    "service6_title": "Usafirishaji na Usambazaji",
+    "service6_text": "Usafiri wa uhakika na uwasilishaji kwa wakati",
+    "service6_description": "Mtandao wetu wa usafirishaji unahakikisha bidhaa zinafika salama, kwa wakati na kwa ufanisi kwa wateja wa ndani na wa kimataifa."
+
 
 
 }

@@ -67,50 +67,50 @@
         ['name' => 'Other Products', 'text' => 'Other agricultural products based on seasonality & demand', 'image' => 'https://images.unsplash.com/photo-1615484477778-ca3b77940c25?auto=format&fit=crop&w=700&q=80'],
     ];
 
-    $services = [
-        [
-            'title' => 'Produce Aggregation', 
-            'text' => 'Sourcing from farmers across regions',
-            'description' => 'Tunafanya kazi kwa karibu na mtandao mpana wa wakulima nchi nzima. Tunakusanya mazao ya kilimo moja kwa moja shambani ili kuhakikisha tunapata bidhaa bora, safi na kwa bei nzuri, huku tukiwainua wakulima wadogo kiuchumi.',
-            'image' => 'https://images.unsplash.com/photo-1595856456094-1a5c68962ff3?auto=format&fit=crop&w=700&q=80',
-            'icon' => '<path d="M7 20c0-7 4-12 12-14-.4 7-5 11-12 11"/><path d="M7 20c0-4-2-7-6-9 4-.3 7 1.5 8 5"/>'
-        ],
-        [
-            'title' => 'Sorting & Grading', 
-            'text' => 'Ensuring premium quality standards', 
-            'description' => 'Kila zao linaloingia ghalani mwetu hupitia mchakato mkali wa kuchambuliwa na kupangwa katika madaraja. Hii inatuhakikishia kuwa wateja wetu wanapata bidhaa zinazokidhi viwango vya ubora wa masoko ya ndani na kimataifa.',
-            'image' => 'https://images.unsplash.com/photo-1591129210712-4022db2e65d2?auto=format&fit=crop&w=700&q=80',
-            'icon' => '<circle cx="5" cy="6" r="2"/><circle cx="17" cy="6" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="7" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7.5 10.5 11M13.5 11 16 7.5M10.5 13 8 16.5M13.5 13 17 16.5"/>'
-        ],
-        [
-            'title' => 'Processing & Value Addition', 
-            'text' => 'Drying, grinding & other processing', 
-            'description' => 'Tunaongeza thamani kwenye mazao kupitia usagishaji, ukaushaji, na usindikaji mwingine wa kisasa. Kwa mfano, tunasaga mahindi kupata unga bora na kusindika viungo (spices) ili vihifadhike vizuri na kutumika kwa urahisi zaidi.',
-            'image' => 'https://images.unsplash.com/photo-1615485291234-9d694218aeb3?auto=format&fit=crop&w=700&q=80',
-            'icon' => '<path d="M3 21h18"/><path d="M5 21V9l6 4V9l8 5v7"/><path d="M7 16h2"/><path d="M13 16h2"/><path d="M17 16h2"/><path d="M9 9V5h4v6"/>'
-        ],
-        [
-            'title' => 'Packaging', 
-            'text' => 'Hygienic packaging for local & export markets', 
-            'description' => 'Tunatumia vifungashio vya kisasa, salama na vinavyotunza ubora wa bidhaa kwa muda mrefu. Vifungashio vyetu vinakidhi viwango vya afya na vimeundwa kuvutia masoko ya reja reja, jumla na yale ya nje ya nchi (export).',
-            'image' => 'https://images.unsplash.com/photo-1628102491629-77858e80eb0b?auto=format&fit=crop&w=700&q=80',
-            'icon' => '<path d="m21 8-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/><path d="m7.5 5.5 9 5"/>'
-        ],
-        [
-            'title' => 'Warehouse Storage', 
-            'text' => 'Safe storage with proper handling systems', 
-            'description' => 'Tuna maghala ya kisasa (warehouses) yenye mifumo thabiti ya kudhibiti unyevu, joto na wadudu. Hii inahakikisha kuwa mazao yanakuwa salama na hayapotezi ubora wake wakati yakisubiri kusafirishwa au kuingizwa sokoni.',
-            'image' => 'https://i.pinimg.com/736x/2a/fd/d1/2afdd1af2261b3dd272c081b82ffdbc1.jpg',
-            'icon' => '<path d="M3 21h18"/><path d="M4 21V8l8-5 8 5v13"/><path d="M8 21v-8h8v8"/><path d="M8 11h8"/><path d="M10 17h4"/>'
-        ],
-        [
-            'title' => 'Logistics & Delivery', 
-            'text' => 'Reliable transport & timely delivery', 
-            'description' => 'Usafirishaji ni uti wa mgongo wa biashara yetu. Tuna mtandao mzuri wa usafirishaji unaotuhakikishia mzigo wako unakufikia kwa wakati sahihi, ukiwa salama, na kwa gharama nafuu, iwe ni ndani ya nchi au kimataifa.',
-            'image' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=700&q=80',
-            'icon' => '<path d="M10 17H5a2 2 0 0 1-2-2V6h11v11"/><path d="M14 9h4l3 4v4h-3"/><circle cx="7" cy="17" r="2"/><circle cx="16" cy="17" r="2"/>'
-        ],
-    ];
+$services = [
+    [
+        'title' => __('service1_title'),
+        'text' => __('service1_text'),
+        'description' => __('service1_description'),
+        'image' => 'https://images.unsplash.com/photo-1595856456094-1a5c68962ff3?auto=format&fit=crop&w=700&q=80',
+        'icon' => '<path d="M7 20c0-7 4-12 12-14-.4 7-5 11-12 11"/><path d="M7 20c0-4-2-7-6-9 4-.3 7 1.5 8 5"/>'
+    ],
+    [
+        'title' => __('service2_title'),
+        'text' => __('service2_text'),
+        'description' => __('service2_description'),
+        'image' => 'https://images.unsplash.com/photo-1591129210712-4022db2e65d2?auto=format&fit=crop&w=700&q=80',
+        'icon' => '<circle cx="5" cy="6" r="2"/><circle cx="17" cy="6" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="7" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7.5 10.5 11M13.5 11 16 7.5M10.5 13 8 16.5M13.5 13 17 16.5"/>'
+    ],
+    [
+        'title' => __('service3_title'),
+        'text' => __('service3_text'),
+        'description' => __('service3_description'),
+        'image' => 'https://images.unsplash.com/photo-1615485291234-9d694218aeb3?auto=format&fit=crop&w=700&q=80',
+        'icon' => '<path d="M3 21h18"/><path d="M5 21V9l6 4V9l8 5v7"/><path d="M7 16h2"/><path d="M13 16h2"/><path d="M17 16h2"/><path d="M9 9V5h4v6"/>'
+    ],
+    [
+        'title' => __('service4_title'),
+        'text' => __('service4_text'),
+        'description' => __('service4_description'),
+        'image' => 'https://images.unsplash.com/photo-1628102491629-77858e80eb0b?auto=format&fit=crop&w=700&q=80',
+        'icon' => '<path d="m21 8-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/><path d="m7.5 5.5 9 5"/>'
+    ],
+    [
+        'title' => __('service5_title'),
+        'text' => __('service5_text'),
+        'description' => __('service5_description'),
+        'image' => 'https://i.pinimg.com/736x/2a/fd/d1/2afdd1af2261b3dd272c081b82ffdbc1.jpg',
+        'icon' => '<path d="M3 21h18"/><path d="M4 21V8l8-5 8 5v13"/><path d="M8 21v-8h8v8"/><path d="M8 11h8"/><path d="M10 17h4"/>'
+    ],
+    [
+        'title' => __('service6_title'),
+        'text' => __('service6_text'),
+        'description' => __('service6_description'),
+        'image' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=700&q=80',
+        'icon' => '<path d="M10 17H5a2 2 0 0 1-2-2V6h11v11"/><path d="M14 9h4l3 4v4h-3"/><circle cx="7" cy="17" r="2"/><circle cx="16" cy="17" r="2"/>'
+    ],
+];
 @endphp
 
 <header x-data="{ open: false, langOpen: false }" class="fixed left-0 top-0 z-50 w-full border-b border-[#d2e829]/20 bg-gradient-to-r from-[#04140c] via-[#0b341c] to-[#062414] text-white shadow-xl shadow-black/20">
@@ -583,71 +583,78 @@
         </div>
     </section>
     <!-- SERVICES SECTION -->
-    <section id="services" class="relative bg-white px-5 py-24 lg:px-8 overflow-hidden">
-        <div class="mx-auto max-w-7xl">
-            
-            <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto">
-                <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">
-                    {{ __('home.services_title') ?? 'Our Services' }}
-                </p>
-                <h2 class="mt-3 text-4xl font-black tracking-normal text-[#13241f] md:text-5xl">
-                    Tunachokifanya Bora Zaidi
-                </h2>
-                <p class="mt-5 text-lg leading-8 text-[#24352f]">
-                    Tunatoa suluhisho la uhakika katika mnyororo mzima wa thamani wa mazao ya kilimo, kuhakikisha ubora kuanzia shambani mpaka kumfikia mlaji wa mwisho.
-                </p>
-            </div>
+<section id="services" class="relative bg-white px-5 py-24 lg:px-8 overflow-hidden">
+    <div class="mx-auto max-w-7xl">
 
-            <!-- Vertical Cards Container -->
-            <div class="mt-20 flex flex-col gap-12 lg:gap-16">
-                @foreach($services as $index => $service)
-                <!-- Individual Service Card -->
-                <div class="group relative flex flex-col overflow-hidden rounded-[2rem] bg-[#f8faf4] shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl md:flex-row @if($index % 2 != 0) md:flex-row-reverse @endif">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto">
+            <p class="text-sm font-extrabold uppercase tracking-wide text-[#15812d]">
+                {{ __('services_title') }}
+            </p>
 
-                    <!-- Image with Icon Overlay -->
-                    <div class="relative h-72 w-full overflow-hidden md:h-auto md:w-5/12">
-                        <img src="{{ $service['image'] }}" 
-                             alt="{{ $service['title'] }}" 
-                             class="h-full w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110">
-                        
-                        <!-- Floating Icon -->
-                        <div class="absolute bottom-4 right-4 rounded-2xl bg-white/90 p-4 text-[#15812d] shadow-xl backdrop-blur-md transition-transform duration-500 group-hover:-translate-y-2 md:bottom-auto md:top-6 md:left-6 md:right-auto">
-                            <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                {!! $service['icon'] !!}
-                            </svg>
-                        </div>
+            <h2 class="mt-3 text-4xl font-black tracking-normal text-[#13241f] md:text-5xl">
+                {{ __('services_heading') }}
+            </h2>
+
+            <p class="mt-5 text-lg leading-8 text-[#24352f]">
+                {{ __('services_description') }}
+            </p>
+        </div>
+
+        <!-- Vertical Cards Container -->
+        <div class="mt-20 flex flex-col gap-12 lg:gap-16">
+            @foreach($services as $index => $service)
+
+            <div class="group relative flex flex-col overflow-hidden rounded-[2rem] bg-[#f8faf4] shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl md:flex-row @if($index % 2 != 0) md:flex-row-reverse @endif">
+
+                <!-- Image -->
+                <div class="relative h-72 w-full overflow-hidden md:h-auto md:w-5/12">
+                    <img src="{{ $service['image'] }}"
+                         alt="{{ $service['title'] }}"
+                         class="h-full w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110">
+
+                    <div class="absolute bottom-4 right-4 rounded-2xl bg-white/90 p-4 text-[#15812d] shadow-xl backdrop-blur-md transition-transform duration-500 group-hover:-translate-y-2 md:bottom-auto md:top-6 md:left-6 md:right-auto">
+                        <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            {!! $service['icon'] !!}
+                        </svg>
                     </div>
+                </div>
 
-                    <!-- Content Details -->
-                    <div class="flex w-full flex-col justify-center p-8 sm:p-10 md:w-7/12 lg:p-14">
-                        <h3 class="text-2xl font-black text-[#13241f] transition-colors duration-300 group-hover:text-[#15812d] md:text-3xl">
-                            {{ $service['title'] }}
-                        </h3>
-                        
-                        <p class="mt-3 inline-block font-extrabold uppercase tracking-wider text-sm text-[#87a922]">
-                            {{ $service['text'] }}
-                        </p>
-                        
-                        <p class="mt-5 text-base leading-relaxed text-[#24352f] md:text-lg">
-                            {{ $service['description'] }}
-                        </p>
+                <!-- Content -->
+                <div class="flex w-full flex-col justify-center p-8 sm:p-10 md:w-7/12 lg:p-14">
 
-                        <!-- Call to Action / Learn More -->
-                        <div class="mt-8">
-                            <a href="#contact" class="inline-flex items-center gap-2 rounded-full border-2 border-[#15812d] px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-[#15812d] transition-all hover:bg-[#15812d] hover:text-white">
-                                Ulizia Huduma Hii
-                                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                            </a>
-                        </div>
+                    <h3 class="text-2xl font-black text-[#13241f] transition-colors duration-300 group-hover:text-[#15812d] md:text-3xl">
+                        {{ $service['title'] }}
+                    </h3>
+
+                    <p class="mt-3 inline-block font-extrabold uppercase tracking-wider text-sm text-[#87a922]">
+                        {{ $service['text'] }}
+                    </p>
+
+                    <p class="mt-5 text-base leading-relaxed text-[#24352f] md:text-lg">
+                        {{ $service['description'] }}
+                    </p>
+
+                    <div class="mt-8">
+                        <a href="#contact" class="inline-flex items-center gap-2 rounded-full border-2 border-[#15812d] px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-[#15812d] transition-all hover:bg-[#15812d] hover:text-white">
+                            {{ __('inquire_service') }}
+
+                            <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </a>
                     </div>
 
                 </div>
-                @endforeach
+
             </div>
 
+            @endforeach
         </div>
-    </section>
+
+    </div>
+</section>
 </main>
 
 <!-- FLOATING FEEDBACK BUTTON TRIGGER -->

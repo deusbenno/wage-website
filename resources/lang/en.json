@@ -122,7 +122,31 @@
   "phone_or_email": "Phone or Email",
   "subject": "Subject",
   "message": "Message",
-  "cancel": "Cancel"
+  "cancel": "Cancel",
+
+    "service1_title": "Agricultural Produce Aggregation",
+    "service1_text": "Sourcing quality produce directly from farmers",
+    "service1_description": "We work closely with an extensive network of farmers across the country, collecting agricultural produce directly from farms to ensure high-quality products at competitive prices while improving the livelihoods of small-scale farmers.",
+
+    "service2_title": "Produce Sorting & Quality Grading",
+    "service2_text": "Maintaining premium quality standards",
+    "service2_description": "Every product entering our warehouse undergoes a rigorous sorting and grading process to ensure it meets the quality standards required by both local and international markets.",
+
+    "service3_title": "Agricultural Processing & Value Addition",
+    "service3_text": "Drying, milling and modern processing",
+    "service3_description": "We add value to agricultural produce through modern drying, milling and processing techniques. For example, we mill maize into premium flour and process spices to improve shelf life and convenience.",
+
+    "service4_title": "Professional Packaging Solutions",
+    "service4_text": "Safe packaging for local and export markets",
+    "service4_description": "We use modern, hygienic packaging materials that preserve product quality and freshness while meeting health standards for retail, wholesale and export markets.",
+
+    "service5_title": "Modern Warehouse Storage",
+    "service5_text": "Secure storage with quality preservation",
+    "service5_description": "Our modern warehouses are equipped with systems for controlling moisture, temperature and pests, ensuring agricultural products remain safe and maintain their quality before distribution.",
+
+    "service6_title": "Logistics & Distribution",
+    "service6_text": "Reliable transportation and timely delivery",
+    "service6_description": "Our efficient logistics network ensures products are transported safely, delivered on time and handled professionally for both domestic and international customers."
 
 
 }

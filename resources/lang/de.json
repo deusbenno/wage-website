@@ -128,7 +128,35 @@
   "phone_or_email": "Telefon oder E-Mail",
   "subject": "Betreff",
   "message": "Nachricht",
-  "cancel": "Abbrechen"
+  "cancel": "Abbrechen",
+
+  
+    "service1_title": "Sammlung landwirtschaftlicher Erzeugnisse",
+    "service1_text": "Direkte Beschaffung hochwertiger Produkte von Landwirten",
+    "service1_description": "Wir arbeiten eng mit einem großen Netzwerk von Landwirten zusammen und beziehen landwirtschaftliche Produkte direkt vom Feld, um höchste Qualität und faire Preise sicherzustellen.",
+
+    "service2_title": "Sortierung und Qualitätsklassifizierung",
+    "service2_text": "Sicherung höchster Qualitätsstandards",
+    "service2_description": "Alle Produkte werden sorgfältig sortiert und klassifiziert, damit sie die Anforderungen lokaler und internationaler Märkte erfüllen.",
+
+    "service3_title": "Verarbeitung und Wertschöpfung",
+    "service3_text": "Trocknung, Mahlen und moderne Verarbeitung",
+    "service3_description": "Wir steigern den Wert landwirtschaftlicher Produkte durch moderne Trocknungs-, Mahl- und Verarbeitungstechnologien.",
+
+    "service4_title": "Professionelle Verpackungslösungen",
+    "service4_text": "Sichere Verpackung für nationale und internationale Märkte",
+    "service4_description": "Wir verwenden moderne und hygienische Verpackungen, die die Produktqualität erhalten und den Gesundheitsstandards entsprechen.",
+
+    "service5_title": "Moderne Lagerhaltung",
+    "service5_text": "Sichere Lagerung mit Qualitätserhaltung",
+    "service5_description": "Unsere modernen Lagerhäuser verfügen über Systeme zur Kontrolle von Feuchtigkeit, Temperatur und Schädlingen, um die Qualität der Produkte zu bewahren.",
+
+    "service6_title": "Logistik und Vertrieb",
+    "service6_text": "Zuverlässiger Transport und pünktliche Lieferung",
+    "service6_description": "Unser effizientes Logistiknetz gewährleistet eine sichere, pünktliche und professionelle Lieferung für nationale und internationale Kunden."
+
+
+
 
 
 }

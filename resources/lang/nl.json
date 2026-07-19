@@ -126,7 +126,33 @@
   "phone_or_email": "Telefoon of e-mail",
   "subject": "Onderwerp",
   "message": "Bericht",
-  "cancel": "Annuleren"
+  "cancel": "Annuleren",
+
+  
+    "service1_title": "Verzameling van Landbouwproducten",
+    "service1_text": "Rechtstreekse inkoop van kwaliteitsproducten bij boeren",
+    "service1_description": "Wij werken nauw samen met een uitgebreid netwerk van boeren en verzamelen landbouwproducten rechtstreeks van de boerderij om hoge kwaliteit en eerlijke prijzen te garanderen.",
+
+    "service2_title": "Sorteren en Kwaliteitsclassificatie",
+    "service2_text": "Het waarborgen van hoge kwaliteitsnormen",
+    "service2_description": "Alle producten worden zorgvuldig gesorteerd en geclassificeerd zodat ze voldoen aan de eisen van zowel lokale als internationale markten.",
+
+    "service3_title": "Verwerking en Waardetoevoeging",
+    "service3_text": "Drogen, malen en moderne verwerking",
+    "service3_description": "Wij voegen waarde toe aan landbouwproducten door middel van moderne droog-, maal- en verwerkingstechnieken.",
+
+    "service4_title": "Professionele Verpakkingsoplossingen",
+    "service4_text": "Veilige verpakking voor lokale en exportmarkten",
+    "service4_description": "Wij gebruiken moderne en hygiënische verpakkingen die de kwaliteit van producten behouden en voldoen aan de gezondheidsnormen.",
+
+    "service5_title": "Moderne Magazijnopslag",
+    "service5_text": "Veilige opslag met kwaliteitsbehoud",
+    "service5_description": "Onze moderne magazijnen beschikken over systemen voor vocht-, temperatuur- en ongediertebeheersing om de kwaliteit van landbouwproducten te behouden.",
+
+    "service6_title": "Logistiek en Distributie",
+    "service6_text": "Betrouwbaar transport en tijdige levering",
+    "service6_description": "Ons efficiënte logistieke netwerk zorgt ervoor dat producten veilig, op tijd en professioneel worden geleverd aan zowel nationale als internationale klanten."
+
 
 
 
