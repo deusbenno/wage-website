@@ -207,7 +207,7 @@ $services = [
             slides: [
                 {
                     label: 'Fresh Avocados',
-                    image: 'https://i.pinimg.com/1200x/2c/93/87/2c93879744d6ed3770e2cfd1f0e3db31.jpg',
+                    image: '{{ asset('images/image.png') }}',
                     alt: 'Fresh avocados growing on a tree'
                 },
                 {
