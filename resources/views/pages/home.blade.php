@@ -751,7 +751,7 @@ $services = [
 
             <div class="rounded-xl border border-white/10 bg-white/[0.08] p-6">
                 <p class="text-sm font-extrabold uppercase tracking-wide text-[#d2e829]">{{ __('email') }}</p>
-                <a href="mailto:getupala@yahoo.co.uk" class="mt-3 block break-words text-white/85 transition hover:text-[#d2e829]">info@wagesolutions.com</a>
+                <a href="mailto:info@wagesolutionsltd.com" class="mt-3 block break-words text-white/85 transition hover:text-[#d2e829]">info@wagesolutionsltd.com</a>
             </div>
         </div>
     </div>
