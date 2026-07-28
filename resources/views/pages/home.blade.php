@@ -212,12 +212,12 @@ $services = [
                 },
                 {
                     label: 'Maize Flour',
-                    image: 'https://i.pinimg.com/1200x/19/d3/93/19d3938e62a7ca0ce2f0af202ec81d56.jpg',
+                    image: '{{ asset('images/image2.png') }}',
                     alt: 'Maize and maize flour'
                 },
                 {
                     label: 'Pilipili Spices',
-                    image: 'https://i.pinimg.com/1200x/92/12/85/921285754f035b7f41171e5ba7259976.jpg',
+                   image: '{{ asset('images/image3.png') }}',
                     alt: 'Pilipili chili spices'
                 },
                 {
