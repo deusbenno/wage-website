@@ -477,8 +477,8 @@ $services = [
             </div>
 
             <div class="overflow-hidden rounded-2xl shadow-xl shadow-black/10 lg:h-full flex items-center">
-                <img src="image: '{{ asset('images/office.png') }}',"
-                     alt="african warehouse"
+                <img src="{{ asset('images/office.png') }}"
+                     alt="office"
                      class="h-[360px] w-full object-cover">
             </div>
 
