@@ -107,7 +107,7 @@ $services = [
         'title' => __('service6_title'),
         'text' => __('service6_text'),
         'description' => __('service6_description'),
-        'image' => asset('images/logistics.png'),
+        'image' => asset('images/logistics.jpg'),
         'icon' => '<path d="M10 17H5a2 2 0 0 1-2-2V6h11v11"/><path d="M14 9h4l3 4v4h-3"/><circle cx="7" cy="17" r="2"/><circle cx="16" cy="17" r="2"/>'
     ],
 ];
