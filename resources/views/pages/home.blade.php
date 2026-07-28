@@ -93,21 +93,21 @@ $services = [
         'title' => __('service4_title'),
         'text' => __('service4_text'),
         'description' => __('service4_description'),
-        'image' => 'https://i.pinimg.com/736x/50/e3/98/50e398cd6baf1a9727dd10b09a140e00.jpg',
+        'image' => asset('images/package.png'),
         'icon' => '<path d="m21 8-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/><path d="m7.5 5.5 9 5"/>'
     ],
     [
         'title' => __('service5_title'),
         'text' => __('service5_text'),
         'description' => __('service5_description'),
-        'image' => 'https://i.pinimg.com/736x/2a/fd/d1/2afdd1af2261b3dd272c081b82ffdbc1.jpg',
+        'image' => asset('images/warehouse.png'),
         'icon' => '<path d="M3 21h18"/><path d="M4 21V8l8-5 8 5v13"/><path d="M8 21v-8h8v8"/><path d="M8 11h8"/><path d="M10 17h4"/>'
     ],
     [
         'title' => __('service6_title'),
         'text' => __('service6_text'),
         'description' => __('service6_description'),
-        'image' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=700&q=80',
+        'image' => asset('images/logistics.png'),
         'icon' => '<path d="M10 17H5a2 2 0 0 1-2-2V6h11v11"/><path d="M14 9h4l3 4v4h-3"/><circle cx="7" cy="17" r="2"/><circle cx="16" cy="17" r="2"/>'
     ],
 ];
