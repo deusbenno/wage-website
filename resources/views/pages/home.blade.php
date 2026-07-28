@@ -508,7 +508,7 @@ $services = [
 
                     <!-- Turmeric -->
                     <div class="carousel-card min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-white p-3 shadow-md ring-1 ring-black/5">
-                        <img src="{{ asset('images/tumeric.png') }}"
+                        <img src="{{ asset('images/tumeric.jpeg') }}"
                              alt="Turmeric"
                              class="h-44 w-full rounded-lg object-cover">
                         <div class="mt-4 px-2 pb-2">
