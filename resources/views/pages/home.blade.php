@@ -72,7 +72,7 @@ $services = [
         'title' => __('service1_title'),
         'text' => __('service1_text'),
         'description' => __('service1_description'),
-        'image' => asset('assets/images/products.png'),
+        'image' => asset('images/products.png'),
         'icon' => '<path d="M7 20c0-7 4-12 12-14-.4 7-5 11-12 11"/><path d="M7 20c0-4-2-7-6-9 4-.3 7 1.5 8 5"/>'
     ],
     [
