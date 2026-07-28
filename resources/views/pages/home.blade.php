@@ -222,7 +222,7 @@ $services = [
                 },
                 {
                     label: 'Fresh Ginger',
-                    image: 'https://i.pinimg.com/736x/50/8e/ff/508eff21da147ef089dab9f38ef4cb4f.jpg',
+                    image: '{{ asset('images/image4.png') }}',
                     alt: 'Fresh ginger roots'
                 }
             ],
